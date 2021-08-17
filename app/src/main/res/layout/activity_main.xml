@@ -9,13 +9,16 @@
     <Button
         android:id="@+id/btn_selectAvatar"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:text="Select Avatar"/>
+        android:layout_height="50dp"
+        android:text="Select Avatar"
+        android:layout_centerInParent="true"/>
 
     <Button
         android:id="@+id/btn_solveQuiz"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:text="Solve Quiz"/>
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_selectAvatar"
+        android:layout_marginTop="20dp"
+        android:text="Solve Quiz" />
 
 </RelativeLayout>
