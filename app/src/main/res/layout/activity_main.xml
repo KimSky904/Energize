@@ -4,21 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/background">
 
-    <Button
-        android:id="@+id/btn_selectAvatar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Select Avatar"
-        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/MainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="137dp"
+        android:text="Before You\nBegin"
+        android:textColor="@color/white"
+        style="@style/Text.TitleStyle"/>
 
-    <Button
-        android:id="@+id/btn_solveQuiz"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/btn_selectAvatar"
-        android:layout_marginTop="20dp"
-        android:text="Solve Quiz" />
+    <TextView
+        android:id="@+id/SubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainText"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="5dp"
+        android:text="Create a username and choose an\navatar to begin! "
+        android:textColor="#CDCDCD"
+        style="@style/Text.ContextStyle"/>
+
 
 </RelativeLayout>

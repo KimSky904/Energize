@@ -22,4 +22,16 @@
         android:layout_marginTop="-50dp"
         android:src="@drawable/energize_string_logo" />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_version"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:textColor="#CDCDCD"
+        android:textStyle="bold"/>
+
 </RelativeLayout>

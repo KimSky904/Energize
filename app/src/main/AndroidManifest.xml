@@ -19,13 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Theme_Geothermal" />
-        <activity android:name=".Theme_Wind" />
-        <activity android:name=".Theme_Hydro" />
-        <activity android:name=".Theme_Solar" />
-        <activity android:name=".SolveQuiz" />
-        <activity android:name=".SelectAvatar" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>
