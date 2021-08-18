@@ -10,4 +10,5 @@
 
 
     <color name="background">#507B00</color>
+    <color name="gray">#CDCDCD</color>
 </resources>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <font-family xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,10 +16,9 @@
     <!--Bold-->
     <font
         android:font="@font/poppins_bold"
-        android:fontStyle="normal"
         android:fontWeight="1000"
         app:font="@font/poppins_bold"
         app:fontStyle="normal"
-        app:fontWeight="1000" />
+        app:fontWeight="1500" />
 
 </font-family>
