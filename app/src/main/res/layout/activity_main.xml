@@ -31,10 +31,12 @@
 
 
     <RelativeLayout
+        android:id="@+id/bottom_page"
         android:layout_width="match_parent"
         android:layout_height="360dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/bottom_page_style">
+        android:background="@drawable/bottom_page_style"
+        android:animateLayoutChanges="true">
 
         <Button
             android:id="@+id/btn_chooseAvatar"
