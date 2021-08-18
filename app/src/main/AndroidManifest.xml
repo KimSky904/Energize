@@ -9,19 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Energize">
-        <activity android:name=".Theme_Geothermal"></activity>
-        <activity android:name=".Theme_Wind" />
-        <activity android:name=".Theme_Hydro" />
-        <activity android:name=".Theme_Solar" />
-        <activity android:name=".SolveQuiz" />
-        <activity android:name=".SelectAvatar" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SignIn"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Theme_Geothermal" />
+        <activity android:name=".Theme_Wind" />
+        <activity android:name=".Theme_Hydro" />
+        <activity android:name=".Theme_Solar" />
+        <activity android:name=".SolveQuiz" />
+        <activity android:name=".SelectAvatar" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
