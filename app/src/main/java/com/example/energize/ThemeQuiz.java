@@ -10,7 +10,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-public class LanguageSelection extends AppCompatActivity {
+public class ThemeQuiz extends AppCompatActivity {
 
     //bottom page animation
     RelativeLayout bottomPage;
@@ -20,8 +20,7 @@ public class LanguageSelection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_language_selection);
-        setTheme(R.style.AppTheme);
+        setContentView(R.layout.activity_theme_quiz);
 
         //bottom page animation
         final Animation translateup = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate_up);

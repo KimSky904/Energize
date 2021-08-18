@@ -14,25 +14,16 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="17dp"
         android:layout_marginTop="137dp"
-        android:text="Choose a Theme"
+        android:text="Questions"
         android:textColor="@color/white"
         style="@style/Text.TitleStyle"/>
 
-    <TextView
-        android:id="@+id/SubText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/MainText"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="5dp"
-        android:text="The theme you choose will be the main topic for the questions you'll attempt!"
-        android:textColor="#CDCDCD"
-        style="@style/Text.ContextStyle"/>
+
 
     <RelativeLayout
         android:id="@+id/bottom_page"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
+        android:layout_height="460dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_page_style"
         android:animateLayoutChanges="true">
@@ -73,4 +64,7 @@
             android:textColor="@color/white"/>
 
     </RelativeLayout>
+
+
+
 </RelativeLayout>

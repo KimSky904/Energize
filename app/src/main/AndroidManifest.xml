@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Energize">
-        <activity android:name=".ThemeSelection"></activity>
+        <activity android:name=".ThemeQuiz"></activity>
+        <activity android:name=".ThemeSelection" />
         <activity android:name=".LanguageSelection" />
         <activity
             android:name=".SplashActivity"

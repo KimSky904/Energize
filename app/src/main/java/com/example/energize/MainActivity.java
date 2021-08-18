@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
     //bottom page animation
     RelativeLayout bottomPage;
+    //continue button
+    Button btn_continue;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +28,18 @@ public class MainActivity extends AppCompatActivity {
         //bottom page animation
         final Animation translateup = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate_up);
         bottomPage = findViewById(R.id.bottom_page);
-
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
 
+        //move to select language screen
+        btn_continue = findViewById(R.id.btn_continue);
+        btn_continue.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(),LanguageSelection.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            finish();
+        });
 
     }
 }
