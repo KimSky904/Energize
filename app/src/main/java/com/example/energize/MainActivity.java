@@ -1,5 +1,6 @@
 package com.example.energize;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -17,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout bottomPage;
     //continue button
     Button btn_continue;
-
+    //choose avatar popup
+    Button btn_chooseAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
 
+        //Choose avatar popup
+        btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
+        btn_chooseAvatar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this,SelectAvatar.class);
+            startActivityForResult(intent,1);
+        });
+
+
         //move to select language screen
         btn_continue = findViewById(R.id.btn_continue);
         btn_continue.setOnClickListener(v -> {
@@ -42,4 +52,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+
+            Log.d("myapp",data.getStringExtra("selected_avatar")+"가 선택되었습니다.");
+
+        }
+    }
 }
+

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Energize">
-        <activity android:name=".ThemeQuiz"></activity>
+        <activity android:name=".SelectAvatar"
+            android:theme="@style/popupTheme" android:screenOrientation="portrait"></activity>
+        <activity android:name=".ThemeQuiz" />
         <activity android:name=".ThemeSelection" />
         <activity android:name=".LanguageSelection" />
         <activity
