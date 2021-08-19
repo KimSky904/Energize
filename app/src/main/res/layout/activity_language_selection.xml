@@ -28,6 +28,15 @@
         android:text="Please choose a language that youprefer :)"
         android:textColor="#CDCDCD"
         style="@style/Text.ContextStyle"/>
+    <Button
+        android:id="@+id/go_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="311dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/round_btn_style"
+        android:text="A" />
 
     <RelativeLayout
         android:id="@+id/bottom_page"
@@ -42,9 +51,8 @@
             android:id="@+id/btn_chooseLanguage_Korean"
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:layout_marginLeft="201dp"
+            android:layout_marginLeft="203dp"
             android:layout_marginTop="80dp"
-            android:layout_marginRight="10dp"
             android:background="@drawable/round_edge_btn_style"
             android:text="Korean" />
 
@@ -72,13 +80,5 @@
 
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/go_avatar"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="311dp"
-        android:layout_marginRight="19dp"
-        android:background="@drawable/round_btn_style"
-        android:text="A" />
+
 </RelativeLayout>

@@ -7,13 +7,25 @@
     tools:context=".MainActivity"
     android:background="@color/background">
 
+    <Button
+        android:id="@+id/Btn_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_btn_style"
+        android:text="←"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#507B00"/>
+
     <TextView
         android:id="@+id/MainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="137dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="136dp"
         android:text="Choose a Theme"
         android:textColor="@color/white"
         style="@style/Text.TitleStyle"/>
@@ -23,8 +35,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/MainText"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="3dp"
         android:text="The theme you choose will be the main topic for the questions you'll attempt!"
         android:textColor="#CDCDCD"
         style="@style/Text.ContextStyle"/>
@@ -32,45 +44,54 @@
     <RelativeLayout
         android:id="@+id/bottom_page"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
+        android:layout_height="390dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/bottom_page_style"
-        android:animateLayoutChanges="true">
+        android:layout_marginBottom="1dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bottom_page_style">
 
         <Button
-            android:id="@+id/btn_chooseAvatar"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/round_btn_style"
-            android:text="Choose Avatar" />
-
-        <EditText
-            android:id="@+id/editTxt_userName"
-            android:layout_width="330dp"
-            android:layout_height="60dp"
-            android:layout_below="@+id/btn_chooseAvatar"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:hint="Enter Username"
-            android:paddingStart="10dp"
-            android:background="@drawable/username_edittxt_style"/>
-
+            android:id="@+id/Btn_solar"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/round_edge_btn_style"
+            android:drawableTop="@drawable/solar"
+            android:text="Solar"
+             />
 
         <Button
-            android:id="@+id/btn_continue"
-            android:layout_width="225dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/editTxt_userName"
-            android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/oval_btn_style"
-            android:text="CONTINUE →"
-            style="@style/Text.TitleStyle"
-            android:textSize="16sp"
-            android:textColor="@color/white"/>
+            android:id="@+id/Btn_hydroelectric"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="202dp"
+            android:background="@drawable/round_edge_btn_style"
+            android:drawableTop="@drawable/hydroelectric"
+            android:text="Hydroelectric\nEnergy"
+             />
 
+        <Button
+            android:id="@+id/Btn_wind"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="248dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/round_edge_btn_style"
+            android:drawableTop="@drawable/wind"
+            android:text="Wind Energy"
+            />
+
+        <Button
+            android:id="@+id/Btn_geothermal"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="248dp"
+            android:layout_marginLeft="202dp"
+            android:background="@drawable/round_edge_btn_style"
+            android:drawableTop="@drawable/geothermal"
+            android:text="Geothermal\nEnergy"
+             />
     </RelativeLayout>
 </RelativeLayout>
