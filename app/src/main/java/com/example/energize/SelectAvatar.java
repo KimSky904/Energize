@@ -1,7 +1,6 @@
 package com.example.energize;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintSet;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -9,7 +8,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class SelectAvatar extends AppCompatActivity {
@@ -28,7 +26,7 @@ public class SelectAvatar extends AppCompatActivity {
         //remove status bar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_select_avatar);
+        setContentView(R.layout.activity_avator_selector_dialog);
 
 
         //each buttons
