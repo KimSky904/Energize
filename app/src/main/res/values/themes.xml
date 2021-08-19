@@ -3,7 +3,7 @@
     <style name="Theme.Energize" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#CDCDCD</item>
-        <item name="colorPrimaryVariant">@color/statusBar</item>
+        <item name="colorPrimaryVariant">@color/deepGreen</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
