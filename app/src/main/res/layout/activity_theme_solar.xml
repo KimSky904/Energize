@@ -20,7 +20,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/bottom_page"
+        android:id="@+id/question1"
         android:layout_width="match_parent"
         android:layout_height="480dp"
         android:layout_alignParentBottom="true"
@@ -42,13 +42,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/btn_answer1"
+                    android:id="@+id/Q1_A1"
                     android:layout_marginRight="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:background="@drawable/round_edge_btn_style" />
                 <Button
-                    android:id="@+id/btn_answer2"
+                    android:id="@+id/Q1_A2"
                     android:layout_marginLeft="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -64,13 +64,85 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/btn_answer3"
+                    android:id="@+id/Q1_A3"
                     android:layout_marginRight="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:background="@drawable/round_edge_btn_style" />
                 <Button
-                    android:id="@+id/btn_answer4"
+                    android:id="@+id/Q1_A4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_edge_btn_style" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/next_q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/round_right_button" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_page_style"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/Q2_A1"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_edge_btn_style" />
+                <Button
+                    android:id="@+id/Q2_A2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_edge_btn_style" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/Q2_A3"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_edge_btn_style" />
+                <Button
+                    android:id="@+id/Q2_A4"
                     android:layout_marginLeft="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -80,6 +152,7 @@
 
 
         <ImageView
+            android:id="@+id/previous_q1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -89,6 +162,7 @@
             android:src="@drawable/round_left_button" />
 
         <ImageView
+            android:id="@+id/next_q3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
