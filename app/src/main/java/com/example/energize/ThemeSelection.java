@@ -32,41 +32,40 @@ public class ThemeSelection extends AppCompatActivity {
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
 
-
         theme_solar = findViewById(R.id.Btn_solar);
         theme_hydro = findViewById(R.id.Btn_hydroelectric);
         theme_wind = findViewById(R.id.Btn_wind);
         theme_geo = findViewById(R.id.Btn_geothermal);
 
-//        //move to each theme activity(fragment)
-//        theme_solar.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, Fragment_Solar.class);
-//            startActivity(intent);
-//            //starting activity animation
-//            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
-//            finish();
-//        });
-//        theme_hydro.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, Fragment_Hydro.class);
-//            startActivity(intent);
-//            //starting activity animation
-//            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
-//            finish();
-//        });
-//        theme_wind.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, Fragment_Wind.class);
-//            startActivity(intent);
-//            //starting activity animation
-//            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
-//            finish();
-//        });
-//        theme_geo.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, Fragment_Geo.class);
-//            startActivity(intent);
-//            //starting activity animation
-//            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
-//            finish();
-//        });
+        //move to each theme activity(fragment)
+        theme_solar.setOnClickListener(v -> {
+            Intent intent = new Intent(this, Theme_Solar.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            finish();
+        });
+        theme_hydro.setOnClickListener(v -> {
+            Intent intent = new Intent(this, Theme_Hydro.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            finish();
+        });
+        theme_wind.setOnClickListener(v -> {
+            Intent intent = new Intent(this, Theme_Wind.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            finish();
+        });
+        theme_geo.setOnClickListener(v -> {
+            Intent intent = new Intent(this, Theme_Geo.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            finish();
+        });
 
         //            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
         //            finish();

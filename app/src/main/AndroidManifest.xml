@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Energize">
+        <activity android:name=".Theme_Wind"></activity>
+        <activity android:name=".Theme_Hydro" />
+        <activity android:name=".Theme_Solar" />
+        <activity android:name=".Theme_Geo" />
         <activity
             android:name=".SelectAvatar"
             android:screenOrientation="portrait"
