@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     //choose avatar popup
     Button btn_chooseAvatar;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,5 +64,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
 }
 
