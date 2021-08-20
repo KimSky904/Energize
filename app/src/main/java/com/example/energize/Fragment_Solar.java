@@ -26,15 +26,15 @@ public class Fragment_Solar extends Fragment {
         question1.setVisibility(View.VISIBLE);
         question1.startAnimation(translateup);
 
-        next_q2 = view.findViewById(R.id.next_q2);
-        question2 = view.findViewById(R.id.question2);
-        next_q2.setOnClickListener(v -> {
-            question1.setVisibility(View.INVISIBLE);
-            question2.setVisibility(View.VISIBLE);
-            //starting activity animation
-            getActivity().overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
-            getActivity().finish();
-        });
+//        next_q2 = view.findViewById(R.id.next_q2);
+//        question2 = view.findViewById(R.id.question2);
+//        next_q2.setOnClickListener(v -> {
+//            question1.setVisibility(View.INVISIBLE);
+//            question2.setVisibility(View.VISIBLE);
+//            //starting activity animation
+//            getActivity().overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+//            getActivity().finish();
+//        });
 
         return view;
     }
