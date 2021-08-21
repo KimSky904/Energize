@@ -6,6 +6,27 @@
     tools:context=".MainActivity"
     android:background="@color/background">
 
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_btn_style"
+        android:backgroundTint="@color/white"
+        android:text="←"
+        android:textColor="#507B00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/go_avatar2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="311dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_btn_style" />
+
     <TextView
         android:id="@+id/MainText"
         android:layout_width="wrap_content"

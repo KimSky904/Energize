@@ -59,7 +59,9 @@
             android:background="@drawable/round_edge_btn_style"
             android:drawableTop="@drawable/solar"
             android:text="Solar"
-             />
+            android:textColor="@color/clickable_words"
+            android:textColorLink="@color/clickable_words"
+            android:textColorHighlight="@color/clickable_words"/>
 
         <Button
             android:id="@+id/Btn_hydroelectric"
@@ -70,7 +72,9 @@
             android:background="@drawable/round_edge_btn_style"
             android:drawableTop="@drawable/hydroelectric"
             android:text="Hydroelectric\nEnergy"
-             />
+            android:textColor="@color/clickable_words"
+            android:textColorLink="@color/clickable_words"
+            android:textColorHighlight="@color/clickable_words" />
 
         <Button
             android:id="@+id/Btn_wind"
@@ -81,7 +85,9 @@
             android:background="@drawable/round_edge_btn_style"
             android:drawableTop="@drawable/wind"
             android:text="Wind Energy"
-            />
+            android:textColor="@color/clickable_words"
+            android:textColorLink="@color/clickable_words"
+            android:textColorHighlight="@color/clickable_words" />
 
         <Button
             android:id="@+id/Btn_geothermal"
@@ -92,6 +98,8 @@
             android:background="@drawable/round_edge_btn_style"
             android:drawableTop="@drawable/geothermal"
             android:text="Geothermal\nEnergy"
-             />
+            android:textColor="@color/clickable_words"
+            android:textColorLink="@color/clickable_words"
+            android:textColorHighlight="@color/clickable_words" />
     </RelativeLayout>
 </RelativeLayout>
