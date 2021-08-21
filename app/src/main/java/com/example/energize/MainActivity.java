@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         //Choose avatar popup
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
         btn_chooseAvatar.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this,SelectAvatar.class);
+            Intent intent = new Intent(MainActivity.this,SelectAvatar_Dialog.class);
             startActivityForResult(intent,1);
         });
 

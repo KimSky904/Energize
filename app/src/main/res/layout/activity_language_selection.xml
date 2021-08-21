@@ -28,12 +28,15 @@
         android:text="Please choose a language that youprefer :)"
         android:textColor="#CDCDCD"
         style="@style/Text.ContextStyle"/>
+
     <ImageButton
         android:id="@+id/go_avatar"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
         android:layout_marginLeft="311dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/round_btn_style" />
 
     <RelativeLayout

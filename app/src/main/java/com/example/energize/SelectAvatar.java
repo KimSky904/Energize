@@ -3,79 +3,94 @@ package com.example.energize;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class SelectAvatar extends AppCompatActivity {
 
-    ImageButton avatar1;
-    ImageButton avatar2;
-    ImageButton avatar3;
-    ImageButton avatar4;
-
+    //each avatar
+    ImageButton avatar_1,avatar_2,avatar_3,avatar_4,avatar_5,avatar_6,avatar_7,avatar_8;
+    //back to previous page
+    Button Btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //transparent background corner
-        getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        //remove status bar
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_avator_selector_dialog);
+        setContentView(R.layout.activity_avatar_selector);
 
+        //each avatars
+        avatar_1 = findViewById(R.id.avatar_1);
+        avatar_2 = findViewById(R.id.avatar_2);
+        avatar_3 = findViewById(R.id.avatar_3);
+        avatar_4 = findViewById(R.id.avatar_4);
+        avatar_5 = findViewById(R.id.avatar_5);
+        avatar_6 = findViewById(R.id.avatar_6);
+        avatar_7 = findViewById(R.id.avatar_7);
+        avatar_8 = findViewById(R.id.avatar_8);
 
-        //each buttons
-        avatar1 = findViewById(R.id.avatar_1);
-        avatar2 = findViewById(R.id.avatar_2);
-        avatar3 = findViewById(R.id.avatar_3);
-        avatar4 = findViewById(R.id.avatar_4);
+        Btn_back = findViewById(R.id.Btn_back);
+        Btn_back.setOnClickListener(v -> {
+            Intent fromPage = getIntent();
+            int pageCode = fromPage.getIntExtra("page_code",1);
 
-
-
-        avatar1.setOnClickListener(v->{
-            //intent
-            Intent intent = new Intent();
-            intent.putExtra("selected_avatar","1");
-            setResult(RESULT_OK, intent);
-            finish();
+            switch (pageCode){
+                // page code 1 : LanguageSelection
+                // page code 2 : ThemeSelection
+                // page code 3 : Theme_Solar
+                // page code 4 : Theme_Hydro
+                // page code 5 : Theme_Wind
+                // page code 6 : Theme_Geo
+                // page code 7 : ResultScreen
+                case 1 :
+                    startActivity(new Intent(this, LanguageSelection.class));
+                    //starting activity animation
+                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                    finish();
+                    break;
+                case 2 :
+                    startActivity(new Intent(this, ThemeSelection.class));
+                    //starting activity animation
+                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                    finish();
+                    break;
+                case 3 :
+                    startActivity(new Intent(this, Theme_Solar.class));
+                    //starting activity animation
+                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                    finish();
+                    break;
+                case 4 :
+                    startActivity(new Intent(this, Theme_Hydro.class));
+                    //starting activity animation
+                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                    finish();
+                    break;
+                case 5 :
+                    startActivity(new Intent(this, Theme_Wind.class));
+                    //starting activity animation
+                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                    finish();
+                    break;
+                case 6 :
+                    startActivity(new Intent(this, Theme_Geo.class));
+                    //starting activity animation
+                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                    finish();
+                    break;
+                case 7 :
+                    Intent intent7 = new Intent(this,ResultScreen.class);
+                    //starting activity animation
+                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                    finish();
+                    break;
+            }
         });
-        avatar2.setOnClickListener(v->{
-            //intent
-            Intent intent = new Intent();
-            intent.putExtra("selected_avatar","2");
-            setResult(RESULT_OK, intent);
-            finish();
-        });
-        avatar3.setOnClickListener(v->{
-            //intent
-            Intent intent = new Intent();
-            intent.putExtra("selected_avatar","3");
-            setResult(RESULT_OK, intent);
-            finish();
-        });
-        avatar4.setOnClickListener(v->{
-            //intent
-            Intent intent = new Intent();
-            intent.putExtra("selected_avatar","4");
-            setResult(RESULT_OK, intent);
-            finish();
-        });
 
-
-    }
-    @Override
-    public boolean onTouchEvent(MotionEvent event){
-        if(event.getAction()== MotionEvent.ACTION_OUTSIDE)
-            return false;
-        else
-            return true;
-    }
-    @Override
-    public void onBackPressed(){
     }
 }

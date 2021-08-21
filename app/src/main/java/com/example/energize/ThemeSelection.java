@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 public class ThemeSelection extends AppCompatActivity {
@@ -21,6 +22,8 @@ public class ThemeSelection extends AppCompatActivity {
     Button theme_geo;
     //back button
     Button btn_back;
+    //move to avatar
+    ImageButton go_avatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +81,16 @@ public class ThemeSelection extends AppCompatActivity {
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
+        });
+
+
+        //move to avatar select page
+        go_avatar = findViewById(R.id.go_avatar);
+        go_avatar.setOnClickListener(v -> {
+            Intent intent = new Intent(this,SelectAvatar.class);
+            //Theme selection page code = 2
+            intent.putExtra("page_code",2);
+            startActivity(intent);
         });
     }
 }

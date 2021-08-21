@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 public class LanguageSelection extends AppCompatActivity {
@@ -16,6 +17,8 @@ public class LanguageSelection extends AppCompatActivity {
     RelativeLayout bottomPage;
     //continue button
     Button btn_continue;
+    //move to avatar
+    ImageButton go_avatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,15 @@ public class LanguageSelection extends AppCompatActivity {
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
+        });
+
+        //move to avatar select page
+        go_avatar = findViewById(R.id.go_avatar);
+        go_avatar.setOnClickListener(v -> {
+            Intent intent = new Intent(this,SelectAvatar.class);
+            //language selection page code = 1
+            intent.putExtra("page_code",1);
+            startActivity(intent);
         });
 
     }

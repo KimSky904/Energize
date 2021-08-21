@@ -14,12 +14,12 @@
         <activity android:name=".Theme_Hydro" />
         <activity android:name=".Theme_Solar" />
         <activity android:name=".Theme_Geo" />
-        <activity
-            android:name=".SelectAvatar"
-            android:screenOrientation="portrait"
-            android:theme="@style/popupTheme" />
+        <activity android:name=".SelectAvatar"/>
         <activity android:name=".ThemeSelection" />
         <activity android:name=".LanguageSelection" />
+        <activity android:name=".SelectAvatar_Dialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
