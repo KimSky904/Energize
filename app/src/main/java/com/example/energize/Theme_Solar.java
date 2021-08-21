@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import java.security.acl.NotOwnerException;
+
 public class Theme_Solar extends AppCompatActivity {
 
     //previous / next button
@@ -144,13 +146,19 @@ public class Theme_Solar extends AppCompatActivity {
             finish();
         });
 
+        //퀴즈 번호 기억
+        Intent getpage = getIntent();
+        index = getpage.getIntExtra("page_number",index);
+
         //save each page as int (like key)
         question = new View[]{question1, question2, question3, question4, question5, question6, question7, question8, question9, question10};
         //save the currently displayed screen
-        View NowDisplayScreen = question[0]; //1 ~ 10;
+        View NowDisplayScreen;
+        if(index==0) NowDisplayScreen = question[0]; //0~9
+        else NowDisplayScreen = question[index-1]; //0~9
         //save the pre/next screen
-        View PreDisplayScreen = question[0];
-        View NextDisplayScreen = question[1];
+        View PreDisplayScreen = question[index];
+        View NextDisplayScreen = question[index+1];
         if(index==0) previous.setVisibility(View.INVISIBLE);
 
         //animation in anim directory
@@ -194,7 +202,10 @@ public class Theme_Solar extends AppCompatActivity {
             Intent intent = new Intent(this,SelectAvatar.class);
             //Theme Solar page code = 3
             intent.putExtra("page_code",3);
+            intent.putExtra("question_number",index);
+            Log.d("myapp", index+"");
             startActivity(intent);
+            finish();
         });
     }
 
@@ -224,6 +235,11 @@ public class Theme_Solar extends AppCompatActivity {
             //next
             if(index==9) NextDisplayScreen = question[9];
             else NextDisplayScreen = question[index+1];
+
+            Log.d("myapp","현재 : "+NowDisplayScreen.toString());
+            Log.d("myapp","이전 : "+PreDisplayScreen.toString());
+            Log.d("myapp","다음 : "+NextDisplayScreen.toString());
+            Log.d("myapp","인덱스 : "+index+"");
         }
         @Override
         public void onAnimationRepeat(Animation animation) { }

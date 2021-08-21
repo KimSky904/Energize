@@ -60,25 +60,37 @@ public class SelectAvatar extends AppCompatActivity {
                     finish();
                     break;
                 case 3 :
-                    startActivity(new Intent(this, Theme_Solar.class));
+                    int pageNumber_solar = fromPage.getIntExtra("question_number",0);
+                    Intent intent_solar = new Intent(this, Theme_Solar.class);
+                    intent_solar.putExtra("question_number",pageNumber_solar);
+                    startActivity(intent_solar);
                     //starting activity animation
                     overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
                     finish();
                     break;
                 case 4 :
-                    startActivity(new Intent(this, Theme_Hydro.class));
+                    int pageNumber_hydro = fromPage.getIntExtra("question_number",0);
+                    Intent intent_hydro = new Intent(this, Theme_Hydro.class);
+                    intent_hydro.putExtra("question_number",pageNumber_hydro);
+                    startActivity(intent_hydro);
                     //starting activity animation
                     overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
                     finish();
                     break;
                 case 5 :
-                    startActivity(new Intent(this, Theme_Wind.class));
+                    int pageNumber_wind = fromPage.getIntExtra("question_number",0);
+                    Intent intent_wind = new Intent(this, Theme_Wind.class);
+                    intent_wind.putExtra("question_number",pageNumber_wind);
+                    startActivity(intent_wind);
                     //starting activity animation
                     overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
                     finish();
                     break;
                 case 6 :
-                    startActivity(new Intent(this, Theme_Geo.class));
+                    int pageNumber_geo = fromPage.getIntExtra("question_number",0);
+                    Intent intent_geo = new Intent(this, Theme_Geo.class);
+                    intent_geo.putExtra("question_number",pageNumber_geo);
+                    startActivity(intent_geo);
                     //starting activity animation
                     overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
                     finish();
