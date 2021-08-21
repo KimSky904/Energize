@@ -2,6 +2,7 @@ package com.example.energize;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -151,22 +152,29 @@ public class Theme_Solar extends AppCompatActivity {
         next.setOnClickListener(v -> {
             NowDisplayScreen.setVisibility(View.INVISIBLE);
             NextDisplayScreen.setVisibility(View.VISIBLE);
-            Log.d("myapp",NextDisplayScreen.toString());
+            Log.d("myapp","NowDisplayScreen : "+NowDisplayScreen.toString());
+            Log.d("myapp","NextDisplayScreen : "+NextDisplayScreen.toString());
             index++;
             if(index>10) index = 10;
             Log.d("myapp","index : "+index+" ");
-            NextDisplayScreen.startAnimation(tranlateRightAnim);
+            //NextDisplayScreen.startAnimation(tranlateLeftAnim);
             NowDisplayScreen.startAnimation(tranlateLeftAnim);
 
+            //if last question is end
+            if(index==9){
+                Intent intent = new Intent(this,ResultScreen.class);
+                startActivity(intent);
+            }
         });
         previous.setOnClickListener(v -> {
             NowDisplayScreen.setVisibility(View.INVISIBLE);
             PreDisplayScreen.setVisibility(View.VISIBLE);
-            Log.d("myapp",NextDisplayScreen.toString());
+            Log.d("myapp","NowDisplayScreen : "+NowDisplayScreen.toString());
+            Log.d("myapp","PreDisplayScreen : "+PreDisplayScreen.toString());
             index--;
             if(index<0) index = 0;
-            NowDisplayScreen.startAnimation(tranlateLeftAnim);
-            PreDisplayScreen.startAnimation(tranlateRightAnim);
+            NowDisplayScreen.startAnimation(tranlateRightAnim);
+            //PreDisplayScreen.startAnimation(tranlateRightAnim);
             Log.d("myapp","index : "+index+" ");
         });
 
@@ -202,11 +210,14 @@ public class Theme_Solar extends AppCompatActivity {
             //remove previous button if question 1
             if(index==0) previous.setVisibility(View.INVISIBLE);
             else previous.setVisibility(View.VISIBLE);
+            //remove next button if question 10
+            if(index==10) next.setVisibility(View.INVISIBLE);
+            else next.setVisibility(View.VISIBLE);
 
             //hide irrelevant question page
             for(int i=0;i<10;i++){
-                if(i==index||i==(index-1)||i==(index+1)) continue;
-                question[i].setVisibility(View.INVISIBLE);
+                if(i==index) question[i].setVisibility(View.VISIBLE);
+                else question[i].setVisibility(View.INVISIBLE);
                 Log.i("visiblity",i+"번째 문제 : "+question[i].getVisibility()+" ");
             }
 
@@ -219,6 +230,10 @@ public class Theme_Solar extends AppCompatActivity {
             //next
             if(index==9) NextDisplayScreen = question[9];
             else NextDisplayScreen = question[index+1];
+
+            Log.d("바뀐 index번호(now) : ",NowDisplayScreen.toString());
+            Log.d("바뀐 index번호(pre) : ",PreDisplayScreen.toString());
+            Log.d("바뀐 index번호(next) : ",NextDisplayScreen.toString());
         }
         @Override
         public void onAnimationRepeat(Animation animation) { }

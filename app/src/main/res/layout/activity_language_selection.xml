@@ -46,11 +46,16 @@
         android:animateLayoutChanges="true">
 
 
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/choose_language">
         <Button
             android:id="@+id/btn_chooseLanguage_Korean"
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:layout_marginLeft="203dp"
             android:layout_marginTop="80dp"
             android:background="@drawable/round_edge_btn"
             android:textColor="@color/clickable_words"
@@ -58,22 +63,23 @@
             android:textColorHighlight="@color/clickable_words"
             android:text="Korean" />
 
+
         <Button
             android:id="@+id/btn_chooseLanguage_English"
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:layout_marginLeft="19dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="80dp"
             android:background="@drawable/round_edge_btn"
             android:text="English"
             android:textColor="@color/black"/>
-
+        </LinearLayout>
         <Button
             android:id="@+id/btn_continue"
             android:layout_width="225dp"
             android:layout_height="50dp"
-            android:layout_below="@+id/editTxt_userName"
-            android:layout_marginTop="278dp"
+            android:layout_below="@+id/choose_language"
+            android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/oval_btn_style"
             android:text="CONTINUE →"

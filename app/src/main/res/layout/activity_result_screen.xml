@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/MainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="137dp"
+        android:text="Your Results"
+        android:textColor="@color/white"
+        style="@style/Text.TitleStyle"/>
+
+    <TextView
+        android:id="@+id/SubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainText"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="5dp"
+        android:text="Below is a summary of how you performed!"
+        android:textColor="#CDCDCD"
+        style="@style/Text.ContextStyle"/>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_page"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_page_style"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:id="@+id/btn_chooseAvatar"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_btn_style"
+            android:text="result point" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/Text.TitleStyle"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_chooseAvatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/oval_btn_style"
+            android:text="DONE →"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
