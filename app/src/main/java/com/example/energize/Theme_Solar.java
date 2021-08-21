@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -17,6 +18,8 @@ public class Theme_Solar extends AppCompatActivity {
     //previous / next button
     ImageView previous;
     ImageView next;
+    //back button
+    Button btn_back;
     //question
     RelativeLayout question1;
     RelativeLayout question2;
@@ -67,6 +70,9 @@ public class Theme_Solar extends AppCompatActivity {
         //previous / next button
         previous = findViewById(R.id.previous_btn);
         next = findViewById(R.id.next_btn);
+
+        //back button
+        btn_back = findViewById(R.id.btn_back);
 
         //question & view
         question1_a1 = findViewById(R.id.question1_a1);
@@ -128,7 +134,14 @@ public class Theme_Solar extends AppCompatActivity {
         question10_a3 = findViewById(R.id.question10_a3);
         question10_a4 = findViewById(R.id.question10_a4);
 
-
+        //back button click listener
+        btn_back.setOnClickListener(v -> {
+            Intent intent = new Intent(this,MainActivity.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
+        });
 
         //save each page as int (like key)
         question = new View[]{question1, question2, question3, question4, question5, question6, question7, question8, question9, question10};
@@ -140,23 +153,19 @@ public class Theme_Solar extends AppCompatActivity {
         if(index==0) previous.setVisibility(View.INVISIBLE);
 
         //animation in anim directory
-        tranlateLeftAnim = AnimationUtils.loadAnimation(this,R.anim.translate_left);
-        tranlateRightAnim = AnimationUtils.loadAnimation(this,R.anim.translate_right);
+        tranlateLeftAnim = AnimationUtils.loadAnimation(this,R.anim.translate_center_to_left);
+        tranlateRightAnim = AnimationUtils.loadAnimation(this,R.anim.translate_center_to_right);
         // sence page sliding event
         SlidingPageAnimationListener animListener = new SlidingPageAnimationListener();
         tranlateLeftAnim.setAnimationListener(animListener);
         tranlateRightAnim.setAnimationListener(animListener);
 
 
-
         next.setOnClickListener(v -> {
             NowDisplayScreen.setVisibility(View.INVISIBLE);
             NextDisplayScreen.setVisibility(View.VISIBLE);
-            Log.d("myapp","NowDisplayScreen : "+NowDisplayScreen.toString());
-            Log.d("myapp","NextDisplayScreen : "+NextDisplayScreen.toString());
             index++;
             if(index>10) index = 10;
-            Log.d("myapp","index : "+index+" ");
             //NextDisplayScreen.startAnimation(tranlateLeftAnim);
             NowDisplayScreen.startAnimation(tranlateLeftAnim);
 
@@ -164,49 +173,25 @@ public class Theme_Solar extends AppCompatActivity {
             if(index==9){
                 Intent intent = new Intent(this,ResultScreen.class);
                 startActivity(intent);
+                //starting activity animation
+                overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                finish();
             }
         });
         previous.setOnClickListener(v -> {
             NowDisplayScreen.setVisibility(View.INVISIBLE);
             PreDisplayScreen.setVisibility(View.VISIBLE);
-            Log.d("myapp","NowDisplayScreen : "+NowDisplayScreen.toString());
-            Log.d("myapp","PreDisplayScreen : "+PreDisplayScreen.toString());
             index--;
             if(index<0) index = 0;
             NowDisplayScreen.startAnimation(tranlateRightAnim);
             //PreDisplayScreen.startAnimation(tranlateRightAnim);
-            Log.d("myapp","index : "+index+" ");
         });
-
-
-        //next btn -> move to next page
-        /*
-        next.setOnClickListener(v -> {
-            NowDisplayScreen.setVisibility(View.INVISIBLE);
-            NextDisplayScreen.setVisibility(View.VISIBLE);
-            Log.d("myapp",NextDisplayScreen.toString());
-            addIndex(index);
-            Log.d("myapp","index : "+index+" ");
-            //starting activity animation
-            //overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
-        }); */
-        //previous btn -> move to previous page
-        /*
-        previous.setOnClickListener(v -> {
-            NowDisplayScreen.setVisibility(View.INVISIBLE);
-            PreDisplayScreen.setVisibility(View.VISIBLE);
-            Log.d("myapp",PreDisplayScreen.toString());
-            //starting activity animation
-            //overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
-        });
-        */
     }
 
     private class SlidingPageAnimationListener implements Animation.AnimationListener{
         @Override
         public void onAnimationStart(Animation animation) { }
         public void onAnimationEnd(Animation animation){
-            Log.d("myapp","애니메이션 발생함");
             //remove previous button if question 1
             if(index==0) previous.setVisibility(View.INVISIBLE);
             else previous.setVisibility(View.VISIBLE);
@@ -218,7 +203,6 @@ public class Theme_Solar extends AppCompatActivity {
             for(int i=0;i<10;i++){
                 if(i==index) question[i].setVisibility(View.VISIBLE);
                 else question[i].setVisibility(View.INVISIBLE);
-                Log.i("visiblity",i+"번째 문제 : "+question[i].getVisibility()+" ");
             }
 
             //set each screen status
@@ -230,10 +214,6 @@ public class Theme_Solar extends AppCompatActivity {
             //next
             if(index==9) NextDisplayScreen = question[9];
             else NextDisplayScreen = question[index+1];
-
-            Log.d("바뀐 index번호(now) : ",NowDisplayScreen.toString());
-            Log.d("바뀐 index번호(pre) : ",PreDisplayScreen.toString());
-            Log.d("바뀐 index번호(next) : ",NextDisplayScreen.toString());
         }
         @Override
         public void onAnimationRepeat(Animation animation) { }

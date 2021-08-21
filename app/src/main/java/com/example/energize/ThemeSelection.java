@@ -19,6 +19,8 @@ public class ThemeSelection extends AppCompatActivity {
     Button theme_hydro;
     Button theme_wind;
     Button theme_geo;
+    //back button
+    Button btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,32 +44,40 @@ public class ThemeSelection extends AppCompatActivity {
             Intent intent = new Intent(this, Theme_Solar.class);
             startActivity(intent);
             //starting activity animation
-            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
         theme_hydro.setOnClickListener(v -> {
             Intent intent = new Intent(this, Theme_Hydro.class);
             startActivity(intent);
             //starting activity animation
-            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
         theme_wind.setOnClickListener(v -> {
             Intent intent = new Intent(this, Theme_Wind.class);
             startActivity(intent);
             //starting activity animation
-            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
         theme_geo.setOnClickListener(v -> {
             Intent intent = new Intent(this, Theme_Geo.class);
             startActivity(intent);
             //starting activity animation
-            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
 
-        //            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
-        //            finish();
+
+        btn_back = findViewById(R.id.btn_back);
+        //move to sign in activity (mainactivity)
+        btn_back.setOnClickListener(v -> {
+            Intent intent = new Intent(this,MainActivity.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
+        });
     }
 }

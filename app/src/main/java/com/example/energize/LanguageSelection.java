@@ -35,7 +35,7 @@ public class LanguageSelection extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(),ThemeSelection.class);
             startActivity(intent);
             //starting activity animation
-            overridePendingTransition(R.anim.translate_none,R.anim.translate_right);
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
 
