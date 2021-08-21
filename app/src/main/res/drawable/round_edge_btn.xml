@@ -4,3 +4,4 @@
     <item android:state_focused="true" android:drawable="@drawable/round_edge_btn_click_color"/>
     <item android:drawable="@drawable/round_edge_btn_style"/>
 </selector>
+<!--click event round_edge_btn use this-->

@@ -29,15 +29,14 @@
         android:textColor="#CDCDCD"
         style="@style/Text.ContextStyle"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/go_avatar"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="311dp"
         android:layout_marginRight="19dp"
-        android:background="@drawable/round_btn_style"
-        android:text="A" />
+        android:background="@drawable/round_btn_style" />
 
     <RelativeLayout
         android:id="@+id/bottom_page"
@@ -55,6 +54,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
             android:background="@drawable/round_btn_style"
+            android:backgroundTint="#CC507B00"
             android:text="86 out 100 Points"
             android:textSize="12sp"
             android:textStyle="bold"/>

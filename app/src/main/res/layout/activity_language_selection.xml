@@ -34,8 +34,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="311dp"
-        android:background="@drawable/round_btn_style"
-         />
+        android:background="@drawable/round_btn_style" />
 
     <RelativeLayout
         android:id="@+id/bottom_page"
@@ -72,7 +71,9 @@
             android:layout_marginTop="80dp"
             android:background="@drawable/round_edge_btn"
             android:text="English"
-            android:textColor="@color/black"/>
+            android:textColorHighlight="@color/clickable_words"
+            android:textColor="@color/clickable_words"
+            android:textColorLink="@color/clickable_words"/>
         </LinearLayout>
         <Button
             android:id="@+id/btn_continue"

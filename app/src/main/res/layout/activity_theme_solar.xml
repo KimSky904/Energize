@@ -71,13 +71,13 @@
                     android:layout_marginEnd="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
                 <Button
                     android:id="@+id/question1_a2"
                     android:layout_marginStart="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
             <LinearLayout
                 android:paddingLeft="10dp"
@@ -92,13 +92,13 @@
                     android:layout_marginEnd="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
                 <Button
                     android:id="@+id/question1_a4"
                     android:layout_marginStart="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -137,14 +137,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question2_a2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
 
             <LinearLayout
@@ -161,14 +161,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question2_a4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -207,14 +207,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question3_a2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
 
             <LinearLayout
@@ -231,14 +231,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question3_a4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -277,14 +277,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question4_a2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
 
             <LinearLayout
@@ -301,14 +301,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question4_a4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -347,14 +347,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question5_a2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
 
             <LinearLayout
@@ -371,14 +371,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question5_a4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -417,14 +417,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question6_a2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
 
             <LinearLayout
@@ -441,14 +441,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question6_a4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -487,14 +487,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question7_a2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
 
             <LinearLayout
@@ -511,14 +511,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question7_a4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -557,14 +557,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question8_a2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
 
             <LinearLayout
@@ -581,14 +581,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question8_a4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -627,14 +627,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question9_a2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
 
             <LinearLayout
@@ -697,14 +697,14 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question10_a2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
 
             <LinearLayout
@@ -721,18 +721,17 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginEnd="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
 
                 <Button
                     android:id="@+id/question10_a4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginStart="5dp"
-                    android:background="@drawable/round_edge_btn_style" />
+                    android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
-
 
 
 
