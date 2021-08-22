@@ -55,7 +55,7 @@ public class AccountDetails extends AppCompatActivity {
                     finish();
                     break;
                 case 3 :
-                    Intent intent7 = new Intent(this,ResultScreen.class);
+                    startActivity(new Intent(this, ResultScreen.class));
                     //starting activity animation
                     overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
                     finish();

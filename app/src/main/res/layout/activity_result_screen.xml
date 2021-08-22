@@ -60,7 +60,7 @@
             android:text="result point" />
 
         <Button
-            android:id="@+id/btn_continue"
+            android:id="@+id/btn_done"
             style="@style/Text.TitleStyle"
             android:layout_width="225dp"
             android:layout_height="50dp"

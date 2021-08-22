@@ -11,7 +11,8 @@ public class ResultScreen extends AppCompatActivity {
 
     //move to avatar
     ImageButton go_avatar;
-
+    //move to theme selection
+    Button go_theme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +32,10 @@ public class ResultScreen extends AppCompatActivity {
             finish();
         });
         //move to theme select screen
-        Button go_theme = (Button) findViewById(R.id.btn_continue);
+        go_theme = (Button) findViewById(R.id.btn_done);
         go_theme.setOnClickListener(v-> {
             Intent intent = new Intent(this,ThemeSelection.class);
             startActivity(intent);
-
         });
     }
 }
