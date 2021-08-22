@@ -60,6 +60,7 @@
             android:layout_height="170dp"
             android:layout_marginTop="80dp"
             android:background="@drawable/round_edge_btn"
+
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words"
