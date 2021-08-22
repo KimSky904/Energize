@@ -84,10 +84,10 @@ public class ThemeSelection extends AppCompatActivity {
         });
 
 
-        //move to avatar select page
+        //move to account details
         go_avatar = findViewById(R.id.go_avatar);
         go_avatar.setOnClickListener(v -> {
-            Intent intent = new Intent(this,SelectAvatar.class);
+            Intent intent = new Intent(this,AccountDetails.class);
             //Theme selection page code = 2
             intent.putExtra("page_code",2);
             startActivity(intent);

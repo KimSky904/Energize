@@ -187,16 +187,6 @@ public class Theme_Wind extends AppCompatActivity {
             NowDisplayScreen.startAnimation(tranlateRightAnim);
             //PreDisplayScreen.startAnimation(tranlateRightAnim);
         });
-
-
-        //move to avatar select page
-        go_avatar = findViewById(R.id.go_avatar);
-        go_avatar.setOnClickListener(v -> {
-            Intent intent = new Intent(this,SelectAvatar.class);
-            //Theme Wind page code = 5
-            intent.putExtra("page_code",5);
-            startActivity(intent);
-        });
     }
 
     private class SlidingPageAnimationListener implements Animation.AnimationListener{

@@ -63,16 +63,16 @@
 
         <Button
             android:id="@+id/btn_done"
+            style="@style/Text.TitleStyle"
             android:layout_width="225dp"
             android:layout_height="50dp"
-            android:layout_below="@+id/editTxt_userName"
-            android:layout_marginTop="294dp"
+            android:layout_below="@+id/btn_get_points"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
             android:background="@drawable/oval_btn_style"
             android:text="DONE →"
-            style="@style/Text.TitleStyle"
-            android:textSize="18sp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 

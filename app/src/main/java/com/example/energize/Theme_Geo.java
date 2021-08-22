@@ -54,8 +54,6 @@ public class Theme_Geo extends AppCompatActivity {
     //save the pre/next screen
     View PreDisplayScreen;
     View NextDisplayScreen;
-    //move to avatar
-    ImageView go_avatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -186,16 +184,6 @@ public class Theme_Geo extends AppCompatActivity {
             if(index<0) index = 0;
             NowDisplayScreen.startAnimation(tranlateRightAnim);
             //PreDisplayScreen.startAnimation(tranlateRightAnim);
-        });
-
-
-        //move to avatar select page
-        go_avatar = findViewById(R.id.go_avatar);
-        go_avatar.setOnClickListener(v -> {
-            Intent intent = new Intent(this,SelectAvatar.class);
-            //Theme Geo page code = 6
-            intent.putExtra("page_code",6);
-            startActivity(intent);
         });
     }
 

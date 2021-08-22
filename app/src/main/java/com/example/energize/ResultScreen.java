@@ -19,12 +19,12 @@ public class ResultScreen extends AppCompatActivity {
         setContentView(R.layout.activity_result_screen);
 
 
-        //move to avatar select page
+        //move to account details
         go_avatar = findViewById(R.id.go_avatar);
         go_avatar.setOnClickListener(v -> {
-            Intent intent = new Intent(this,SelectAvatar.class);
-            //Result page code = 7
-            intent.putExtra("page_code",7);
+            Intent intent = new Intent(this,AccountDetails.class);
+            //Result page code = 3
+            intent.putExtra("page_code",3);
             startActivity(intent);
 
         });
