@@ -7,37 +7,29 @@
     android:orientation="vertical"
     android:background="#507B00">
 
-    <LinearLayout
+    <Button
+        android:id="@+id/Btn_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_btn_style"
+        android:backgroundTint="@color/white"
+        android:text="←"
+        android:textColor="#507B00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_point"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/Btn_back"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/round_btn_style"
-            android:backgroundTint="@color/white"
-            android:text="←"
-            android:textColor="#507B00"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <TextView
-            style="@style/Text.ContextStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="96dp"
-            android:layout_marginTop="34dp"
-            android:text="Choose Avatar"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-
+        android:layout_height="30dp"
+        android:layout_marginLeft="274dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/round_btn_style"
+        android:backgroundTint="@color/white"
+        android:text="point"
+        android:textColor="#507B00" />
 
     <TableLayout
         android:layout_width="wrap_content"
