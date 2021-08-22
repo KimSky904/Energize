@@ -2,23 +2,39 @@ package com.example.energize;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.util.Log;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AccountDetails extends AppCompatActivity {
-
-    Button Btn_back;
+    //bottom page animation
+    RelativeLayout bottomPage;
+    Button btn_back;
 
     @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_details);
+        setTheme(R.style.AppTheme);
 
-        Btn_back = findViewById(R.id.Btn_back);
+
+        //bottom page animation
+        final Animation translateup = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate_up);
+        bottomPage = findViewById(R.id.bottom_page);
+        bottomPage.setVisibility(View.VISIBLE);
+        bottomPage.startAnimation(translateup);
 
 
-        Btn_back.setOnClickListener(v -> {
+        btn_back = findViewById(R.id.btn_back2);
+
+        btn_back.setOnClickListener(v -> {
             Intent fromPage = getIntent();
             int pageCode = fromPage.getIntExtra("page_code",1);
 

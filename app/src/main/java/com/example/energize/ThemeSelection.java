@@ -91,6 +91,9 @@ public class ThemeSelection extends AppCompatActivity {
             //Theme selection page code = 2
             intent.putExtra("page_code",2);
             startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
         });
     }
 }

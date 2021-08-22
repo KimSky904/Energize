@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -69,6 +70,9 @@ public class LanguageSelection extends AppCompatActivity {
             //language selection page code = 1
             intent.putExtra("page_code",1);
             startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
         });
 
     }

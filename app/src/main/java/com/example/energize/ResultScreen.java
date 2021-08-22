@@ -26,13 +26,16 @@ public class ResultScreen extends AppCompatActivity {
             //Result page code = 3
             intent.putExtra("page_code",3);
             startActivity(intent);
-
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
         });
         //move to theme select screen
         Button go_theme = (Button) findViewById(R.id.btn_continue);
         go_theme.setOnClickListener(v-> {
             Intent intent = new Intent(this,ThemeSelection.class);
             startActivity(intent);
+
         });
     }
 }
