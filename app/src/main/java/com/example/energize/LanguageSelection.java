@@ -19,6 +19,8 @@ public class LanguageSelection extends AppCompatActivity {
     Button btn_continue;
     //move to avatar
     ImageButton go_avatar;
+    //move to next page
+    Button btn_korean, btn_english;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,24 @@ public class LanguageSelection extends AppCompatActivity {
         btn_continue = findViewById(R.id.btn_continue);
         btn_continue.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(),ThemeSelection.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
+        });
+        //move to theme select screen
+        btn_english = findViewById(R.id.btn_chooseLanguage_English);
+        btn_english.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), ThemeSelection.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
+        });
+        //move to theme select screen
+        btn_korean = findViewById(R.id.btn_chooseLanguage_Korean);
+        btn_korean.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), ThemeSelection.class);
             startActivity(intent);
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);

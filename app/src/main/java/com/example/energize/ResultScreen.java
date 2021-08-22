@@ -28,6 +28,7 @@ public class ResultScreen extends AppCompatActivity {
             startActivity(intent);
 
         });
+        //move to theme select screen
         Button go_theme = (Button) findViewById(R.id.btn_continue);
         go_theme.setOnClickListener(v-> {
             Intent intent = new Intent(this,ThemeSelection.class);
