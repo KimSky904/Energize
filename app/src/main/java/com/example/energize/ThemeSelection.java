@@ -76,7 +76,7 @@ public class ThemeSelection extends AppCompatActivity {
         btn_back = findViewById(R.id.btn_back);
         //move to sign in activity (mainactivity)
         btn_back.setOnClickListener(v -> {
-            Intent intent = new Intent(this,MainActivity.class);
+            Intent intent = new Intent(this,LanguageSelection.class);
             startActivity(intent);
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
