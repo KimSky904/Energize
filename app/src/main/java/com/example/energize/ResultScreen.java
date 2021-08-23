@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ResultScreen extends AppCompatActivity {
 
     //move to avatar
-    ImageButton go_avatar;
+    ImageView go_avatar;
     //move to theme selection
     Button go_theme;
     //text of acquired point

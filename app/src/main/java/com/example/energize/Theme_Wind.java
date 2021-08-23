@@ -56,6 +56,8 @@ public class Theme_Wind extends AppCompatActivity {
     View NextDisplayScreen;
     //move to avatar
     ImageView go_avatar;
+    //whether quiz is correct (correct : 1, wrong : 0)
+    int[] answer = {0,0,0,0,0,0,0,0,0,0};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -172,6 +174,14 @@ public class Theme_Wind extends AppCompatActivity {
 
             //if last question is end
             if(index==9){
+                //give a point
+                User.point.initialThemePoint();
+                for(int i=0;i<10;i++){
+                    if(answer[i]==1){
+                        User.point.addPoint(2);
+                        User.point.addEachPoint(2);
+                    }
+                }
                 Intent intent = new Intent(this,ResultScreen.class);
                 startActivity(intent);
                 //starting activity animation

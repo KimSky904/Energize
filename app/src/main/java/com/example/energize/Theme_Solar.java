@@ -176,8 +176,6 @@ public class Theme_Solar extends AppCompatActivity {
 
             //if last question is end
             if(index==9){
-                Intent intent = new Intent(this,ResultScreen.class);
-                startActivity(intent);
                 //give a point
                 User.point.initialThemePoint();
                 for(int i=0;i<10;i++){
@@ -186,6 +184,8 @@ public class Theme_Solar extends AppCompatActivity {
                         User.point.addEachPoint(2);
                     }
                 }
+                Intent intent = new Intent(this,ResultScreen.class);
+                startActivity(intent);
                 //starting activity animation
                 overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
                 finish();

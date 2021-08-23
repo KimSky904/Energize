@@ -9,6 +9,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 public class ThemeSelection extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class ThemeSelection extends AppCompatActivity {
     //back button
     Button btn_back;
     //move to avatar
-    ImageButton go_avatar;
+    ImageView go_avatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

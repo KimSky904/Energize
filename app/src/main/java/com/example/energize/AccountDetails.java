@@ -20,7 +20,7 @@ public class AccountDetails extends AppCompatActivity {
     //set point
     Button btn_point;
     //move to avatar selection
-    Button btn_go_avator_selection;
+    Button btn_chooseAvatar;
 
     //change username -> back to page
     Button btn_change_username;
@@ -75,8 +75,8 @@ public class AccountDetails extends AppCompatActivity {
             }
         });
         //move to avatar selection
-        btn_go_avator_selection=findViewById(R.id.btn_chooseAvatar);
-        btn_go_avator_selection.setOnClickListener(v -> {
+        btn_chooseAvatar=findViewById(R.id.btn_chooseAvatar);
+        btn_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), SelectAvatar.class);
             startActivity(intent);
             //starting activity animation
