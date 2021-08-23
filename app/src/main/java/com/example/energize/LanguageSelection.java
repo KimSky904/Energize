@@ -3,6 +3,7 @@ package com.example.energize;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -26,7 +27,7 @@ public class LanguageSelection extends AppCompatActivity {
     ImageView go_avatar;
     //move to next page
 
-    Button korean,english;
+    ToggleButton korean,english;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +70,39 @@ public class LanguageSelection extends AppCompatActivity {
         });
         korean=findViewById(R.id.btn_chooseLanguage_Korean);
         english=findViewById(R.id.btn_chooseLanguage_English);
-
-
+        korean.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    //on
+                    btn_continue.setEnabled(true);
+                    btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
+                    korean.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+                }
+                else {
+                    //off
+                    btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
+                    btn_continue.setEnabled(false);
+                    korean.setBackgroundResource(R.drawable.round_edge_btn_style);
+                }
+            }
+        });
+        english.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    //on
+                    btn_continue.setEnabled(true);
+                    btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
+                    english.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+                }
+                else {
+                    //off
+                    btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
+                    btn_continue.setEnabled(false);
+                    english.setBackgroundResource(R.drawable.round_edge_btn_style);
+                }
+            }
+        });
     }
 }

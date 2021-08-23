@@ -54,27 +54,29 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:id="@+id/choose_language">
-        <Button
+        <ToggleButton
             android:id="@+id/btn_chooseLanguage_Korean"
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_marginTop="80dp"
-            android:background="@drawable/round_edge_btn"
-            android:text="Korean"
+            android:background="@drawable/round_edge_btn_style"
+            android:textOff="Korean"
+            android:textOn="Korean"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words"
             />
 
 
-        <Button
+        <ToggleButton
             android:id="@+id/btn_chooseLanguage_English"
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="80dp"
-            android:background="@drawable/round_edge_btn"
-            android:text="English"
+            android:background="@drawable/round_edge_btn_style"
+            android:textOff="English"
+            android:textOn="English"
             android:textColorHighlight="@color/clickable_words"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"/>
