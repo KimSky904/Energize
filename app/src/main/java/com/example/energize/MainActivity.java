@@ -3,6 +3,7 @@ package com.example.energize;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
     Button btn_chooseAvatar;
 
 
+    //data saving file
+    String shared = "file";
+    //point object
+    Point point;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +57,16 @@ public class MainActivity extends AppCompatActivity {
             finish();
         });
 
+
+        //create point object
+        point = new Point();
+        point.setPoint(500);
+
+        // get shared preference data
+        SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
+        int point_number =sharedPreferences.getInt("point_number",0);
+        point.setPoint(point_number);
+
     }
 
     @Override
@@ -64,5 +79,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //sharedprefarence 호출해서 위의 set한 포인트 값 얻어오기
+        SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("point_number",point.getPoint());
+        editor.commit();
+
+    }
 }
 
