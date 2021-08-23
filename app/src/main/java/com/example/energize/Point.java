@@ -12,11 +12,6 @@ public class Point {
         remain_point = 0;
         Log.d("myapp","포인트 객체가 생성되었습니다.");
     }
-    public Point(int avatar_image,String user_name){
-        remain_point = 0;
-        this.user_name =  user_name;
-        Log.d("myapp","포인트 객체가 생성되었습니다. 잔여 포인트 : "+remain_point+"사용자 이름 : "+user_name);
-    }
 
     //point
     public int getPoint(){
@@ -57,7 +52,7 @@ public class Point {
     public String getUser_name(){
         return  user_name;
     }
-    public void setUser_name(){
+    public void setUser_name(String user_name){
         this.user_name = user_name;
     }
 }

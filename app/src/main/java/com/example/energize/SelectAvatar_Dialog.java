@@ -40,28 +40,28 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
         avatar1.setOnClickListener(v->{
             //intent
             Intent intent = new Intent();
-            intent.putExtra("selected_avatar","1");
+            intent.putExtra("selected_avatar",R.drawable.img_avatar_1);
             setResult(RESULT_OK, intent);
             finish();
         });
         avatar2.setOnClickListener(v->{
             //intent
             Intent intent = new Intent();
-            intent.putExtra("selected_avatar","2");
+            intent.putExtra("selected_avatar",R.drawable.img_avatar_2);
             setResult(RESULT_OK, intent);
             finish();
         });
         avatar3.setOnClickListener(v->{
             //intent
             Intent intent = new Intent();
-            intent.putExtra("selected_avatar","3");
+            intent.putExtra("selected_avatar",R.drawable.img_avatar_3);
             setResult(RESULT_OK, intent);
             finish();
         });
         avatar4.setOnClickListener(v->{
             //intent
             Intent intent = new Intent();
-            intent.putExtra("selected_avatar","4");
+            intent.putExtra("selected_avatar",R.drawable.img_avatar_4);
             setResult(RESULT_OK, intent);
             finish();
         });

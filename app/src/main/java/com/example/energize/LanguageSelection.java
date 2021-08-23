@@ -36,6 +36,13 @@ public class LanguageSelection extends AppCompatActivity {
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
 
+        //user setting check
+        Log.d("myapp","포인트 : "+User.point.getPoint()+"");
+        Log.d("myapp","사용자 이름 : "+User.point.getUser_name()+"");
+        Log.d("myapp","아바타 : "+User.point.getAvatar_image()+"");
+
+
+
         //move to theme select screen
         btn_continue = findViewById(R.id.btn_continue);
         btn_continue.setOnClickListener(v -> {

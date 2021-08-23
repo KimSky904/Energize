@@ -24,6 +24,8 @@ public class AccountDetails extends AppCompatActivity {
 
     //change username -> back to page
     Button btn_change_username;
+    //activity 실행 요청 확인을 위한 요청코드
+    static final int REQ_AVATAR_CONTACT = 2;
 
     //move to
     @Override
@@ -41,7 +43,7 @@ public class AccountDetails extends AppCompatActivity {
 
         //set point text
         btn_point = findViewById(R.id.btn_point);
-        btn_point.setText(User.point.getPoint()+"");
+        btn_point.setText(User.point.getPoint()+" Points");
 
 
         btn_back = findViewById(R.id.btn_back2);
@@ -112,6 +114,17 @@ public class AccountDetails extends AppCompatActivity {
                     break;
             }
         });
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQ_AVATAR_CONTACT) {
+            if (resultCode == RESULT_OK) {
+                //dialog 액티비티에서 이미지 리소스 네임 받아옴, 객체 avatar 설정
+                int selectedAvatarResource = data.getIntExtra("selected_avatar",R.drawable.img_avatar_1);
+                User.point.setAvatar_image(selectedAvatarResource);
+            }
+        }
     }
 }

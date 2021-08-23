@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,12 +21,16 @@ public class MainActivity extends AppCompatActivity {
     Button btn_continue;
     //choose avatar popup
     Button btn_chooseAvatar;
-
+    //user name
+    EditText editTxt_userName;
 
     //data saving file
     String shared = "file";
     //point object
     Point point;
+
+    //activity 실행 요청 확인을 위한 요청코드
+    static final int REQ_DIALOG_CONTACT = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,23 +44,30 @@ public class MainActivity extends AppCompatActivity {
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
 
+        //user name
+        editTxt_userName = findViewById(R.id.editTxt_userName);
         //Choose avatar popup
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
         btn_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this,SelectAvatar_Dialog.class);
-            startActivityForResult(intent,1);
+            startActivityForResult(intent,REQ_DIALOG_CONTACT);
         });
 
 
         //move to select language screen
         btn_continue = findViewById(R.id.btn_continue);
         btn_continue.setOnClickListener(v -> {
+            User.point.setUser_name(editTxt_userName.getText().toString());
             Intent intent = new Intent(getApplicationContext(),LanguageSelection.class);
             startActivity(intent);
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
+
+
+
+
 
         User.point.setPoint(0);
 /*
@@ -71,10 +83,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK) {
-
-            Log.d("myapp",data.getStringExtra("selected_avatar")+"가 선택되었습니다.");
-
+        if (requestCode == REQ_DIALOG_CONTACT) {
+            if (resultCode == RESULT_OK) {
+                //dialog 액티비티에서 이미지 리소스 네임 받아옴, 객체 avatar 설정
+                int selectedAvatarResource = data.getIntExtra("selected_avatar",R.drawable.img_avatar_1);
+                User.point.setAvatar_image(selectedAvatarResource);
+            }
         }
     }
 
