@@ -62,12 +62,14 @@
 
         <Button
             android:id="@+id/btn_continue"
+            android:clickable="false"
             android:layout_width="225dp"
             android:layout_height="50dp"
             android:layout_below="@+id/editTxt_userName"
             android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/oval_btn_style"
+
             android:text="CONTINUE →"
             style="@style/Text.TitleStyle"
             android:textSize="16sp"

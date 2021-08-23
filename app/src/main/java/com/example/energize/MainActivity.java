@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
@@ -12,6 +15,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,16 +25,14 @@ public class MainActivity extends AppCompatActivity {
     Button btn_continue;
     //choose avatar popup
     Button btn_chooseAvatar;
-    //user name
-    EditText editTxt_userName;
+
+    //userName EditText
+    EditText userName;
 
     //data saving file
     String shared = "file";
     //point object
     Point point;
-
-    //activity 실행 요청 확인을 위한 요청코드
-    static final int REQ_DIALOG_CONTACT = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,30 +46,42 @@ public class MainActivity extends AppCompatActivity {
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
 
-        //user name
-        editTxt_userName = findViewById(R.id.editTxt_userName);
         //Choose avatar popup
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
         btn_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this,SelectAvatar_Dialog.class);
-            startActivityForResult(intent,REQ_DIALOG_CONTACT);
+            startActivityForResult(intent,1);
         });
-
-
-        //move to select language screen
+        //userName 안채우면 버튼 비활성화
+        userName = findViewById(R.id.editTxt_userName);
         btn_continue = findViewById(R.id.btn_continue);
-        btn_continue.setOnClickListener(v -> {
-            User.point.setUser_name(editTxt_userName.getText().toString());
-            Intent intent = new Intent(getApplicationContext(),LanguageSelection.class);
-            startActivity(intent);
-            //starting activity animation
-            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
-            finish();
+
+        userName.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if(s.length()>0) {
+                    btn_continue.setClickable(true);
+                    btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
+                    //move to select language screen
+                    btn_continue.setOnClickListener(v -> {
+                        Intent intent = new Intent(getApplicationContext(),LanguageSelection.class);
+                        startActivity(intent);
+                        //starting activity animation
+                        overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                        finish();
+                    });
+                }
+                else{
+                    btn_continue.setClickable(false);
+                }
+            }
         });
-
-
-
-
 
         User.point.setPoint(0);
 /*
@@ -83,12 +97,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQ_DIALOG_CONTACT) {
-            if (resultCode == RESULT_OK) {
-                //dialog 액티비티에서 이미지 리소스 네임 받아옴, 객체 avatar 설정
-                int selectedAvatarResource = data.getIntExtra("selected_avatar",R.drawable.img_avatar_1);
-                User.point.setAvatar_image(selectedAvatarResource);
-            }
+        if (resultCode == RESULT_OK) {
+
+            Log.d("myapp",data.getStringExtra("selected_avatar")+"가 선택되었습니다.");
+
         }
     }
 

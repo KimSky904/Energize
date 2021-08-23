@@ -17,7 +17,7 @@ public class SelectAvatar extends AppCompatActivity {
     //each avatar
     ImageButton avatar_1,avatar_2,avatar_3,avatar_4,avatar_5,avatar_6,avatar_7,avatar_8;
     //back to previous page
-    Button Btn_back;
+    ImageButton Btn_back;
     //point text
     Button btn_point;
 
@@ -39,7 +39,7 @@ public class SelectAvatar extends AppCompatActivity {
         avatar_7 = findViewById(R.id.avatar_7);
         avatar_8 = findViewById(R.id.avatar_8);
 
-        Btn_back = findViewById(R.id.Btn_back);
+        Btn_back = findViewById(R.id.btn_back);
         Btn_back.setOnClickListener(v -> {
             Intent intent = new Intent(this,AccountDetails.class);
             startActivity(intent);

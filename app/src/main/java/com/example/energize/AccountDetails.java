@@ -1,13 +1,18 @@
 package com.example.energize;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
@@ -16,11 +21,13 @@ import androidx.appcompat.app.AppCompatActivity;
 public class AccountDetails extends AppCompatActivity {
     //bottom page animation
     RelativeLayout bottomPage;
-    Button btn_back;
+    ImageButton btn_back;
     //set point
     Button btn_point;
     //move to avatar selection
     Button btn_chooseAvatar;
+    //editText 채워야 버튼 활성화
+    EditText Change_userName;
 
     //change username -> back to page
     Button btn_change_username;
@@ -46,8 +53,7 @@ public class AccountDetails extends AppCompatActivity {
         btn_point.setText(User.point.getPoint()+" Points");
 
 
-        btn_back = findViewById(R.id.btn_back2);
-
+        btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(v -> {
             Intent fromPage = getIntent();
             int pageCode = fromPage.getIntExtra("page_code",1);
@@ -85,33 +91,55 @@ public class AccountDetails extends AppCompatActivity {
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
-        btn_change_username=findViewById(R.id.btn_change_username);
-        btn_change_username.setOnClickListener(v -> {
-            Intent fromPage = getIntent();
-            int pageCode = fromPage.getIntExtra("page_code",1);
 
-            switch (pageCode){
-                // page code 1 : LanguageSelection
-                // page code 2 : ThemeSelection
-                // page code 3 : ResultScreen
-                case 1 :
-                    startActivity(new Intent(this, LanguageSelection.class));
-                    //starting activity animation
-                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
-                    finish();
-                    break;
-                case 2 :
-                    startActivity(new Intent(this, ThemeSelection.class));
-                    //starting activity animation
-                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
-                    finish();
-                    break;
-                case 3 :
-                    startActivity(new Intent(this, ResultScreen.class));
-                    //starting activity animation
-                    overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
-                    finish();
-                    break;
+        //이름 넣는 칸이 빈칸이면 버튼 비활성화
+        Change_userName=findViewById(R.id.editTxt_userName);
+        Change_userName.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                //빈칸이 아니면 버튼 활성화 및 이전페이지 이동
+                if(s.length()>0) {
+                    btn_change_username.setClickable(true);
+                    btn_change_username.setBackgroundResource(R.drawable.oval_btn_style);
+                    //move to before page
+                    btn_change_username.setOnClickListener(v -> {
+                        Intent fromPage = getIntent();
+                        int pageCode = fromPage.getIntExtra("page_code",1);
+
+                        switch (pageCode){
+                            // page code 1 : LanguageSelection
+                            // page code 2 : ThemeSelection
+                            // page code 3 : ResultScreen
+                            case 1 :
+                                startActivity(new Intent(v.getContext(), LanguageSelection.class));
+                                //starting activity animation
+                                overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                                finish();
+                                break;
+                            case 2 :
+                                startActivity(new Intent(v.getContext(), ThemeSelection.class));
+                                //starting activity animation
+                                overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                                finish();
+                                break;
+                            case 3 :
+                                startActivity(new Intent(v.getContext(), ResultScreen.class));
+                                //starting activity animation
+                                overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                                finish();
+                                break;
+                        }
+                    });
+                }
+                else{
+                    btn_change_username.setClickable(false);
+                }
             }
         });
     }

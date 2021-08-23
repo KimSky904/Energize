@@ -10,6 +10,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -19,7 +20,7 @@ public class Theme_Hydro extends AppCompatActivity {
     ImageView previous;
     ImageView next;
     //back button
-    Button btn_back;
+    ImageButton btn_back;
     //question
     RelativeLayout question1;
     RelativeLayout question2;
@@ -137,7 +138,7 @@ public class Theme_Hydro extends AppCompatActivity {
 
         //back button click listener
         btn_back.setOnClickListener(v -> {
-            Intent intent = new Intent(this,MainActivity.class);
+            Intent intent = new Intent(this,ThemeSelection.class);
             startActivity(intent);
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);

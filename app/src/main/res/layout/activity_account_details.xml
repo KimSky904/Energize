@@ -14,17 +14,14 @@
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_back2"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="16dp"
             android:background="@drawable/round_btn_style"
             android:backgroundTint="@color/white"
-            android:text="←"
-            android:textColor="#507B00"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:src="@drawable/back_btn" />
 
         <Button
             android:id="@+id/btn_point"
