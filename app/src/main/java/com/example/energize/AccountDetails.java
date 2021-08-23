@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
@@ -21,7 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class AccountDetails extends AppCompatActivity {
     //bottom page animation
     RelativeLayout bottomPage;
-    ImageButton btn_back;
+    ImageView btn_back;
     //set point
     Button btn_point;
     //move to avatar selection
@@ -94,6 +95,7 @@ public class AccountDetails extends AppCompatActivity {
 
         //이름 넣는 칸이 빈칸이면 버튼 비활성화
         Change_userName=findViewById(R.id.editTxt_userName);
+        btn_change_username=findViewById(R.id.btn_change_username);
         Change_userName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
@@ -106,7 +108,7 @@ public class AccountDetails extends AppCompatActivity {
                 //빈칸이 아니면 버튼 활성화 및 이전페이지 이동
                 if(s.length()>0) {
                     btn_change_username.setClickable(true);
-                    btn_change_username.setBackgroundResource(R.drawable.oval_btn_style);
+                    btn_change_username.setBackgroundResource(R.drawable.oval_btn_color_style);
                     //move to before page
                     btn_change_username.setOnClickListener(v -> {
                         Intent fromPage = getIntent();
@@ -139,6 +141,7 @@ public class AccountDetails extends AppCompatActivity {
                 }
                 else{
                     btn_change_username.setClickable(false);
+                    btn_change_username.setBackgroundResource(R.drawable.oval_btn_style);
                 }
             }
         });

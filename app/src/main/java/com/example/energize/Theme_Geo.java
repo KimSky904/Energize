@@ -20,7 +20,7 @@ public class Theme_Geo extends AppCompatActivity {
     ImageView previous;
     ImageView next;
     //back button
-    ImageButton btn_back;
+    ImageView btn_back;
     //question
     RelativeLayout question1;
     RelativeLayout question2;

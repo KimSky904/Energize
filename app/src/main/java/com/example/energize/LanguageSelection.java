@@ -5,13 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.ToggleButton;
 
 public class LanguageSelection extends AppCompatActivity {
 
@@ -23,6 +26,7 @@ public class LanguageSelection extends AppCompatActivity {
     ImageView go_avatar;
     //move to next page
 
+    Button korean,english;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +67,9 @@ public class LanguageSelection extends AppCompatActivity {
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
+        korean=findViewById(R.id.btn_chooseLanguage_Korean);
+        english=findViewById(R.id.btn_chooseLanguage_English);
+
 
     }
 }

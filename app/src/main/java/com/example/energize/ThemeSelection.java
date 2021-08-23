@@ -22,7 +22,7 @@ public class ThemeSelection extends AppCompatActivity {
     Button theme_wind;
     Button theme_geo;
     //back button
-    ImageButton btn_back;
+    ImageView btn_back;
     //move to avatar
     ImageView go_avatar;
 

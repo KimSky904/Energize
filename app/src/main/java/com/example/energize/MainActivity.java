@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 if(s.length()>0) {
                     btn_continue.setClickable(true);
-                    btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
+                    btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
                     //move to select language screen
                     btn_continue.setOnClickListener(v -> {
                         Intent intent = new Intent(getApplicationContext(),LanguageSelection.class);
@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     btn_continue.setClickable(false);
+                    btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
                 }
             }
         });
