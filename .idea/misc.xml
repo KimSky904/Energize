@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidProject/Energize/app/src/main/res/layout/activity_result.xml" value="0.17864583333333334" />
+        <entry key="..\:/AndroidProject/Energize/app/src/main/res/layout/activity_account_details.xml" value="0.17864583333333334" />
+        <entry key="..\:/AndroidProject/Energize/app/src/main/res/layout/activity_result.xml" value="0.2" />
+        <entry key="..\:/AndroidProject/Energize/app/src/main/res/layout/activity_result_screen.xml" value="0.19895833333333332" />
       </map>
     </option>
   </component>

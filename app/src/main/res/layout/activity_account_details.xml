@@ -19,17 +19,18 @@
         android:textColor="#507B00"
         android:textSize="30sp"
         android:textStyle="bold" />
+
     <Button
         android:id="@+id/btn_point"
-        android:clickable="false"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginTop="31dp"
         android:layout_marginLeft="274dp"
+        android:layout_marginTop="31dp"
         android:background="@drawable/round_btn_style"
         android:backgroundTint="@color/white"
-        android:textColor="#507B00"
-        android:text="point" />
+        android:clickable="false"
+        android:text="point"
+        android:textColor="#507B00" />
 
     <TextView
         android:id="@+id/MainText"

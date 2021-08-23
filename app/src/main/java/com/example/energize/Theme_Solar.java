@@ -56,6 +56,8 @@ public class Theme_Solar extends AppCompatActivity {
     //save the pre/next screen
     View PreDisplayScreen;
     View NextDisplayScreen;
+    //whether quiz is correct (correct : 1, wrong : 0)
+    int[] answer = {0,0,0,0,0,0,0,0,0,0};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,10 +146,6 @@ public class Theme_Solar extends AppCompatActivity {
             finish();
         });
 
-        //퀴즈 번호 기억
-        Intent getpage = getIntent();
-        index = getpage.getIntExtra("page_number",index);
-
         //save each page as int (like key)
         question = new View[]{question1, question2, question3, question4, question5, question6, question7, question8, question9, question10};
         //save the currently displayed screen
@@ -180,6 +178,14 @@ public class Theme_Solar extends AppCompatActivity {
             if(index==9){
                 Intent intent = new Intent(this,ResultScreen.class);
                 startActivity(intent);
+                //give a point
+                User.point.initialThemePoint();
+                for(int i=0;i<10;i++){
+                    if(answer[i]==1){
+                        User.point.addPoint(2);
+                        User.point.addEachPoint(2);
+                    }
+                }
                 //starting activity animation
                 overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
                 finish();
@@ -222,10 +228,6 @@ public class Theme_Solar extends AppCompatActivity {
             if(index==9) NextDisplayScreen = question[9];
             else NextDisplayScreen = question[index+1];
 
-            Log.d("myapp","현재 : "+NowDisplayScreen.toString());
-            Log.d("myapp","이전 : "+PreDisplayScreen.toString());
-            Log.d("myapp","다음 : "+NextDisplayScreen.toString());
-            Log.d("myapp","인덱스 : "+index+"");
         }
         @Override
         public void onAnimationRepeat(Animation animation) { }

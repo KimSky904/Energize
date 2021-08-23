@@ -57,15 +57,14 @@ public class MainActivity extends AppCompatActivity {
             finish();
         });
 
-
-        //create point object
-        point = new Point();
-        point.setPoint(500);
-
+        User.point.setPoint(0);
+/*
         // get shared preference data
         SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
         int point_number =sharedPreferences.getInt("point_number",0);
         point.setPoint(point_number);
+
+ */
 
     }
 
@@ -79,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+/*
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -90,5 +89,7 @@ public class MainActivity extends AppCompatActivity {
         editor.commit();
 
     }
+
+ */
 }
 

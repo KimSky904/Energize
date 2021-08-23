@@ -17,7 +17,8 @@ public class AccountDetails extends AppCompatActivity {
     //bottom page animation
     RelativeLayout bottomPage;
     Button btn_back;
-
+    //set point
+    Button btn_point;
     //move to avatar selection
     Button btn_go_avator_selection;
 
@@ -37,6 +38,10 @@ public class AccountDetails extends AppCompatActivity {
         bottomPage = findViewById(R.id.bottom_page);
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
+
+        //set point text
+        btn_point = findViewById(R.id.btn_point);
+        btn_point.setText(User.point.getPoint()+"");
 
 
         btn_back = findViewById(R.id.btn_back2);

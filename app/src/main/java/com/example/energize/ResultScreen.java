@@ -13,11 +13,18 @@ public class ResultScreen extends AppCompatActivity {
     ImageButton go_avatar;
     //move to theme selection
     Button go_theme;
+    //text of acquired point
+    Button btn_chooseAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_screen);
+
+        //get each points
+        btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
+        btn_chooseAvatar.setText(User.point.getEachPoint()+" out 20 points");
+        User.point.initialThemePoint();
 
 
         //move to account details
