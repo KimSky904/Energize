@@ -38,7 +38,7 @@
     </LinearLayout>
 
     <TableLayout
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -49,32 +49,32 @@
         <TableRow>
             <ImageButton
                 android:id="@+id/avatar_1"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="5dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/round_btn_style" />
 
             <ImageButton
                 android:id="@+id/avatar_2"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="5dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/round_btn_style" />
         </TableRow>
 
         <TableRow>
             <ImageButton
                 android:id="@+id/avatar_3"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="5dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/round_btn_style" />
 
             <ImageButton
                 android:id="@+id/avatar_4"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="5dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/round_btn_style" />
         </TableRow>
 
@@ -82,16 +82,16 @@
 
             <ImageButton
                 android:id="@+id/avatar_5"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="5dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/round_btn" />
 
             <ImageButton
                 android:id="@+id/avatar_6"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="5dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/round_btn" />
         </TableRow>
 
@@ -99,16 +99,16 @@
 
             <ImageButton
                 android:id="@+id/avatar_7"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="5dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/round_btn" />
 
             <ImageButton
                 android:id="@+id/avatar_8"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_margin="5dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
                 android:background="@drawable/round_btn" />
         </TableRow>
     </TableLayout>
