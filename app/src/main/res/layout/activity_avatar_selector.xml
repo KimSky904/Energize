@@ -14,14 +14,15 @@
         android:orientation="horizontal"
         android:layout_marginTop="20dp">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/btn_back"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="16dp"
+
+            android:src="@drawable/arrow"
             android:background="@drawable/round_btn_style"
-            android:backgroundTint="@color/white"
-            android:src="@drawable/back_btn" />
+            android:backgroundTint="@color/white" />
 
         <Button
             android:layout_gravity="center_vertical"
@@ -111,6 +112,4 @@
                 android:background="@drawable/round_btn" />
         </TableRow>
     </TableLayout>
-
-
 </LinearLayout>

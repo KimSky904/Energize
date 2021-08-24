@@ -22,7 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class AccountDetails extends AppCompatActivity {
     //bottom page animation
     RelativeLayout bottomPage;
-    ImageView btn_back;
+    ImageButton btn_back;
     //set point
     Button btn_point;
     //move to avatar selection

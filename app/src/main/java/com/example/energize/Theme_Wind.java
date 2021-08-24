@@ -20,7 +20,7 @@ public class Theme_Wind extends AppCompatActivity {
     ImageView previous;
     ImageView next;
     //back button
-    ImageView btn_back;
+    ImageButton btn_back;
     //question
     RelativeLayout question1;
     RelativeLayout question2;
