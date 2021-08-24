@@ -19,6 +19,7 @@ import android.widget.TextView;
 import java.security.acl.NotOwnerException;
 
 public class Theme_Solar extends AppCompatActivity {
+    //C B C A D B C B C D
 
     //question text
     TextView MainText;
@@ -38,17 +39,17 @@ public class Theme_Solar extends AppCompatActivity {
     RelativeLayout question8;
     RelativeLayout question9;
     RelativeLayout question10;
-    //each answer button
-    Button question1_a1,question1_a2,question1_a3,question1_a4;
-    Button question2_a1,question2_a2,question2_a3,question2_a4;
-    Button question3_a1,question3_a2,question3_a3,question3_a4;
-    Button question4_a1,question4_a2,question4_a3,question4_a4;
-    Button question5_a1,question5_a2,question5_a3,question5_a4;
-    Button question6_a1,question6_a2,question6_a3,question6_a4;
-    Button question7_a1,question7_a2,question7_a3,question7_a4;
-    Button question8_a1,question8_a2,question8_a3,question8_a4;
-    Button question9_a1,question9_a2,question9_a3,question9_a4;
-    Button question10_a1,question10_a2,question10_a3,question10_a4;
+//    //each answer button
+//    Button question1_a1,question1_a2,question1_a3,question1_a4;
+//    Button question2_a1,question2_a2,question2_a3,question2_a4;
+//    Button question3_a1,question3_a2,question3_a3,question3_a4;
+//    Button question4_a1,question4_a2,question4_a3,question4_a4;
+//    Button question5_a1,question5_a2,question5_a3,question5_a4;
+//    Button question6_a1,question6_a2,question6_a3,question6_a4;
+//    Button question7_a1,question7_a2,question7_a3,question7_a4;
+//    Button question8_a1,question8_a2,question8_a3,question8_a4;
+//    Button question9_a1,question9_a2,question9_a3,question9_a4;
+//    Button question10_a1,question10_a2,question10_a3,question10_a4;
     //index Key
     int index = 0;
     //question 1~10 array
@@ -63,7 +64,8 @@ public class Theme_Solar extends AppCompatActivity {
     View NextDisplayScreen;
     //문제
     int[] question_ask_text;
-    //C B C A D B C B C D
+    //보기
+    int[][] answer_text = null;
     //세트당 4개씩의 버튼 2차원 배열
     Button[][] answerButton = null;
     //theme의 1~10까지의 정답 버튼 아이디
@@ -95,6 +97,7 @@ public class Theme_Solar extends AppCompatActivity {
 
         //all button
         answerButton = new Button[10][4];
+        //버튼
         int[][] answerId = {
                 {R.id.question1_a1,R.id.question1_a2,R.id.question1_a3,R.id.question1_a4},
                 {R.id.question2_a1,R.id.question2_a2,R.id.question2_a3,R.id.question2_a4},
@@ -107,8 +110,36 @@ public class Theme_Solar extends AppCompatActivity {
                 {R.id.question9_a1,R.id.question9_a2,R.id.question9_a3,R.id.question9_a4},
                 {R.id.question10_a1,R.id.question10_a2,R.id.question10_a3,R.id.question10_a4},
         };
+        //save each page as int (like key)
+        question = new View[]{question1, question2, question3, question4, question5, question6, question7, question8, question9, question10};
+        //question array
+        question_ask_text = new int[]{
+                R.string.Solar_Question_1,
+                R.string.Solar_Question_2,
+                R.string.Solar_Question_3,
+                R.string.Solar_Question_4,
+                R.string.Solar_Question_5,
+                R.string.Solar_Question_6,
+                R.string.Solar_Question_7,
+                R.string.Solar_Question_8,
+                R.string.Solar_Question_9,
+                R.string.Solar_Question_10,
+        };
+        //보기 텍스트
+        answer_text = new int[][]{
+                {R.string.Solar_Answer_Q1_1, R.string.Solar_Answer_Q1_2, R.string.Solar_Answer_Q1_3, R.string.Solar_Answer_Q1_4},
+                {R.string.Solar_Answer_Q2_1, R.string.Solar_Answer_Q2_2, R.string.Solar_Answer_Q2_3, R.string.Solar_Answer_Q2_4},
+                {R.string.Solar_Answer_Q3_1, R.string.Solar_Answer_Q3_2, R.string.Solar_Answer_Q3_3, R.string.Solar_Answer_Q3_4},
+                {R.string.Solar_Answer_Q4_1, R.string.Solar_Answer_Q4_2, R.string.Solar_Answer_Q4_3, R.string.Solar_Answer_Q4_4},
+                {R.string.Solar_Answer_Q5_1, R.string.Solar_Answer_Q5_2, R.string.Solar_Answer_Q5_3, R.string.Solar_Answer_Q5_4},
+                {R.string.Solar_Answer_Q6_1, R.string.Solar_Answer_Q6_2, R.string.Solar_Answer_Q6_3, R.string.Solar_Answer_Q6_4},
+                {R.string.Solar_Answer_Q7_1, R.string.Solar_Answer_Q7_2, R.string.Solar_Answer_Q7_3, R.string.Solar_Answer_Q7_4},
+                {R.string.Solar_Answer_Q8_1, R.string.Solar_Answer_Q8_2, R.string.Solar_Answer_Q8_3, R.string.Solar_Answer_Q8_4},
+                {R.string.Solar_Answer_Q9_1, R.string.Solar_Answer_Q9_2, R.string.Solar_Answer_Q9_3, R.string.Solar_Answer_Q9_4},
+                {R.string.Solar_Answer_Q10_1, R.string.Solar_Answer_Q10_2, R.string.Solar_Answer_Q10_3, R.string.Solar_Answer_Q10_4},
+        };
 
-
+        //각 보기 버튼
         for(int i=0;i<10;i++){
             for(int j=0;j<4;j++){
                 answerButton[i][j]=(Button)findViewById(answerId[i][j]);
@@ -141,30 +172,20 @@ public class Theme_Solar extends AppCompatActivity {
             finish();
         });
 
-        //save each page as int (like key)
-        question = new View[]{question1, question2, question3, question4, question5, question6, question7, question8, question9, question10};
-        //question array
-        question_ask_text = new int[]{
-            R.string.Solar_Question_1,
-            R.string.Solar_Question_2,
-            R.string.Solar_Question_3,
-            R.string.Solar_Question_4,
-            R.string.Solar_Question_5,
-            R.string.Solar_Question_6,
-            R.string.Solar_Question_7,
-            R.string.Solar_Question_8,
-            R.string.Solar_Question_9,
-            R.string.Solar_Question_10,
-        };
-        //answer array
 
         //question text
         MainText.setText(question_ask_text[0]);
+        //answer text
+        answerButton[0][0].setText(answer_text[0][0]);
+        answerButton[0][1].setText(answer_text[0][1]);
+        answerButton[0][2].setText(answer_text[0][2]);
+        answerButton[0][3].setText(answer_text[0][3]);
 
         //save the currently displayed screen
         View NowDisplayScreen;
         if(index==0) NowDisplayScreen = question[0]; //0~9
         else NowDisplayScreen = question[index-1]; //0~9
+
         //save the pre/next screen
         View PreDisplayScreen = question[index];
         View NextDisplayScreen = question[index+1];
@@ -187,8 +208,6 @@ public class Theme_Solar extends AppCompatActivity {
             if(index>9) index = 9;
             //NextDisplayScreen.startAnimation(tranlateLeftAnim);
             NowDisplayScreen.startAnimation(tranlateLeftAnim);
-
-            Log.d("myapp","인덱스 : "+index+"");
         });
         previous.setOnClickListener(v -> {
             NowDisplayScreen.setVisibility(View.INVISIBLE);
@@ -230,14 +249,15 @@ public class Theme_Solar extends AppCompatActivity {
 
             //question text
             MainText.setText(question_ask_text[index]);
-
+            for(int i=0;i<4;i++){
+                answerButton[index][i].setText(answer_text[index][i]);
+            }
         }
         @Override
         public void onAnimationRepeat(Animation animation) { }
     }
 
-    private View.OnClickListener btnListener = v -> {
-        Log.d("myapp",v.getId()+" ");
+    private final View.OnClickListener btnListener = v -> {
         users_answer[index] = v.getId();
     };
     //채점
