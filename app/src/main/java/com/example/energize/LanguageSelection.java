@@ -78,12 +78,14 @@ public class LanguageSelection extends AppCompatActivity {
                     btn_continue.setEnabled(true);
                     btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
                     korean.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+                    english.setEnabled(false);
                 }
                 else {
                     //off
                     btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
                     btn_continue.setEnabled(false);
                     korean.setBackgroundResource(R.drawable.round_edge_btn_style);
+                    english.setEnabled(true);
                 }
             }
         });
@@ -95,12 +97,14 @@ public class LanguageSelection extends AppCompatActivity {
                     btn_continue.setEnabled(true);
                     btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
                     english.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+                    korean.setEnabled(false);
                 }
                 else {
                     //off
                     btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
                     btn_continue.setEnabled(false);
                     english.setBackgroundResource(R.drawable.round_edge_btn_style);
+                    korean.setEnabled(true);
                 }
             }
         });
