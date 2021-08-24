@@ -9,5 +9,9 @@
     <stroke
         android:width="0.5dp"
         android:color="#507B00"/>
+    <selector>
+        <item android:color="@color/white" android:state_pressed="true"/>
+        <item android:color="@color/black"/>
+    </selector>
 
 </shape>

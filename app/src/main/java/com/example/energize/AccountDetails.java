@@ -106,7 +106,7 @@ public class AccountDetails extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 //빈칸이 아니면 버튼 활성화 및 이전페이지 이동
-                if(s.length()>0) {
+                if(s.length()>0 ) {
                     btn_change_username.setClickable(true);
                     btn_change_username.setBackgroundResource(R.drawable.oval_btn_color_style);
                     //move to before page

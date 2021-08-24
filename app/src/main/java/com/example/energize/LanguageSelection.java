@@ -3,19 +3,16 @@ package com.example.energize;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.ToggleButton;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class LanguageSelection extends AppCompatActivity {
 
@@ -28,7 +25,7 @@ public class LanguageSelection extends AppCompatActivity {
     //move to next page
 
     Button korean,english;
-
+    boolean e_bool,k_bool=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +68,18 @@ public class LanguageSelection extends AppCompatActivity {
         korean=findViewById(R.id.btn_chooseLanguage_Korean);
         english=findViewById(R.id.btn_chooseLanguage_English);
 
-        
+        korean.setOnClickListener(v->{
+            if(korean.isPressed()){
+                korean.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+
+            }
+        });
+        english.setOnClickListener(v->{
+            if(english.isPressed()){
+                english.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+               
+            }
+
+        });
     }
 }
