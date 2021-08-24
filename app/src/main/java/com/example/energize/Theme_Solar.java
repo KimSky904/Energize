@@ -14,11 +14,14 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.security.acl.NotOwnerException;
 
 public class Theme_Solar extends AppCompatActivity {
 
+    //question text
+    TextView MainText;
     //previous / next button
     ImageView previous;
     ImageView next;
@@ -58,13 +61,24 @@ public class Theme_Solar extends AppCompatActivity {
     //save the pre/next screen
     View PreDisplayScreen;
     View NextDisplayScreen;
-    //whether quiz is correct (correct : 1, wrong : 0)
-    int[] answer = {0,0,0,0,0,0,0,0,0,0};
+    //문제
+    int[] question_ask_text;
+    //C B C A D B C B C D
+    //세트당 4개씩의 버튼 2차원 배열
+    Button[][] answerButton = null;
+    //theme의 1~10까지의 정답 버튼 아이디
+    int[] answer = {R.id.question1_a3,R.id.question2_a2,R.id.question3_a3,R.id.question4_a1,R.id.question5_a4,R.id.question6_a2,R.id.question7_a3,R.id.question8_a2,R.id.question9_a3,R.id.question10_a4};
+    //사용자가 고른 최종 답
+    int[] users_answer = new int[10];
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theme_solar);
+
+        //question text
+        MainText = findViewById(R.id.MainText);
 
         //bottom page animation (only first page)
         final Animation translateup = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate_up);
@@ -79,65 +93,44 @@ public class Theme_Solar extends AppCompatActivity {
         //back button
         btn_back = findViewById(R.id.btn_back);
 
+        //all button
+        answerButton = new Button[10][4];
+        int[][] answerId = {
+                {R.id.question1_a1,R.id.question1_a2,R.id.question1_a3,R.id.question1_a4},
+                {R.id.question2_a1,R.id.question2_a2,R.id.question2_a3,R.id.question2_a4},
+                {R.id.question3_a1,R.id.question3_a2,R.id.question3_a3,R.id.question3_a4},
+                {R.id.question4_a1,R.id.question4_a2,R.id.question4_a3,R.id.question4_a4},
+                {R.id.question5_a1,R.id.question5_a2,R.id.question5_a3,R.id.question5_a4},
+                {R.id.question6_a1,R.id.question6_a2,R.id.question6_a3,R.id.question6_a4},
+                {R.id.question7_a1,R.id.question7_a2,R.id.question7_a3,R.id.question7_a4},
+                {R.id.question8_a1,R.id.question8_a2,R.id.question8_a3,R.id.question8_a4},
+                {R.id.question9_a1,R.id.question9_a2,R.id.question9_a3,R.id.question9_a4},
+                {R.id.question10_a1,R.id.question10_a2,R.id.question10_a3,R.id.question10_a4},
+        };
+
+
+        for(int i=0;i<10;i++){
+            for(int j=0;j<4;j++){
+                answerButton[i][j]=(Button)findViewById(answerId[i][j]);
+            }
+        }
+
+        for(int i=0;i<10;i++){
+            for(int j=0;j<4;j++){
+                answerButton[i][j].setOnClickListener(btnListener);
+            }
+        }
+
         //question & view
-        question1_a1 = findViewById(R.id.question1_a1);
-        question1_a2 = findViewById(R.id.question1_a2);
-        question1_a3 = findViewById(R.id.question1_a3);
-        question1_a4 = findViewById(R.id.question1_a4);
-
         question2 = findViewById(R.id.question2);
-        question2_a1 = findViewById(R.id.question2_a1);
-        question2_a2 = findViewById(R.id.question2_a2);
-        question2_a3 = findViewById(R.id.question2_a3);
-        question2_a4 = findViewById(R.id.question2_a4);
-
         question3 = findViewById(R.id.question3);
-        question3_a1 = findViewById(R.id.question3_a1);
-        question3_a2 = findViewById(R.id.question3_a2);
-        question3_a3 = findViewById(R.id.question3_a3);
-        question3_a4 = findViewById(R.id.question3_a4);
-
         question4 = findViewById(R.id.question4);
-        question4_a1 = findViewById(R.id.question4_a1);
-        question4_a2 = findViewById(R.id.question4_a2);
-        question4_a3 = findViewById(R.id.question4_a3);
-        question4_a4 = findViewById(R.id.question4_a4);
-
         question5 = findViewById(R.id.question5);
-        question5_a1 = findViewById(R.id.question5_a1);
-        question5_a2 = findViewById(R.id.question5_a2);
-        question5_a3 = findViewById(R.id.question5_a3);
-        question5_a4 = findViewById(R.id.question5_a4);
-
         question6 = findViewById(R.id.question6);
-        question6_a1 = findViewById(R.id.question6_a1);
-        question6_a2 = findViewById(R.id.question6_a2);
-        question6_a3 = findViewById(R.id.question6_a3);
-        question6_a4 = findViewById(R.id.question6_a4);
-
         question7 = findViewById(R.id.question7);
-        question7_a1 = findViewById(R.id.question7_a1);
-        question7_a2 = findViewById(R.id.question7_a2);
-        question7_a3 = findViewById(R.id.question7_a3);
-        question7_a4 = findViewById(R.id.question7_a4);
-
         question8 = findViewById(R.id.question8);
-        question8_a1 = findViewById(R.id.question8_a1);
-        question8_a2 = findViewById(R.id.question8_a2);
-        question8_a3 = findViewById(R.id.question8_a3);
-        question8_a4 = findViewById(R.id.question8_a4);
-
         question9 = findViewById(R.id.question9);
-        question9_a1 = findViewById(R.id.question9_a1);
-        question9_a2 = findViewById(R.id.question9_a2);
-        question9_a3 = findViewById(R.id.question9_a3);
-        question9_a4 = findViewById(R.id.question9_a4);
-
         question10 = findViewById(R.id.question10);
-        question10_a1 = findViewById(R.id.question10_a1);
-        question10_a2 = findViewById(R.id.question10_a2);
-        question10_a3 = findViewById(R.id.question10_a3);
-        question10_a4 = findViewById(R.id.question10_a4);
 
         //back button click listener
         btn_back.setOnClickListener(v -> {
@@ -150,6 +143,24 @@ public class Theme_Solar extends AppCompatActivity {
 
         //save each page as int (like key)
         question = new View[]{question1, question2, question3, question4, question5, question6, question7, question8, question9, question10};
+        //question array
+        question_ask_text = new int[]{
+            R.string.Solar_Question_1,
+            R.string.Solar_Question_2,
+            R.string.Solar_Question_3,
+            R.string.Solar_Question_4,
+            R.string.Solar_Question_5,
+            R.string.Solar_Question_6,
+            R.string.Solar_Question_7,
+            R.string.Solar_Question_8,
+            R.string.Solar_Question_9,
+            R.string.Solar_Question_10,
+        };
+        //answer array
+
+        //question text
+        MainText.setText(question_ask_text[0]);
+
         //save the currently displayed screen
         View NowDisplayScreen;
         if(index==0) NowDisplayScreen = question[0]; //0~9
@@ -169,29 +180,15 @@ public class Theme_Solar extends AppCompatActivity {
 
 
         next.setOnClickListener(v -> {
+            if(index==9) scoring();
             NowDisplayScreen.setVisibility(View.INVISIBLE);
             NextDisplayScreen.setVisibility(View.VISIBLE);
             index++;
-            if(index>10) index = 10;
+            if(index>9) index = 9;
             //NextDisplayScreen.startAnimation(tranlateLeftAnim);
             NowDisplayScreen.startAnimation(tranlateLeftAnim);
 
-            //if last question is end
-            if(index==9){
-                //give a point
-                User.point.initialThemePoint();
-                for(int i=0;i<10;i++){
-                    if(answer[i]==1){
-                        User.point.addPoint(2);
-                        User.point.addEachPoint(2);
-                    }
-                }
-                Intent intent = new Intent(this,ResultScreen.class);
-                startActivity(intent);
-                //starting activity animation
-                overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
-                finish();
-            }
+            Log.d("myapp","인덱스 : "+index+"");
         });
         previous.setOnClickListener(v -> {
             NowDisplayScreen.setVisibility(View.INVISIBLE);
@@ -203,6 +200,7 @@ public class Theme_Solar extends AppCompatActivity {
         });
     }
 
+
     private class SlidingPageAnimationListener implements Animation.AnimationListener{
         @Override
         public void onAnimationStart(Animation animation) { }
@@ -210,9 +208,9 @@ public class Theme_Solar extends AppCompatActivity {
             //remove previous button if question 1
             if(index==0) previous.setVisibility(View.INVISIBLE);
             else previous.setVisibility(View.VISIBLE);
-            //remove next button if question 10
-            if(index==10) next.setVisibility(View.INVISIBLE);
-            else next.setVisibility(View.VISIBLE);
+//            //remove next button if question 10
+//            if(index==9) next.setVisibility(View.INVISIBLE);
+//            else next.setVisibility(View.VISIBLE);
 
             //hide irrelevant question page
             for(int i=0;i<10;i++){
@@ -230,8 +228,35 @@ public class Theme_Solar extends AppCompatActivity {
             if(index==9) NextDisplayScreen = question[9];
             else NextDisplayScreen = question[index+1];
 
+            //question text
+            MainText.setText(question_ask_text[index]);
+
         }
         @Override
         public void onAnimationRepeat(Animation animation) { }
+    }
+
+    private View.OnClickListener btnListener = v -> {
+        Log.d("myapp",v.getId()+" ");
+        users_answer[index] = v.getId();
+    };
+    //채점
+    private void scoring() {
+        //if last question is end
+        if (index == 9) {
+            //give a point
+            User.point.initialThemePoint();
+            for (int i = 0; i < 10; i++) {
+                if (users_answer[i] == answer[i]) {
+                    User.point.addPoint(2);
+                    User.point.addEachPoint(2);
+                }
+            }
+            Intent intent = new Intent(this, ResultScreen.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none, R.anim.translate_center_to_right);
+            finish();
+        }
     }
 }

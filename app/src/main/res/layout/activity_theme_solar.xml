@@ -22,10 +22,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginTop="137dp"
         android:text="1. What is . . ."
         android:textColor="@color/white"
-        style="@style/Text.TitleStyle"/>
+        style="@style/Text.TitleStyle"
+        android:textSize="40sp"/>
 
 
     <!-- one for each quiz(question) -->

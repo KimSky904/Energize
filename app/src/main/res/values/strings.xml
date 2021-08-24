@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">Energize</string>
     <string name="app_version">Version 1.0.0</string>
+
+    <string name="Solar_Question_1">1. What\'s the main source of Solar Energy?</string>
+    <string name="Solar_Question_2">2. A _______ is used to harvest Solar Energy.</string>
+    <string name="Solar_Question_3">3. What country harvest the most Solar Energy?</string>
+    <string name="Solar_Question_4">4. Can you harvest Solar Energy at night?</string>
+    <string name="Solar_Question_5">5. When was Solar Energy discovered?</string>
+    <string name="Solar_Question_6">6. Is Solar Energy eco friendly?</string>
+    <string name="Solar_Question_7">7. What is Photovoltaics?</string>
+    <string name="Solar_Question_8">8. Is Solar Power considered a renewable energy?</string>
+    <string name="Solar_Question_9">9. Solar Energy can be used to generate heat or ______.</string>
+    <string name="Solar_Question_10">What particles from the sun help to generate power from solar cells?</string>
+
+<!--    <string name="Solar_Answer_1"></string>-->
+<!--    <string name="Solar_Answer_2"></string>-->
+<!--    <string name="Solar_Answer_3"></string>-->
+<!--    <string name="Solar_Answer_4"></string>-->
+<!--    <string name="Solar_Answer_5"></string>-->
+<!--    <string name="Solar_Answer_6"></string>-->
+<!--    <string name="Solar_Answer_7"></string>-->
+<!--    <string name="Solar_Answer_8"></string>-->
+<!--    <string name="Solar_Answer_9"></string>-->
+<!--    <string name="Solar_Answer_10"></string>-->
 </resources>
