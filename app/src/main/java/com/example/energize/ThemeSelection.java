@@ -52,21 +52,21 @@ public class ThemeSelection extends AppCompatActivity {
             finish();
         });
         theme_hydro.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Theme_Hydro.class);
+            Intent intent = new Intent(this, ThemeHydro.class);
             startActivity(intent);
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
         theme_wind.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Theme_Wind.class);
+            Intent intent = new Intent(this, ThemeWind.class);
             startActivity(intent);
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
         theme_geo.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Theme_Geo.class);
+            Intent intent = new Intent(this, ThemeGeo.class);
             startActivity(intent);
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);

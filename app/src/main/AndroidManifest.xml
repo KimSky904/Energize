@@ -11,10 +11,6 @@
         android:theme="@style/Theme.Energize">
         <activity android:name=".ThemeSolar"></activity>
         <activity android:name=".ResultScreen"></activity>
-        <activity android:name=".Theme_Wind" />
-        <activity android:name=".Theme_Hydro" />
-        <activity android:name=".Theme_Solar" />
-        <activity android:name=".Theme_Geo" />
         <activity android:name=".SelectAvatar"/>
         <activity android:name=".ThemeSelection" />
         <activity android:name=".LanguageSelection" />
