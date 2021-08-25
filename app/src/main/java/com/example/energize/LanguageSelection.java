@@ -69,17 +69,16 @@ public class LanguageSelection extends AppCompatActivity {
         english=findViewById(R.id.btn_chooseLanguage_English);
 
         korean.setOnClickListener(v->{
-            if(korean.isPressed()){
-                korean.setBackgroundResource(R.drawable.round_edge_btn_click_color);
-
-            }
+            korean.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+            english.setBackgroundResource(R.drawable.round_edge_btn_style);
+            btn_continue.setClickable(true);
+            btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
         });
         english.setOnClickListener(v->{
-            if(english.isPressed()){
-                english.setBackgroundResource(R.drawable.round_edge_btn_click_color);
-               
-            }
-
+            english.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+            korean.setBackgroundResource(R.drawable.round_edge_btn_style);
+            btn_continue.setClickable(true);
+            btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
         });
     }
 }

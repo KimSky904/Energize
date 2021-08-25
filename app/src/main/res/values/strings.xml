@@ -193,4 +193,68 @@
     <string name="Geothermal_Answer_Q10_4"></string>
 
 
+    <!--theme wind-->
+    <string name="Wind_Question_1"></string>
+    <string name="Wind_Question_2"></string>
+    <string name="Wind_Question_3"></string>
+    <string name="Wind_Question_4"></string>
+    <string name="Wind_Question_5"></string>
+    <string name="Wind_Question_6"></string>
+    <string name="Wind_Question_7"></string>
+    <string name="Wind_Question_8"></string>
+    <string name="Wind_Question_9"></string>
+    <string name="Wind_Question_10"></string>
+
+
+    <string name="Wind_Answer_Q1_1"></string>
+    <string name="Wind_Answer_Q1_2"></string>
+    <string name="Wind_Answer_Q1_3"></string>
+    <string name="Wind_Answer_Q1_4"></string>
+
+    <string name="Wind_Answer_Q2_1"></string>
+    <string name="Wind_Answer_Q2_2"></string>
+    <string name="Wind_Answer_Q2_3"></string>
+    <string name="Wind_Answer_Q2_4"></string>
+
+    <string name="Wind_Answer_Q3_1"></string>
+    <string name="Wind_Answer_Q3_2"></string>
+    <string name="Wind_Answer_Q3_3"></string>
+    <string name="Wind_Answer_Q3_4"></string>
+
+    <string name="Wind_Answer_Q4_1"></string>
+    <string name="Wind_Answer_Q4_2"></string>
+    <string name="Wind_Answer_Q4_3"></string>
+    <string name="Wind_Answer_Q4_4"></string>
+
+    <string name="Wind_Answer_Q5_1"></string>
+    <string name="Wind_Answer_Q5_2"></string>
+    <string name="Wind_Answer_Q5_3"></string>
+    <string name="Wind_Answer_Q5_4"></string>
+
+    <string name="Wind_Answer_Q6_1"></string>
+    <string name="Wind_Answer_Q6_2"></string>
+    <string name="Wind_Answer_Q6_3"></string>
+    <string name="Wind_Answer_Q6_4"></string>
+
+    <string name="Wind_Answer_Q7_1"></string>
+    <string name="Wind_Answer_Q7_2"></string>
+    <string name="Wind_Answer_Q7_3"></string>
+    <string name="Wind_Answer_Q7_4"></string>
+
+    <string name="Wind_Answer_Q8_1"></string>
+    <string name="Wind_Answer_Q8_2"></string>
+    <string name="Wind_Answer_Q8_3"></string>
+    <string name="Wind_Answer_Q8_4"></string>
+
+    <string name="Wind_Answer_Q9_1"></string>
+    <string name="Wind_Answer_Q9_2"></string>
+    <string name="Wind_Answer_Q9_3"></string>
+    <string name="Wind_Answer_Q9_4"></string>
+
+    <string name="Wind_Answer_Q10_1"></string>
+    <string name="Wind_Answer_Q10_2"></string>
+    <string name="Wind_Answer_Q10_3"></string>
+    <string name="Wind_Answer_Q10_4"></string>
+
+
 </resources>
