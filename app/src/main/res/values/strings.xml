@@ -64,4 +64,68 @@
     <string name="Solar_Answer_Q10_2">Neutrons</string>
     <string name="Solar_Answer_Q10_3">Protons</string>
     <string name="Solar_Answer_Q10_4">Photons</string>
+
+
+    <!--hydro theme-->
+    <string name="Hydro_Question_1">Low ____ can disrupt power generation.</string>
+    <string name="Hydro_Question_2">Environmental pollution is caused by the fuel used in hydroelectric power generation.</string>
+    <string name="Hydro_Question_3">What kind of energy uses the principle of falling when water flows low?</string>
+    <string name="Hydro_Question_4">What is not suitable for hydroelectric power plant use?</string>
+    <string name="Hydro_Question_5">Hydroelectric power plants emit no air pollutants.</string>
+    <string name="Hydro_Question_6">What is not a place to get hydroelectric energy?</string>
+    <string name="Hydro_Question_7">Hydroelectric power is transformed into ____ energy.</string>
+    <string name="Hydro_Question_8">What is rotated by water falling from the top?</string>
+    <string name="Hydro_Question_9">Low __ can disrupt power generation.</string>
+    <string name="Hydro_Question_10">Low __ can disrupt power generation.</string>
+
+    <string name="Hydro_Answer_Q1_1">Chemical fuel</string>
+    <string name="Hydro_Answer_Q1_2">Precipitation</string>
+    <string name="Hydro_Answer_Q1_3">Electrical energy</string>
+    <string name="Hydro_Answer_Q1_4">Solar power</string>
+
+    <string name="Hydro_Answer_Q2_1">Yes</string>
+    <string name="Hydro_Answer_Q2_2">No</string>
+    <string name="Hydro_Answer_Q2_3">Maybe</string>
+    <string name="Hydro_Answer_Q2_4">I\'m not sure</string>
+
+    <string name="Hydro_Answer_Q3_1">Electric energy</string>
+    <string name="Hydro_Answer_Q3_2">Wind energy</string>
+    <string name="Hydro_Answer_Q3_3">Hydro energy</string>
+    <string name="Hydro_Answer_Q3_4">Nuclear energy</string>
+
+    <string name="Hydro_Answer_Q4_1">provides water for citizens.</string>
+    <string name="Hydro_Answer_Q4_2">prevent natural disasters</string>
+    <string name="Hydro_Answer_Q4_3">drought can be overcome</string>
+    <string name="Hydro_Answer_Q4_4">can be used as fuel for cars.</string>
+
+    <string name="Hydro_Answer_Q5_1">Yes</string>
+    <string name="Hydro_Answer_Q5_2">No</string>
+    <string name="Hydro_Answer_Q5_3">Maybe</string>
+    <string name="Hydro_Answer_Q5_4">I\'m not sure</string>
+
+    <string name="Hydro_Answer_Q6_1">Falls</string>
+    <string name="Hydro_Answer_Q6_2">Dam</string>
+    <string name="Hydro_Answer_Q6_3">Swimming pool</string>
+    <string name="Hydro_Answer_Q6_4">Waves of the sea</string>
+
+    <string name="Hydro_Answer_Q7_1">Kinetic</string>
+    <string name="Hydro_Answer_Q7_2">Heat</string>
+    <string name="Hydro_Answer_Q7_3">Nuclear</string>
+    <string name="Hydro_Answer_Q7_4">Light</string>
+
+    <string name="Hydro_Answer_Q8_1">water wheel</string>
+    <string name="Hydro_Answer_Q8_2"></string>
+    <string name="Hydro_Answer_Q8_3">Turbine</string>
+    <string name="Hydro_Answer_Q8_4"></string>
+
+    <string name="Hydro_Answer_Q9_1"></string>
+    <string name="Hydro_Answer_Q9_2"></string>
+    <string name="Hydro_Answer_Q9_3"></string>
+    <string name="Hydro_Answer_Q9_4"></string>
+
+    <string name="Hydro_Answer_Q10_1"></string>
+    <string name="Hydro_Answer_Q10_2"></string>
+    <string name="Hydro_Answer_Q10_3"></string>
+    <string name="Hydro_Answer_Q10_4"></string>
+
 </resources>
