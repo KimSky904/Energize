@@ -128,4 +128,69 @@
     <string name="Hydro_Answer_Q10_3"></string>
     <string name="Hydro_Answer_Q10_4"></string>
 
+    '
+
+    <!--theme Geothermal-->
+    <string name="Geothermal_Question_1">What type of energy is geothermal energy?</string>
+    <string name="Geothermal_Question_2">How long does a Geothermal source of energy last?</string>
+    <string name="Geothermal_Question_3">A ____ is used to extract geothermal energy from under the ground</string>
+    <string name="Geothermal_Question_4">What part of the Earth is Geothermal energy extracted from?</string>
+    <string name="Geothermal_Question_5">What type of energy is geothermal energy usually transformed into?</string>
+    <string name="Geothermal_Question_6">Geothermal energy is a good alternative to?</string>
+    <string name="Geothermal_Question_7">What is the optimum temperature of water for geothermal energy to be extracted from?</string>
+    <string name="Geothermal_Question_8">What was the first trace of geothermal use in history?</string>
+    <string name="Geothermal_Question_9"></string>
+    <string name="Geothermal_Question_10"></string>
+
+    <string name="Geothermal_Answer_Q1_1">Electricity</string>
+    <string name="Geothermal_Answer_Q1_2">Heat</string>
+    <string name="Geothermal_Answer_Q1_3">Earth</string>
+    <string name="Geothermal_Answer_Q1_4">Solar</string>
+
+    <string name="Geothermal_Answer_Q2_1">100 years</string>
+    <string name="Geothermal_Answer_Q2_2">10 years</string>
+    <string name="Geothermal_Answer_Q2_3">20-50 years</string>
+    <string name="Geothermal_Answer_Q2_4">Inexhaustible</string>
+
+    <string name="Geothermal_Answer_Q3_1">Spinning turbine</string>
+    <string name="Geothermal_Answer_Q3_2">Geothermal panel</string>
+    <string name="Geothermal_Answer_Q3_3">Geothermal heat pump</string>
+    <string name="Geothermal_Answer_Q3_4">Thermochemical feedstocks</string>
+
+    <string name="Geothermal_Answer_Q4_1">Crust</string>
+    <string name="Geothermal_Answer_Q4_2">Mantle</string>
+    <string name="Geothermal_Answer_Q4_3">Outer core</string>
+    <string name="Geothermal_Answer_Q4_4">Surface</string>
+
+    <string name="Geothermal_Answer_Q5_1">Heat</string>
+    <string name="Geothermal_Answer_Q5_2">Light</string>
+    <string name="Geothermal_Answer_Q5_3">Chemical energy</string>
+    <string name="Geothermal_Answer_Q5_4">Electricity</string>
+
+    <string name="Geothermal_Answer_Q6_1">Solar energy</string>
+    <string name="Geothermal_Answer_Q6_2">Firewood</string>
+    <string name="Geothermal_Answer_Q6_3">Gas/Oil</string>
+    <string name="Geothermal_Answer_Q6_4">Coal</string>
+
+    <string name="Geothermal_Answer_Q7_1">100-150°C</string>
+    <string name="Geothermal_Answer_Q7_2">70-100°C</string>
+    <string name="Geothermal_Answer_Q7_3">40-60°C</string>
+    <string name="Geothermal_Answer_Q7_4">160-180°C</string>
+
+    <string name="Geothermal_Answer_Q8_1">1852 AD</string>
+    <string name="Geothermal_Answer_Q8_2">3 BC</string>
+    <string name="Geothermal_Answer_Q8_3">256 AD</string>
+    <string name="Geothermal_Answer_Q8_4">1640 AD</string>
+
+    <string name="Geothermal_Answer_Q9_1"></string>
+    <string name="Geothermal_Answer_Q9_2"></string>
+    <string name="Geothermal_Answer_Q9_3"></string>
+    <string name="Geothermal_Answer_Q9_4"></string>
+
+    <string name="Geothermal_Answer_Q10_1"></string>
+    <string name="Geothermal_Answer_Q10_2"></string>
+    <string name="Geothermal_Answer_Q10_3"></string>
+    <string name="Geothermal_Answer_Q10_4"></string>
+
+
 </resources>
