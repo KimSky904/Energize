@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThemeSolar"
+    tools:context=".MainActivity"
     android:background="@color/background">
 
     <ImageButton
@@ -31,19 +31,19 @@
 
 
     <!-- one for each quiz(question) -->
-<!-- first question -->
-    <RelativeLayout
-        android:id="@+id/QuizLayout"
+    <!-- first question -->
+    <fragment
+        android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="480dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_page_style"
         android:animateLayoutChanges="true">
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="첫번째 문제"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="첫번째 문제"/>
         <LinearLayout
             android:layout_marginTop="40dp"
             android:layout_centerHorizontal="true"
@@ -58,15 +58,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/AnswerText1"
-                    android:onClick="chooseAnswer"
+                    android:id="@+id/question_answer1"
                     android:layout_marginEnd="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:background="@drawable/round_edge_btn" />
                 <Button
-                    android:id="@+id/AnswerText2"
-                    android:onClick="chooseAnswer"
+                    android:id="@+id/question_answer2"
                     android:layout_marginStart="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -81,40 +79,18 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/AnswerText3"
-                    android:onClick="chooseAnswer"
+                    android:id="@+id/question_answer3"
                     android:layout_marginEnd="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:background="@drawable/round_edge_btn" />
                 <Button
-                    android:id="@+id/AnswerText4"
-                    android:onClick="chooseAnswer"
+                    android:id="@+id/question_answer4"
                     android:layout_marginStart="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:background="@drawable/round_edge_btn" />
             </LinearLayout>
         </LinearLayout>
-    </RelativeLayout>
-
-<!-- next / previous button-->
-    <ImageView
-        android:id="@+id/previous_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="15dp"
-        android:src="@drawable/round_left_button" />
-    <ImageView
-        android:id="@+id/next_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:src="@drawable/round_right_button" />
+    </fragment>
 </RelativeLayout>

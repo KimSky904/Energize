@@ -79,6 +79,9 @@ public class Theme_Solar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theme_solar);
 
+        //point set
+        User.point.initialThemePoint();
+
         //question text
         MainText = findViewById(R.id.MainText);
 
@@ -265,7 +268,6 @@ public class Theme_Solar extends AppCompatActivity {
         //if last question is end
         if (index == 9) {
             //give a point
-            User.point.initialThemePoint();
             for (int i = 0; i < 10; i++) {
                 if (users_answer[i] == answer[i]) {
                     User.point.addPoint(2);

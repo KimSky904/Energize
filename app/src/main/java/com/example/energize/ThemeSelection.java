@@ -45,7 +45,7 @@ public class ThemeSelection extends AppCompatActivity {
 
         //move to each theme activity(fragment)
         theme_solar.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Theme_Solar.class);
+            Intent intent = new Intent(this, ThemeSolar.class);
             startActivity(intent);
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);

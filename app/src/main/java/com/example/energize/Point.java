@@ -33,9 +33,7 @@ public class Point {
     public void addEachPoint(int point){
         eachPoint += point;
     }
-    public void initialThemePoint(){
-        eachPoint = 0;
-    }
+    public void initialThemePoint(){ eachPoint = 0; }
     public int getEachPoint(){
         return eachPoint;
     }
