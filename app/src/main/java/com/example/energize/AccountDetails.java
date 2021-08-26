@@ -53,7 +53,6 @@ public class AccountDetails extends AppCompatActivity {
         btn_point = findViewById(R.id.btn_point);
         btn_point.setText(User.point.getPoint()+" Points");
 
-
         btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(v -> {
             Intent fromPage = getIntent();
@@ -91,24 +90,11 @@ public class AccountDetails extends AppCompatActivity {
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
+
         });
 
-        //이름 넣는 칸이 빈칸이면 버튼 비활성화
-        Change_userName=findViewById(R.id.editTxt_userName);
         btn_change_username=findViewById(R.id.btn_change_username);
-        Change_userName.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                //빈칸이 아니면 버튼 활성화 및 이전페이지 이동
-                if(s.length()>0 ) {
-                    btn_change_username.setClickable(true);
-                    btn_change_username.setBackgroundResource(R.drawable.oval_btn_color_style);
                     //move to before page
                     btn_change_username.setOnClickListener(v -> {
                         Intent fromPage = getIntent();
@@ -138,13 +124,6 @@ public class AccountDetails extends AppCompatActivity {
                                 break;
                         }
                     });
-                }
-                else{
-                    btn_change_username.setClickable(false);
-                    btn_change_username.setBackgroundResource(R.drawable.oval_btn_style);
-                }
-            }
-        });
     }
 
     @Override

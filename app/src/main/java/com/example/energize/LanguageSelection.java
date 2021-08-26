@@ -54,17 +54,7 @@ public class LanguageSelection extends AppCompatActivity {
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
-        //move to account details
-        go_avatar = findViewById(R.id.go_avatar);
-        go_avatar.setOnClickListener(v -> {
-            Intent intent = new Intent(this,AccountDetails.class);
-            //language selection page code = 1
-            intent.putExtra("page_code",1);
-            startActivity(intent);
-            //starting activity animation
-            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
-            finish();
-        });
+        //언어 둘 중에 하나 골라야 컨티뉴 버튼 활성화 및 색 변경
         korean=findViewById(R.id.btn_chooseLanguage_Korean);
         english=findViewById(R.id.btn_chooseLanguage_English);
 
@@ -80,5 +70,18 @@ public class LanguageSelection extends AppCompatActivity {
             btn_continue.setClickable(true);
             btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
         });
+
+        //move to account details
+        go_avatar = findViewById(R.id.go_avatar);
+        go_avatar.setOnClickListener(v -> {
+            Intent intent = new Intent(this,AccountDetails.class);
+            //language selection page code = 1
+            intent.putExtra("page_code",1);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
+        });
+
     }
 }

@@ -1,2 +1,263 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <resources>
+        <string name="app_name">Energize</string>
+        <string name="app_version">Version 1.0.0</string>
+
+
+        <!-- Solar Theme -->
+        <string name="Solar_Question_1">태양 에너지의 주요 에너지원은?</string>
+        <string name="Solar_Question_2">태양 에너지는 ____을(를) 통하여 에너지를 얻는다.</string>
+        <string name="Solar_Question_3">태양 에너지를 가장 많이 얻는 나라는?</string>
+        <string name="Solar_Question_4">태양 에너지는 밤에도 얻을 수 있다.</string>
+        <string name="Solar_Question_5">태양 에너지가 발견된 년도는?</string>
+        <string name="Solar_Question_6">태양 에너지는 친환경적이다.</string>
+        <string name="Solar_Question_7">태양광이 뜻하는 바로 옳은 것은?</string>
+        <string name="Solar_Question_8">태양열 에너지는 재생 에너지이다.</string>
+        <string name="Solar_Question_9">태양열 에너지는 열 또는 ____을(를) 발생시키는 데 사용할 수 있다.</string>
+        <string name="Solar_Question_10">태양으로부터 나오는 입자 중 태양 전지에서 에너지를 생성하는데 도움을 주는 것은?</string>
+
+        <string name="Solar_Answer_Q1_1">습도</string>
+        <string name="Solar_Answer_Q1_2">물</string>
+        <string name="Solar_Answer_Q1_3">태양광선</string>
+        <string name="Solar_Answer_Q1_4">열</string>
+
+        <string name="Solar_Answer_Q2_1">온도계</string>
+        <string name="Solar_Answer_Q2_2">태양광 패널</string>
+        <string name="Solar_Answer_Q2_3">컵</string>
+        <string name="Solar_Answer_Q2_4">기압계</string>
+
+        <string name="Solar_Answer_Q3_1">미국</string>
+        <string name="Solar_Answer_Q3_2">영국</string>
+        <string name="Solar_Answer_Q3_3">중국</string>
+        <string name="Solar_Answer_Q3_4">대한민국</string>
+
+        <string name="Solar_Answer_Q4_1">그렇다.</string>
+        <string name="Solar_Answer_Q4_2">아니다.</string>
+        <string name="Solar_Answer_Q4_3">그럴 것이다.</string>
+        <string name="Solar_Answer_Q4_4">잘 모르겠다.</string>
+
+        <string name="Solar_Answer_Q5_1">1930년</string>
+        <string name="Solar_Answer_Q5_2">1864년</string>
+        <string name="Solar_Answer_Q5_3">1758년</string>
+        <string name="Solar_Answer_Q5_4">1839년</string>
+
+        <string name="Solar_Answer_Q6_1">그렇다.</string>
+        <string name="Solar_Answer_Q6_2">아니다.</string>
+        <string name="Solar_Answer_Q6_3">그럴 것이다.</string>
+        <string name="Solar_Answer_Q6_4">잘 모르겠다.</string>
+
+        <string name="Solar_Answer_Q7_1">바람이 전기로 변환된 것이다.</string>
+        <string name="Solar_Answer_Q7_2">지열 에너지에 사용되는 것이다.</string>
+        <string name="Solar_Answer_Q7_3">원자 수준에서 빛을 전기로 직접 변환한 것이다.</string>
+        <string name="Solar_Answer_Q7_4">화석 연료를 태운 것이다.</string>
+
+        <string name="Solar_Answer_Q8_1">그렇다.</string>
+        <string name="Solar_Answer_Q8_2">아니다.</string>
+        <string name="Solar_Answer_Q8_3">그럴 것이다.</string>
+        <string name="Solar_Answer_Q8_4">잘 모르겠다.</string>
+
+        <string name="Solar_Answer_Q9_1">가스</string>
+        <string name="Solar_Answer_Q9_2">물</string>
+        <string name="Solar_Answer_Q9_3">전기</string>
+        <string name="Solar_Answer_Q9_4">빛</string>
+
+        <string name="Solar_Answer_Q10_1">전자</string>
+        <string name="Solar_Answer_Q10_2">중성자</string>
+        <string name="Solar_Answer_Q10_3">양성자</string>
+        <string name="Solar_Answer_Q10_4">광자</string>
+
+
+        <!--hydro theme-->
+        <string name="Hydro_Question_1">____이 적으면 수력발전에 차질이 생길 수 있다.</string>
+        <string name="Hydro_Question_2">수력발전의 과정에서 쓰이는 연료로 인해 환경 오염이 발생한다.</string>
+        <string name="Hydro_Question_3">물이 낮은 곳으로 흘렀을 때 발생하는 낙차의 원리를 이용한 에너지의 종류는?</string>
+        <string name="Hydro_Question_4">수력발전이 사용되는 용도에 해당되지 않는 것은?</string>
+        <string name="Hydro_Question_5">수력 발전소는 대기 오염물질을 전혀 배출하지 않는다.</string>
+        <string name="Hydro_Question_6">수력 에너지를 얻을 수 있는 장소로 알맞지 않은 곳은?</string>
+        <string name="Hydro_Question_7">수력 에너지는 위치 에너지가 ____에너지로 바뀌면서 생산된다.</string>
+        <string name="Hydro_Question_8">수력발전의 과정 중 위에서 떨어지는 물에 의해 회전하는 부품의 이름은?</string>
+        <string name="Hydro_Question_9">바다의 염분을 이용한 에너지가 존재한다.</string>
+        <string name="Hydro_Question_10">다음 중 댐에 관한 설명으로 어색한 것은?</string>
+
+        <string name="Hydro_Answer_Q1_1">태양열</string>
+        <string name="Hydro_Answer_Q1_2">강수량</string>
+        <string name="Hydro_Answer_Q1_3">전기 에너지ㅓ</string>
+        <string name="Hydro_Answer_Q1_4">화석 연료</string>
+
+        <string name="Hydro_Answer_Q2_1">그렇다.</string>
+        <string name="Hydro_Answer_Q2_2">아니다.</string>
+        <string name="Hydro_Answer_Q2_3">그럴 것이다.</string>
+        <string name="Hydro_Answer_Q2_4">잘 모르겠다.</string>
+
+        <string name="Hydro_Answer_Q3_1">전기 에너지</string>
+        <string name="Hydro_Answer_Q3_2">풍력 에너지</string>
+        <string name="Hydro_Answer_Q3_3">수력 에너지</string>
+        <string name="Hydro_Answer_Q3_4">원자력 에너지</string>
+
+        <string name="Hydro_Answer_Q4_1">용수 제공</string>
+        <string name="Hydro_Answer_Q4_2">자연재해 예방</string>
+        <string name="Hydro_Answer_Q4_3">가뭄 극복</string>
+        <string name="Hydro_Answer_Q4_4">자동차 연료</string>
+
+        <string name="Hydro_Answer_Q5_1">그렇다.</string>
+        <string name="Hydro_Answer_Q5_2">아니다.</string>
+        <string name="Hydro_Answer_Q5_3">그럴 것이다.</string>
+        <string name="Hydro_Answer_Q5_4">잘 모르겠다.</string>
+
+        <string name="Hydro_Answer_Q6_1">폭포</string>
+        <string name="Hydro_Answer_Q6_2">댐</string>
+        <string name="Hydro_Answer_Q6_3">수영장</string>
+        <string name="Hydro_Answer_Q6_4">파도</string>
+
+        <string name="Hydro_Answer_Q7_1">운동 에너지</string>
+        <string name="Hydro_Answer_Q7_2">열 에너지</string>
+        <string name="Hydro_Answer_Q7_3">원자력 에너지</string>
+        <string name="Hydro_Answer_Q7_4">빛 에너지</string>
+
+        <string name="Hydro_Answer_Q8_1">물레방아</string>
+        <string name="Hydro_Answer_Q8_2">반도체</string>
+        <string name="Hydro_Answer_Q8_3">터빈</string>
+        <string name="Hydro_Answer_Q8_4">증기 발생기</string>
+
+        <string name="Hydro_Answer_Q9_1">그렇다.</string>
+        <string name="Hydro_Answer_Q9_2">아니다.</string>
+        <string name="Hydro_Answer_Q9_3">그럴 것이다.</string>
+        <string name="Hydro_Answer_Q9_4">잘 모르겠다.</string>
+
+        <string name="Hydro_Answer_Q10_1">비싼 공사비</string>
+        <string name="Hydro_Answer_Q10_2">co2 발생</string>
+        <string name="Hydro_Answer_Q10_3">생태계 파괴</string>
+        <string name="Hydro_Answer_Q10_4">안정성</string>
+
+        '
+
+        <!--theme Wind-->
+        <string name="Wind_Question_1">풍력 에너지는 ____을(를) 사용하여 운동 에너지를 만든다.</string>
+        <string name="Wind_Question_2">풍력 발전소를 세우기 적합한 곳은?</string>
+        <string name="Wind_Question_3">풍력발전의 단점으로 옳지 않은 것은?</string>
+        <string name="Wind_Question_4">풍력 발전소는 바다에 설치할 수 있다.</string>
+        <string name="Wind_Question_5">풍력 에너지는 다음 중 어떤 에너지에 속할까?</string>
+        <string name="Wind_Question_6">재생 에너지는 사용했던 에너지를 재사용하는 것으로 대표적으로 석탄과 석유가 있다.</string>
+        <string name="Wind_Question_7">풍력 에너지는 미래 지향적이다.</string>
+        <string name="Wind_Question_8">현재 가장 많은 풍력 에너지가 생산되는 곳은?</string>
+        <string name="Wind_Question_9">사람들이 화석 에너지를 대체할 에너지를 찾는 이유로 옳지 않은 것은?</string>
+        <string name="Wind_Question_10">전 세계에서 생산되는 풍력 에너지의 2/3는 유럽에서 생산된다.</string>
+
+        <string name="Wind_Answer_Q1_1">프로펠러</string>
+        <string name="Wind_Answer_Q1_2">프레온 가스</string>
+        <string name="Wind_Answer_Q1_3">석탄</string>
+        <string name="Wind_Answer_Q1_4">헬리콥터</string>
+
+        <string name="Wind_Answer_Q2_1">나무 한그루 없는 평야</string>
+        <string name="Wind_Answer_Q2_2">산꼭대기</string>
+        <string name="Wind_Answer_Q2_3">사람이 많이 사는 도시</string>
+        <string name="Wind_Answer_Q2_4">새들이 지나가는 산지</string>
+
+        <string name="Wind_Answer_Q3_1">높은 비용</string>
+        <string name="Wind_Answer_Q3_2">설치 지역 제한</string>
+        <string name="Wind_Answer_Q3_3">유해 물질 배출 X</string>
+        <string name="Wind_Answer_Q3_4">주변 환경 파괴</string>
+
+        <string name="Wind_Answer_Q4_1">그렇다.</string>
+        <string name="Wind_Answer_Q4_2">아니다.</string>
+        <string name="Wind_Answer_Q4_3">그럴 것이다.</string>
+        <string name="Wind_Answer_Q4_4">잘 모르겠다.</string>
+
+        <string name="Wind_Answer_Q5_1">태양 에너지</string>
+        <string name="Wind_Answer_Q5_2">바이오 에너지</string>
+        <string name="Wind_Answer_Q5_3">화석 에너지</string>
+        <string name="Wind_Answer_Q5_4">재생 에너지</string>
+
+        <string name="Wind_Answer_Q6_1">그렇다.</string>
+        <string name="Wind_Answer_Q6_2">아니다.</string>
+        <string name="Wind_Answer_Q6_3">그럴 것이다.</string>
+        <string name="Wind_Answer_Q6_4">잘 모르겠다.</string>
+
+        <string name="Wind_Answer_Q7_1">그렇다.</string>
+        <string name="Wind_Answer_Q7_2">아니다.</string>
+        <string name="Wind_Answer_Q7_3">그럴 것이다.</string>
+        <string name="Wind_Answer_Q7_4">잘 모르겠다.</string>
+
+        <string name="Wind_Answer_Q8_1">대한민국</string>
+        <string name="Wind_Answer_Q8_2">탄자니아</string>
+        <string name="Wind_Answer_Q8_3">노르웨이</string>
+        <string name="Wind_Answer_Q8_4">중국</string>
+
+        <string name="Wind_Answer_Q9_1">비싼 비용</string>
+        <string name="Wind_Answer_Q9_2">환경 보호</string>
+        <string name="Wind_Answer_Q9_3">화석 에너지 고갈</string>
+        <string name="Wind_Answer_Q9_4">미래 지향적</string>
+
+        <string name="Wind_Answer_Q10_1">그렇다.</string>
+        <string name="Wind_Answer_Q10_2">아니다.</string>
+        <string name="Wind_Answer_Q10_3">그럴 것이다.</string>
+        <string name="Wind_Answer_Q10_4">잘 모르겠다.</string>
+
+
+        <!--theme wind-->
+        <string name="Geothermal_Question_1">지열 에너지는 다음 중 어떤 에너지에 속할까?</string>
+        <string name="Geothermal_Question_2">지열 에너지는 얼마나 오래 지속되는가?</string>
+        <string name="Geothermal_Question_3">____은(는) 지하에서 지열 에너지를 추출하는 데 사용된다.</string>
+        <string name="Geothermal_Question_4">지역 에너지는 지구의 어느 지역에서 추출되는가?</string>
+        <string name="Geothermal_Question_5">지열 에너지는 보통 어떤 에너지로 변환되는가?</string>
+        <string name="Geothermal_Question_6">지열 에너지는 ____의 좋은 대안책이다.</string>
+        <string name="Geothermal_Question_7">지열 에너지를 추출하기 위한 최적의 물 온도는?</string>
+        <string name="Geothermal_Question_8">최초로 지열이 사용된 흔적으로 옳은 년도는?</string>
+        <string name="Geothermal_Question_9">Geothermal Energy에서 "Geo"의 의미는?</string>
+        <string name="Geothermal_Question_10">지열 에너지는 석탄의 ____만큼의 배출물을 생성한다.</string>
+
+
+        <string name="Geothermal_Answer_Q1_1">전기</string>
+        <string name="Geothermal_Answer_Q1_2">열</string>
+        <string name="Geothermal_Answer_Q1_3">땅(지구)</string>
+        <string name="Geothermal_Answer_Q1_4">태양</string>
+
+        <string name="Geothermal_Answer_Q2_1">100년</string>
+        <string name="Geothermal_Answer_Q2_2">10년</string>
+        <string name="Geothermal_Answer_Q2_3">20~50년</string>
+        <string name="Geothermal_Answer_Q2_4">무기한</string>
+
+        <string name="Geothermal_Answer_Q3_1">회전 터빈</string>
+        <string name="Geothermal_Answer_Q3_2">지열 패널</string>
+        <string name="Geothermal_Answer_Q3_3">지열 펌프</string>
+        <string name="Geothermal_Answer_Q3_4">열화학 공급 연료</string>
+
+        <string name="Geothermal_Answer_Q4_1">지각</string>
+        <string name="Geothermal_Answer_Q4_2">맨틀</string>
+        <string name="Geothermal_Answer_Q4_3">외핵</string>
+        <string name="Geothermal_Answer_Q4_4">표면</string>
+
+        <string name="Geothermal_Answer_Q5_1">열 에너지</string>
+        <string name="Geothermal_Answer_Q5_2">빛 에너지</string>
+        <string name="Geothermal_Answer_Q5_3">화학 에너지</string>
+        <string name="Geothermal_Answer_Q5_4">전기 에너지</string>
+
+        <string name="Geothermal_Answer_Q6_1">태양 에너지</string>
+        <string name="Geothermal_Answer_Q6_2">장작</string>
+        <string name="Geothermal_Answer_Q6_3">가스/석유</string>
+        <string name="Geothermal_Answer_Q6_4">석탄</string>
+
+        <string name="Geothermal_Answer_Q7_1">100~150°C </string>
+        <string name="Geothermal_Answer_Q7_2">70~100°C</string>
+        <string name="Geothermal_Answer_Q7_3">40~60°C</string>
+        <string name="Geothermal_Answer_Q7_4">160~180°C</string>
+
+        <string name="Geothermal_Answer_Q8_1">기원전 1852년</string>
+        <string name="Geothermal_Answer_Q8_2">기원후 3년</string>
+        <string name="Geothermal_Answer_Q8_3">기원전 256년</string>
+        <string name="Geothermal_Answer_Q8_4">기원후 1640년</string>
+
+        <string name="Geothermal_Answer_Q9_1">사람</string>
+        <string name="Geothermal_Answer_Q9_2">땅</string>
+        <string name="Geothermal_Answer_Q9_3">지구</string>
+        <string name="Geothermal_Answer_Q9_4">열</string>
+
+        <string name="Geothermal_Answer_Q10_1">50%</string>
+        <string name="Geothermal_Answer_Q10_2">0.03%</string>
+        <string name="Geothermal_Answer_Q10_3">12%</string>
+        <string name="Geothermal_Answer_Q10_4">5%</string>
+
+
+    </resources>
+</resources>

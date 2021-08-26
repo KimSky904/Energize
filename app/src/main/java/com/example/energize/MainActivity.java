@@ -2,10 +2,14 @@ package com.example.energize;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.http.SslCertificate;
 import android.os.Bundle;
+import android.preference.Preference;
+import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -15,6 +19,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
+
+import java.lang.reflect.Modifier;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,12 +33,20 @@ public class MainActivity extends AppCompatActivity {
     Button btn_chooseAvatar;
 
     //userName EditText
-    EditText userName;
+    EditText txt_userName;
+
+    //saving user name
+    String userName;
 
     //data saving file
     String shared = "file";
+
     //point object
     Point point;
+
+    //아바타 골라야 넘어감
+    boolean chooseAvatar=false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,17 +60,18 @@ public class MainActivity extends AppCompatActivity {
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
 
-        //Choose avatar popup
+
+        txt_userName = findViewById(R.id.editTxt_userName);
+        btn_continue = findViewById(R.id.btn_continue);
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
+        //Choose avatar popup
         btn_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this,SelectAvatar_Dialog.class);
             startActivityForResult(intent,1);
+            chooseAvatar=true;
         });
         //userName 안채우면 버튼 비활성화
-        userName = findViewById(R.id.editTxt_userName);
-        btn_continue = findViewById(R.id.btn_continue);
-
-        userName.addTextChangedListener(new TextWatcher() {
+        txt_userName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
 
@@ -65,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if(s.length()>0) {
+                if(s.length()>0 && chooseAvatar==true) {
                     btn_continue.setClickable(true);
                     btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
                     //move to select language screen
@@ -76,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                         overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
                         finish();
                     });
+
                 }
                 else{
                     btn_continue.setClickable(false);
@@ -83,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+
 
         User.point.setPoint(0);
 /*
@@ -118,5 +137,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
  */
+
 }
 

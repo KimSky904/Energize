@@ -139,8 +139,8 @@
     <string name="Geothermal_Question_6">Geothermal energy is a good alternative to?</string>
     <string name="Geothermal_Question_7">What is the optimum temperature of water for geothermal energy to be extracted from?</string>
     <string name="Geothermal_Question_8">What was the first trace of geothermal use in history?</string>
-    <string name="Geothermal_Question_9"></string>
-    <string name="Geothermal_Question_10"></string>
+    <string name="Geothermal_Question_9">What does the latine term "Geo" mean?</string>
+    <string name="Geothermal_Question_10">Geothermal energy produces ____ of the emission that coal produces</string>
 
     <string name="Geothermal_Answer_Q1_1">Electricity</string>
     <string name="Geothermal_Answer_Q1_2">Heat</string>
@@ -182,34 +182,34 @@
     <string name="Geothermal_Answer_Q8_3">256 AD</string>
     <string name="Geothermal_Answer_Q8_4">1640 AD</string>
 
-    <string name="Geothermal_Answer_Q9_1"></string>
-    <string name="Geothermal_Answer_Q9_2"></string>
-    <string name="Geothermal_Answer_Q9_3"></string>
-    <string name="Geothermal_Answer_Q9_4"></string>
+    <string name="Geothermal_Answer_Q9_1">People</string>
+    <string name="Geothermal_Answer_Q9_2">Land</string>
+    <string name="Geothermal_Answer_Q9_3">Earth</string>
+    <string name="Geothermal_Answer_Q9_4">Heat</string>
 
-    <string name="Geothermal_Answer_Q10_1"></string>
-    <string name="Geothermal_Answer_Q10_2"></string>
-    <string name="Geothermal_Answer_Q10_3"></string>
-    <string name="Geothermal_Answer_Q10_4"></string>
+    <string name="Geothermal_Answer_Q10_1">50%</string>
+    <string name="Geothermal_Answer_Q10_2">0.03%</string>
+    <string name="Geothermal_Answer_Q10_3">12%</string>
+    <string name="Geothermal_Answer_Q10_4">5%</string>
 
 
     <!--theme wind-->
-    <string name="Wind_Question_1"></string>
-    <string name="Wind_Question_2"></string>
-    <string name="Wind_Question_3"></string>
-    <string name="Wind_Question_4"></string>
-    <string name="Wind_Question_5"></string>
-    <string name="Wind_Question_6"></string>
-    <string name="Wind_Question_7"></string>
-    <string name="Wind_Question_8"></string>
-    <string name="Wind_Question_9"></string>
-    <string name="Wind_Question_10"></string>
+    <string name="Wind_Question_1">Wind energy uses ____ to create kinetic energy</string>
+    <string name="Wind_Question_2">What is not a place to get wind energy?</string>
+    <string name="Wind_Question_3">What is wrong with wind energy.</string>
+    <string name="Wind_Question_4">Wind power plant can be installed in the sea.</string>
+    <string name="Wind_Question_5">Where does wind energy belong?</string>
+    <string name="Wind_Question_6">Renewable energy is the reuse of used energy, typically coal and oil.</string>
+    <string name="Wind_Question_7">Wind energy is future-oriented.</string>
+    <string name="Wind_Question_8">Where is the most wind energy produced?</string>
+    <string name="Wind_Question_9">What is wrong about finding energy other than fossil energy?</string>
+    <string name="Wind_Question_10">Two-thirds of the world\'s wind energy is produced in Europe.</string>
 
 
-    <string name="Wind_Answer_Q1_1"></string>
-    <string name="Wind_Answer_Q1_2"></string>
-    <string name="Wind_Answer_Q1_3"></string>
-    <string name="Wind_Answer_Q1_4"></string>
+    <string name="Wind_Answer_Q1_1">Propeller</string>
+    <string name="Wind_Answer_Q1_2">Freon Gas</string>
+    <string name="Wind_Answer_Q1_3">Coal</string>
+    <string name="Wind_Answer_Q1_4">Heilcopter</string>
 
     <string name="Wind_Answer_Q2_1"></string>
     <string name="Wind_Answer_Q2_2"></string>
