@@ -39,6 +39,12 @@ public class ThemeHydro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theme_solar);
 
+        //테마로 돌아가기
+        btn_back.setOnClickListener(v->{
+            Intent intent = new Intent(this,ThemeSelection.class);
+            startActivity(intent);
+        });
+
         //목록 값 할당
         setDataList();
 
