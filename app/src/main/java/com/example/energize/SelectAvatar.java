@@ -26,9 +26,6 @@ public class SelectAvatar extends AppCompatActivity {
     ImageButton Btn_back;
     //point text
     Button btn_point;
-
-    //아바타가 구매되어있는지 확인
-    int[] isAvatarAvailable = {1,1,1,1,0,0,0,0};
     //아바타 배열
     int[] avatar = {R.drawable.img_avatar_1,R.drawable.img_avatar_2,R.drawable.img_avatar_3,R.drawable.img_avatar_4
             ,R.drawable.img_avatar_5,R.drawable.img_avatar_6,R.drawable.img_avatar_7,R.drawable.img_avatar_8};
@@ -92,15 +89,16 @@ public class SelectAvatar extends AppCompatActivity {
         }
 
         //구매되지 않은 아바타일 경우
-        if(isAvatarAvailable[avatarCode-1]==0){
+        if(User.point.getAvatar_available(avatarCode-1)==0){
             //포인트 사용
             //잔여 포인트 부족할 때
             if(User.point.getPoint()<20){
                 FailDialog alert = new FailDialog();
                 alert.showDialog(SelectAvatar.this);
             }
+            //잔여 포인트 있을 때
             else{
-                isAvatarAvailable[avatarCode-1]=1;
+                User.point.setAvatar_available(avatarCode-1);
                 User.point.usePoint(20);
                 btn_point.setText(User.point.getPoint()+" POINTS");
                 ViewDialog alert = new ViewDialog();

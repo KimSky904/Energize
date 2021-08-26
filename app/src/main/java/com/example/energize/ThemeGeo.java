@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ThemeGeo extends AppCompatActivity {
-    //C B C A D B C B C D
+    //2 4 3 1 4 3 1 2 3 2
 
     //돌아가기 버튼
     ImageButton btn_back;
@@ -119,32 +119,33 @@ public class ThemeGeo extends AppCompatActivity {
     private void setDataList(){
         //퀴즈 문제 목록 string
         question = new int[]{
-                R.string.Solar_Question_1,
-                R.string.Solar_Question_2,
-                R.string.Solar_Question_3,
-                R.string.Solar_Question_4,
-                R.string.Solar_Question_5,
-                R.string.Solar_Question_6,
-                R.string.Solar_Question_7,
-                R.string.Solar_Question_8,
-                R.string.Solar_Question_9,
-                R.string.Solar_Question_10,
+                R.string.Geothermal_Question_1,
+                R.string.Geothermal_Question_2,
+                R.string.Geothermal_Question_3,
+                R.string.Geothermal_Question_4,
+                R.string.Geothermal_Question_5,
+                R.string.Geothermal_Question_6,
+                R.string.Geothermal_Question_7,
+                R.string.Geothermal_Question_8,
+                R.string.Geothermal_Question_9,
+                R.string.Geothermal_Question_10,
         };
         //퀴즈 보기 목록 string
         answer = new int[][]{
-                {R.string.Solar_Answer_Q1_1, R.string.Solar_Answer_Q1_2, R.string.Solar_Answer_Q1_3, R.string.Solar_Answer_Q1_4},
-                {R.string.Solar_Answer_Q2_1, R.string.Solar_Answer_Q2_2, R.string.Solar_Answer_Q2_3, R.string.Solar_Answer_Q2_4},
-                {R.string.Solar_Answer_Q3_1, R.string.Solar_Answer_Q3_2, R.string.Solar_Answer_Q3_3, R.string.Solar_Answer_Q3_4},
-                {R.string.Solar_Answer_Q4_1, R.string.Solar_Answer_Q4_2, R.string.Solar_Answer_Q4_3, R.string.Solar_Answer_Q4_4},
-                {R.string.Solar_Answer_Q5_1, R.string.Solar_Answer_Q5_2, R.string.Solar_Answer_Q5_3, R.string.Solar_Answer_Q5_4},
-                {R.string.Solar_Answer_Q6_1, R.string.Solar_Answer_Q6_2, R.string.Solar_Answer_Q6_3, R.string.Solar_Answer_Q6_4},
-                {R.string.Solar_Answer_Q7_1, R.string.Solar_Answer_Q7_2, R.string.Solar_Answer_Q7_3, R.string.Solar_Answer_Q7_4},
-                {R.string.Solar_Answer_Q8_1, R.string.Solar_Answer_Q8_2, R.string.Solar_Answer_Q8_3, R.string.Solar_Answer_Q8_4},
-                {R.string.Solar_Answer_Q9_1, R.string.Solar_Answer_Q9_2, R.string.Solar_Answer_Q9_3, R.string.Solar_Answer_Q9_4},
-                {R.string.Solar_Answer_Q10_1, R.string.Solar_Answer_Q10_2, R.string.Solar_Answer_Q10_3, R.string.Solar_Answer_Q10_4},
+                {R.string.Geothermal_Answer_Q1_1, R.string.Geothermal_Answer_Q1_2, R.string.Geothermal_Answer_Q1_3, R.string.Geothermal_Answer_Q1_4},
+                {R.string.Geothermal_Answer_Q2_1, R.string.Geothermal_Answer_Q2_2, R.string.Geothermal_Answer_Q2_3, R.string.Geothermal_Answer_Q2_4},
+                {R.string.Geothermal_Answer_Q3_1, R.string.Geothermal_Answer_Q3_2, R.string.Geothermal_Answer_Q3_3, R.string.Geothermal_Answer_Q3_4},
+                {R.string.Geothermal_Answer_Q4_1, R.string.Geothermal_Answer_Q4_2, R.string.Geothermal_Answer_Q4_3, R.string.Geothermal_Answer_Q4_4},
+                {R.string.Geothermal_Answer_Q5_1, R.string.Geothermal_Answer_Q5_2, R.string.Geothermal_Answer_Q5_3, R.string.Geothermal_Answer_Q5_4},
+                {R.string.Geothermal_Answer_Q6_1, R.string.Geothermal_Answer_Q6_2, R.string.Geothermal_Answer_Q6_3, R.string.Geothermal_Answer_Q6_4},
+                {R.string.Geothermal_Answer_Q7_1, R.string.Geothermal_Answer_Q7_2, R.string.Geothermal_Answer_Q7_3, R.string.Geothermal_Answer_Q7_4},
+                {R.string.Geothermal_Answer_Q8_1, R.string.Geothermal_Answer_Q8_2, R.string.Geothermal_Answer_Q8_3, R.string.Geothermal_Answer_Q8_4},
+                {R.string.Geothermal_Answer_Q9_1, R.string.Geothermal_Answer_Q9_2, R.string.Geothermal_Answer_Q9_3, R.string.Geothermal_Answer_Q9_4},
+                {R.string.Geothermal_Answer_Q10_1, R.string.Geothermal_Answer_Q10_2, R.string.Geothermal_Answer_Q10_3, R.string.Geothermal_Answer_Q10_4},
         };
         //정답 목록
-        answer_list = new int[]{R.id.AnswerText3,R.id.AnswerText2,R.id.AnswerText3,R.id.AnswerText1,R.id.AnswerText4,R.id.AnswerText2,R.id.AnswerText3,R.id.AnswerText2,R.id.AnswerText3,R.id.AnswerText4};
+        //2 4 3 1 4 3 1 2 3 2
+        answer_list = new int[]{R.id.AnswerText2,R.id.AnswerText4,R.id.AnswerText3,R.id.AnswerText1,R.id.AnswerText4,R.id.AnswerText3,R.id.AnswerText1,R.id.AnswerText2,R.id.AnswerText3,R.id.AnswerText2};
 
     }
 }

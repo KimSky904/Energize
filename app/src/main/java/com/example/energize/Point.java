@@ -8,13 +8,15 @@ public class Point {
     private int remain_point;
     private int avatar_image;
     private String user_name;
+    //아바타 잠금해제 여부
+    private int[] avatar_available={1,1,1,1,0,0,0,0};
 
     public Point(){
         remain_point = 0;
         Log.d("myapp","포인트 객체가 생성되었습니다.");
     }
 
-    //point
+    //포인트
     public int getPoint(){
         return remain_point;
     }
@@ -29,7 +31,8 @@ public class Point {
         remain_point += addition;
         Log.d("myapp","잔여 포인트 : "+remain_point);
     }
-    //quiz result point for each theme
+
+    //테마 끝난 후 해당 세트에 획득한 포인트
     private int eachPoint;
     public void addEachPoint(int point){
         eachPoint += point;
@@ -39,15 +42,21 @@ public class Point {
         return eachPoint;
     }
 
-    //avatar
+    //아바타 리소스 세팅
     public int getAvatar_image(){
         return avatar_image;
     }
     public void setAvatar_image(int avatar_image){
         this.avatar_image = avatar_image;
     }
+    public void setAvatar_available(int index){
+        this.avatar_available[index] = 1;
+    }
+    public int getAvatar_available(int index){
+        return avatar_available[index];
+    }
 
-    //user name
+    //사용자 이름
     public String getUser_name(){
         return  user_name;
     }
