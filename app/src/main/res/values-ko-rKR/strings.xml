@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <resources>
         <string name="app_name">Energize</string>
         <string name="app_version">Version 1.0.0</string>
 
@@ -259,5 +258,4 @@
         <string name="Geothermal_Answer_Q10_4">5%</string>
 
 
-    </resources>
 </resources>

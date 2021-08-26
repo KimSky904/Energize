@@ -2,7 +2,6 @@
     <string name="app_name">Energize</string>
     <string name="app_version">Version 1.0.0</string>
 
-
     <!-- Solar Theme -->
     <string name="Solar_Question_1">1. What\'s the main source of Solar Energy?</string>
     <string name="Solar_Question_2">2. A _______ is used to harvest Solar Energy.</string>
