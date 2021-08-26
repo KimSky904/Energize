@@ -89,7 +89,7 @@ public class SelectAvatar extends AppCompatActivity {
         }
 
         //구매되지 않은 아바타일 경우
-        if(User.point.getAvatar_available(avatarCode-1)==0){
+        if(User.point.getAvatar_available(avatarCode-1)==false){
             //포인트 사용
             //잔여 포인트 부족할 때
             if(User.point.getPoint()<20){

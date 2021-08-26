@@ -9,7 +9,7 @@ public class Point {
     private int avatar_image;
     private String user_name;
     //아바타 잠금해제 여부
-    private int[] avatar_available={1,1,1,1,0,0,0,0};
+    private boolean[] avatar_available={true,true,true,true,false,false,false,false};
 
     public Point(){
         remain_point = 0;
@@ -50,9 +50,9 @@ public class Point {
         this.avatar_image = avatar_image;
     }
     public void setAvatar_available(int index){
-        this.avatar_available[index] = 1;
+        this.avatar_available[index] = true;
     }
-    public int getAvatar_available(int index){
+    public boolean getAvatar_available(int index){
         return avatar_available[index];
     }
 

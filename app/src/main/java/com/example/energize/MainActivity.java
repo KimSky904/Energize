@@ -9,7 +9,6 @@ import android.graphics.Color;
 import android.net.http.SslCertificate;
 import android.os.Bundle;
 import android.preference.Preference;
-import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -65,10 +64,25 @@ public class MainActivity extends AppCompatActivity {
         btn_continue = findViewById(R.id.btn_continue);
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
 
+        //데이터(포인트,이름,아바타 여부) 저장값 불러옴
+        /*
+        int pointValue = PreferenceManager.getInt(this,"rebuild_point");
+        User.point.setPoint(pointValue);
+        String nameValue = PreferenceManager.getString(this,"rebuild_name");
+        User.point.setUser_name(nameValue);
+        boolean[] avatarValue = new boolean[8];
+        for(int i=0;i<8;i++){
+            avatarValue[i] = PreferenceManager.getBoolean(this,"rebuild_avatar["+i+"]");
+            if(avatarValue[i]==true){
+                User.point.setAvatar_available(i);
+            }
+        }*/
+
+
         //아바타 안고르고 고를 시 아바타 먼저 고르라는 메세지 출력
         Toast userNameErr=Toast.makeText(this.getApplicationContext(),"Please choose your avatar first.",Toast.LENGTH_SHORT);
         txt_userName.setOnClickListener(v->{
-            if(chooseAvatar==false)
+            if(!chooseAvatar)
                 userNameErr.show();
         });
 
