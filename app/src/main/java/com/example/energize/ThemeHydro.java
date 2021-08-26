@@ -60,7 +60,37 @@ public class ThemeHydro extends AppCompatActivity {
         AnswerText3 = findViewById(R.id.AnswerText3);
         AnswerText4 = findViewById(R.id.AnswerText4);
 
+        //1번 보기 선택 시 1번만 눌리고 나머지는 그대로
+        AnswerText1.setOnClickListener(v->{
+            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_style);
+        });
 
+        //2번 보기 선택 시 2번만 눌리고 나머지는 그대로
+        AnswerText2.setOnClickListener(v->{
+            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_style);
+        });
+
+        //3번 보기 선택 시 3번만 눌리고 나머지는 그대로
+        AnswerText3.setOnClickListener(v->{
+            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_style);
+        });
+
+        //4번 보기 선택 시 4번만 눌리고 나머지는 그대로
+        AnswerText4.setOnClickListener(v->{
+            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
+        });
 
         //이전 문제로
         previous = findViewById(R.id.previous_btn);
@@ -85,6 +115,11 @@ public class ThemeHydro extends AppCompatActivity {
                 if(index!=0) previous.setVisibility(View.VISIBLE);
                 setQuestion(); //문제 교체
             }
+            //next 누르면 색 원상복구
+            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
+            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_style);
         });
     }
 
