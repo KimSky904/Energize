@@ -2,13 +2,18 @@ package com.example.energize;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.Window;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class SelectAvatar_Dialog extends AppCompatActivity {
 
@@ -65,9 +70,8 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
             setResult(RESULT_OK, intent);
             finish();
         });
-
-
     }
+
     @Override
     public boolean onTouchEvent(MotionEvent event){
         if(event.getAction()== MotionEvent.ACTION_OUTSIDE)

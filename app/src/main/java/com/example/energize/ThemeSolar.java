@@ -41,6 +41,7 @@ public class ThemeSolar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theme_solar);
 
+        btn_back = findViewById(R.id.btn_back);
         //테마로 돌아가기
         btn_back.setOnClickListener(v->{
             Intent intent = new Intent(this,ThemeSelection.class);
