@@ -1,2 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+    <!-- Solar Theme -->
+    <string name="Solar_Question_1">1. What\'s the main source of Solar Energy?</string>
+    <string name="Solar_Question_2">2. A _______ is used to harvest Solar Energy.</string>
+    <string name="Solar_Question_3">3. What country harvest the most Solar Energy?</string>
+    <string name="Solar_Question_4">4. Can you harvest Solar Energy at night?</string>
+    <string name="Solar_Question_5">5. When was Solar Energy discovered?</string>
+    <string name="Solar_Question_6">6. Is Solar Energy eco friendly?</string>
+    <string name="Solar_Question_7">7. What is Photovoltaics?</string>
+    <string name="Solar_Question_8">8. Is Solar Power considered a renewable energy?</string>
+    <string name="Solar_Question_9">9. Solar Energy can be used to generate heat or ______.</string>
+    <string name="Solar_Question_10">10. What particles from the sun help to generate power from solar cells?</string>
+
+    <string name="Solar_Answer_Q1_1">Humidity</string>
+    <string name="Solar_Answer_Q1_2">Water</string>
+    <string name="Solar_Answer_Q1_3">Sun Rays</string>
+    <string name="Solar_Answer_Q1_4">Heat</string>
+
+    <string name="Solar_Answer_Q2_1">Thermometer</string>
+    <string name="Solar_Answer_Q2_2">Solar Panel</string>
+    <string name="Solar_Answer_Q2_3">Solar Cup</string>
+    <string name="Solar_Answer_Q2_4">Barometer</string>
+
+    <string name="Solar_Answer_Q3_1">USA</string>
+    <string name="Solar_Answer_Q3_2">Britain</string>
+    <string name="Solar_Answer_Q3_3">China</string>
+    <string name="Solar_Answer_Q3_4">South Korea</string>
+
+    <string name="Solar_Answer_Q4_1">Yes</string>
+    <string name="Solar_Answer_Q4_2">No</string>
+    <string name="Solar_Answer_Q4_3">Maybe</string>
+    <string name="Solar_Answer_Q4_4">I\'m not sure</string>
+
+    <string name="Solar_Answer_Q5_1">1930</string>
+    <string name="Solar_Answer_Q5_2">1864</string>
+    <string name="Solar_Answer_Q5_3">1758</string>
+    <string name="Solar_Answer_Q5_4">1839</string>
+
+    <string name="Solar_Answer_Q6_1">Yes</string>
+    <string name="Solar_Answer_Q6_2">No</string>
+    <string name="Solar_Answer_Q6_3">Maybe</string>
+    <string name="Solar_Answer_Q6_4">I\'m not sure</string>
+
+    <string name="Solar_Answer_Q7_1">It is the conversion of wind into electricity.</string>
+    <string name="Solar_Answer_Q7_2">It is the use of geothermal energy.</string>
+    <string name="Solar_Answer_Q7_3">It is the direct conversion of light into electricity at the atomic level.</string>
+    <string name="Solar_Answer_Q7_4">It is the burning of fossil fuels to create electricity.</string>
+
+    <string name="Solar_Answer_Q8_1">Yes</string>
+    <string name="Solar_Answer_Q8_2">No</string>
+    <string name="Solar_Answer_Q8_3">Maybe</string>
+    <string name="Solar_Answer_Q8_4">I\'m not sure</string>
+
+    <string name="Solar_Answer_Q9_1">Gas</string>
+    <string name="Solar_Answer_Q9_2">Water</string>
+    <string name="Solar_Answer_Q9_3">Electricity</string>
+    <string name="Solar_Answer_Q9_4">Light</string>
+
+    <string name="Solar_Answer_Q10_1">Electrons</string>
+    <string name="Solar_Answer_Q10_2">Neutrons</string>
+    <string name="Solar_Answer_Q10_3">Protons</string>
+    <string name="Solar_Answer_Q10_4">Photons</string>
+
+
+    <!--hydro theme-->
+    <string name="Hydro_Question_1">Low ____ can disrupt power generation.</string>
+    <string name="Hydro_Question_2">Environmental pollution is caused by the fuel used in hydroelectric power generation.</string>
+    <string name="Hydro_Question_3">What kind of energy uses the principle of falling when water flows low?</string>
+    <string name="Hydro_Question_4">What is not suitable for hydroelectric power plant use?</string>
+    <string name="Hydro_Question_5">Hydroelectric power plants emit no air pollutants.</string>
+    <string name="Hydro_Question_6">What is not a place to get hydroelectric energy?</string>
+    <string name="Hydro_Question_7">Hydroelectric power is transformed into ____ energy.</string>
+    <string name="Hydro_Question_8">What is rotated by water falling from the top?</string>
+    <string name="Hydro_Question_9">There is energy using salt from the sea.</string>
+    <string name="Hydro_Question_10">Which of the following keywords is irrelevant to the dam?</string>
+
+    <string name="Hydro_Answer_Q1_1">Chemical fuel</string>
+    <string name="Hydro_Answer_Q1_2">Precipitation</string>
+    <string name="Hydro_Answer_Q1_3">Electrical energy</string>
+    <string name="Hydro_Answer_Q1_4">Solar power</string>
+
+    <string name="Hydro_Answer_Q2_1">Yes</string>
+    <string name="Hydro_Answer_Q2_2">No</string>
+    <string name="Hydro_Answer_Q2_3">Maybe</string>
+    <string name="Hydro_Answer_Q2_4">I\'m not sure</string>
+
+    <string name="Hydro_Answer_Q3_1">Electric energy</string>
+    <string name="Hydro_Answer_Q3_2">Wind energy</string>
+    <string name="Hydro_Answer_Q3_3">Hydro energy</string>
+    <string name="Hydro_Answer_Q3_4">Nuclear energy</string>
+
+    <string name="Hydro_Answer_Q4_1">provides water for citizens.</string>
+    <string name="Hydro_Answer_Q4_2">prevent natural disasters</string>
+    <string name="Hydro_Answer_Q4_3">drought can be overcome</string>
+    <string name="Hydro_Answer_Q4_4">can be used as fuel for cars.</string>
+
+    <string name="Hydro_Answer_Q5_1">Yes</string>
+    <string name="Hydro_Answer_Q5_2">No</string>
+    <string name="Hydro_Answer_Q5_3">Maybe</string>
+    <string name="Hydro_Answer_Q5_4">I\'m not sure</string>
+
+    <string name="Hydro_Answer_Q6_1">Falls</string>
+    <string name="Hydro_Answer_Q6_2">Dam</string>
+    <string name="Hydro_Answer_Q6_3">Swimming pool</string>
+    <string name="Hydro_Answer_Q6_4">Waves of the sea</string>
+
+    <string name="Hydro_Answer_Q7_1">Kinetic</string>
+    <string name="Hydro_Answer_Q7_2">Heat</string>
+    <string name="Hydro_Answer_Q7_3">Nuclear</string>
+    <string name="Hydro_Answer_Q7_4">Light</string>
+
+    <string name="Hydro_Answer_Q8_1">water wheel</string>
+    <string name="Hydro_Answer_Q8_2">Semiconductor</string>
+    <string name="Hydro_Answer_Q8_3">Turbine</string>
+    <string name="Hydro_Answer_Q8_4">Steam generator</string>
+
+    <string name="Hydro_Answer_Q9_1">Yes</string>
+    <string name="Hydro_Answer_Q9_2">No</string>
+    <string name="Hydro_Answer_Q9_3">Maybe</string>
+    <string name="Hydro_Answer_Q9_4">I\'m not sure</string>
+
+    <string name="Hydro_Answer_Q10_1">High Construction Costs</string>
+    <string name="Hydro_Answer_Q10_2">High co2</string>
+    <string name="Hydro_Answer_Q10_3">Ecosystem Destruction</string>
+    <string name="Hydro_Answer_Q10_4">Safety</string>
+
+    '
+
+    <!--theme Geothermal-->
+    <string name="Geothermal_Question_1">What type of energy is geothermal energy?</string>
+    <string name="Geothermal_Question_2">How long does a Geothermal source of energy last?</string>
+    <string name="Geothermal_Question_3">A ____ is used to extract geothermal energy from under the ground</string>
+    <string name="Geothermal_Question_4">What part of the Earth is Geothermal energy extracted from?</string>
+    <string name="Geothermal_Question_5">What type of energy is geothermal energy usually transformed into?</string>
+    <string name="Geothermal_Question_6">Geothermal energy is a good alternative to?</string>
+    <string name="Geothermal_Question_7">What is the optimum temperature of water for geothermal energy to be extracted from?</string>
+    <string name="Geothermal_Question_8">What was the first trace of geothermal use in history?</string>
+    <string name="Geothermal_Question_9">What does the latine term "Geo" mean?</string>
+    <string name="Geothermal_Question_10">Geothermal energy produces ____ of the emission that coal produces</string>
+
+    <string name="Geothermal_Answer_Q1_1">Electricity</string>
+    <string name="Geothermal_Answer_Q1_2">Heat</string>
+    <string name="Geothermal_Answer_Q1_3">Earth</string>
+    <string name="Geothermal_Answer_Q1_4">Solar</string>
+
+    <string name="Geothermal_Answer_Q2_1">100 years</string>
+    <string name="Geothermal_Answer_Q2_2">10 years</string>
+    <string name="Geothermal_Answer_Q2_3">20~50 years</string>
+    <string name="Geothermal_Answer_Q2_4">Inexhaustible</string>
+
+    <string name="Geothermal_Answer_Q3_1">Spinning turbine</string>
+    <string name="Geothermal_Answer_Q3_2">Geothermal panel</string>
+    <string name="Geothermal_Answer_Q3_3">Geothermal heat pump</string>
+    <string name="Geothermal_Answer_Q3_4">Thermochemical feedstocks</string>
+
+    <string name="Geothermal_Answer_Q4_1">Crust</string>
+    <string name="Geothermal_Answer_Q4_2">Mantle</string>
+    <string name="Geothermal_Answer_Q4_3">Outer core</string>
+    <string name="Geothermal_Answer_Q4_4">Surface</string>
+
+    <string name="Geothermal_Answer_Q5_1">Heat</string>
+    <string name="Geothermal_Answer_Q5_2">Light</string>
+    <string name="Geothermal_Answer_Q5_3">Chemical energy</string>
+    <string name="Geothermal_Answer_Q5_4">Electricity</string>
+
+    <string name="Geothermal_Answer_Q6_1">Solar energy</string>
+    <string name="Geothermal_Answer_Q6_2">Firewood</string>
+    <string name="Geothermal_Answer_Q6_3">Gas/Oil</string>
+    <string name="Geothermal_Answer_Q6_4">Coal</string>
+
+    <string name="Geothermal_Answer_Q7_1">100~150°C</string>
+    <string name="Geothermal_Answer_Q7_2">70~100°C</string>
+    <string name="Geothermal_Answer_Q7_3">40~60°C</string>
+    <string name="Geothermal_Answer_Q7_4">160~180°C</string>
+
+    <string name="Geothermal_Answer_Q8_1">1852 AD</string>
+    <string name="Geothermal_Answer_Q8_2">3 BC</string>
+    <string name="Geothermal_Answer_Q8_3">256 AD</string>
+    <string name="Geothermal_Answer_Q8_4">1640 AD</string>
+
+    <string name="Geothermal_Answer_Q9_1">People</string>
+    <string name="Geothermal_Answer_Q9_2">Land</string>
+    <string name="Geothermal_Answer_Q9_3">Earth</string>
+    <string name="Geothermal_Answer_Q9_4">Heat</string>
+
+    <string name="Geothermal_Answer_Q10_1">50%</string>
+    <string name="Geothermal_Answer_Q10_2">0.03%</string>
+    <string name="Geothermal_Answer_Q10_3">12%</string>
+    <string name="Geothermal_Answer_Q10_4">5%</string>
+
+
+    <!--theme wind-->
+    <string name="Wind_Question_1">Wind energy uses ____ to create kinetic energy</string>
+    <string name="Wind_Question_2">What is not a place to get wind energy?</string>
+    <string name="Wind_Question_3">What is wrong with wind energy.</string>
+    <string name="Wind_Question_4">Wind power plant can be installed in the sea.</string>
+    <string name="Wind_Question_5">Where does wind energy belong?</string>
+    <string name="Wind_Question_6">Renewable energy is the reuse of used energy, typically coal and oil.</string>
+    <string name="Wind_Question_7">Wind energy is future-oriented.</string>
+    <string name="Wind_Question_8">Where is the most wind energy produced?</string>
+    <string name="Wind_Question_9">What is wrong about finding energy other than fossil energy?</string>
+    <string name="Wind_Question_10">Two-thirds of the world\'s wind energy is produced in Europe.</string>
+
+
+    <string name="Wind_Answer_Q1_1">Propeller</string>
+    <string name="Wind_Answer_Q1_2">Freon Gas</string>
+    <string name="Wind_Answer_Q1_3">Coal</string>
+    <string name="Wind_Answer_Q1_4">Helicopter</string>
+
+    <string name="Wind_Answer_Q2_1">A treeless plain</string>
+    <string name="Wind_Answer_Q2_2">The head of a mountain</string>
+    <string name="Wind_Answer_Q2_3">A city inhabited by people</string>
+    <string name="Wind_Answer_Q2_4">A mountain area where birds pass by</string>
+    .
+    <string name="Wind_Answer_Q3_1">A high cost</string>
+    <string name="Wind_Answer_Q3_2">Restricting the installation</string>
+    <string name="Wind_Answer_Q3_3">Not release harmful substances.</string>
+    <string name="Wind_Answer_Q3_4">Destruction of the environment</string>
+
+    <string name="Wind_Answer_Q4_1">Yes</string>
+    <string name="Wind_Answer_Q4_2">No</string>
+    <string name="Wind_Answer_Q4_3">Maybe</string>
+    <string name="Wind_Answer_Q4_4">I\'m not sure.</string>
+
+    <string name="Wind_Answer_Q5_1">Solar Energy</string>
+    <string name="Wind_Answer_Q5_2">Bio Energy</string>
+    <string name="Wind_Answer_Q5_3">Fossil Energy</string>
+    <string name="Wind_Answer_Q5_4">Renewable Energy</string>
+
+    <string name="Wind_Answer_Q6_1">Yes</string>
+    <string name="Wind_Answer_Q6_2">No</string>
+    <string name="Wind_Answer_Q6_3">Maybe</string>
+    <string name="Wind_Answer_Q6_4">I\'m not sure.</string>
+
+    <string name="Wind_Answer_Q7_1">Yes</string>
+    <string name="Wind_Answer_Q7_2">No</string>
+    <string name="Wind_Answer_Q7_3">Maybe</string>
+    <string name="Wind_Answer_Q7_4">I\'m not sure.</string>
+
+    <string name="Wind_Answer_Q8_1">South Korea</string>
+    <string name="Wind_Answer_Q8_2">Tanzania</string>
+    <string name="Wind_Answer_Q8_3">Norway</string>
+    <string name="Wind_Answer_Q8_4">China</string>
+
+    <string name="Wind_Answer_Q9_1">A high cost</string>
+    <string name="Wind_Answer_Q9_2">Environmental preservation</string>
+    <string name="Wind_Answer_Q9_3">Energy depletion</string>
+    <string name="Wind_Answer_Q9_4">Future-oriented</string>
+
+    <string name="Wind_Answer_Q10_1">Yes</string>
+    <string name="Wind_Answer_Q10_2">No</string>
+    <string name="Wind_Answer_Q10_3">Maybe</string>
+    <string name="Wind_Answer_Q10_4">I\'m not sure.</string>
+
+
+</resources>

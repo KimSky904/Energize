@@ -6,16 +6,16 @@
 
 
         <!-- Solar Theme -->
-        <string name="Solar_Question_1">태양 에너지의 주요 에너지원은?</string>
-        <string name="Solar_Question_2">태양 에너지는 ____을(를) 통하여 에너지를 얻는다.</string>
-        <string name="Solar_Question_3">태양 에너지를 가장 많이 얻는 나라는?</string>
-        <string name="Solar_Question_4">태양 에너지는 밤에도 얻을 수 있다.</string>
-        <string name="Solar_Question_5">태양 에너지가 발견된 년도는?</string>
-        <string name="Solar_Question_6">태양 에너지는 친환경적이다.</string>
-        <string name="Solar_Question_7">태양광이 뜻하는 바로 옳은 것은?</string>
-        <string name="Solar_Question_8">태양열 에너지는 재생 에너지이다.</string>
-        <string name="Solar_Question_9">태양열 에너지는 열 또는 ____을(를) 발생시키는 데 사용할 수 있다.</string>
-        <string name="Solar_Question_10">태양으로부터 나오는 입자 중 태양 전지에서 에너지를 생성하는데 도움을 주는 것은?</string>
+        <string name="Solar_Question_1">1. 태양 에너지의 주요 에너지원은?</string>
+        <string name="Solar_Question_2">2. 태양 에너지는 ____을(를) 통하여 에너지를 얻는다.</string>
+        <string name="Solar_Question_3">3. 태양 에너지를 가장 많이 얻는 나라는?</string>
+        <string name="Solar_Question_4">4. 태양 에너지는 밤에도 얻을 수 있다.</string>
+        <string name="Solar_Question_5">5. 태양 에너지가 발견된 년도는?</string>
+        <string name="Solar_Question_6">6. 태양 에너지는 친환경적이다.</string>
+        <string name="Solar_Question_7">7. 태양광이 뜻하는 바로 옳은 것은?</string>
+        <string name="Solar_Question_8">8. 태양열 에너지는 재생 에너지이다.</string>
+        <string name="Solar_Question_9">9. 태양열 에너지는 열 또는 ____을(를) 발생시키는 데 사용할 수 있다.</string>
+        <string name="Solar_Question_10">10. 태양으로부터 나오는 입자 중 태양 전지에서 에너지를 생성하는데 도움을 주는 것은?</string>
 
         <string name="Solar_Answer_Q1_1">습도</string>
         <string name="Solar_Answer_Q1_2">물</string>
@@ -69,16 +69,16 @@
 
 
         <!--hydro theme-->
-        <string name="Hydro_Question_1">____이 적으면 수력발전에 차질이 생길 수 있다.</string>
-        <string name="Hydro_Question_2">수력발전의 과정에서 쓰이는 연료로 인해 환경 오염이 발생한다.</string>
-        <string name="Hydro_Question_3">물이 낮은 곳으로 흘렀을 때 발생하는 낙차의 원리를 이용한 에너지의 종류는?</string>
-        <string name="Hydro_Question_4">수력발전이 사용되는 용도에 해당되지 않는 것은?</string>
-        <string name="Hydro_Question_5">수력 발전소는 대기 오염물질을 전혀 배출하지 않는다.</string>
-        <string name="Hydro_Question_6">수력 에너지를 얻을 수 있는 장소로 알맞지 않은 곳은?</string>
-        <string name="Hydro_Question_7">수력 에너지는 위치 에너지가 ____에너지로 바뀌면서 생산된다.</string>
-        <string name="Hydro_Question_8">수력발전의 과정 중 위에서 떨어지는 물에 의해 회전하는 부품의 이름은?</string>
-        <string name="Hydro_Question_9">바다의 염분을 이용한 에너지가 존재한다.</string>
-        <string name="Hydro_Question_10">다음 중 댐에 관한 설명으로 어색한 것은?</string>
+        <string name="Hydro_Question_1">1. ____이 적으면 수력발전에 차질이 생길 수 있다.</string>
+        <string name="Hydro_Question_2">2. 수력발전의 과정에서 쓰이는 연료로 인해 환경 오염이 발생한다.</string>
+        <string name="Hydro_Question_3">3. 물이 낮은 곳으로 흘렀을 때 발생하는 낙차의 원리를 이용한 에너지의 종류는?</string>
+        <string name="Hydro_Question_4">4. 수력발전이 사용되는 용도에 해당되지 않는 것은?</string>
+        <string name="Hydro_Question_5">5. 수력 발전소는 대기 오염물질을 전혀 배출하지 않는다.</string>
+        <string name="Hydro_Question_6">6. 수력 에너지를 얻을 수 있는 장소로 알맞지 않은 곳은?</string>
+        <string name="Hydro_Question_7">7. 수력 에너지는 위치 에너지가 ____에너지로 바뀌면서 생산된다.</string>
+        <string name="Hydro_Question_8">8. 수력발전의 과정 중 위에서 떨어지는 물에 의해 회전하는 부품의 이름은?</string>
+        <string name="Hydro_Question_9">9. 바다의 염분을 이용한 에너지가 존재한다.</string>
+        <string name="Hydro_Question_10">10. 다음 중 댐에 관한 설명으로 어색한 것은?</string>
 
         <string name="Hydro_Answer_Q1_1">태양열</string>
         <string name="Hydro_Answer_Q1_2">강수량</string>
@@ -133,16 +133,16 @@
         '
 
         <!--theme Wind-->
-        <string name="Wind_Question_1">풍력 에너지는 ____을(를) 사용하여 운동 에너지를 만든다.</string>
-        <string name="Wind_Question_2">풍력 발전소를 세우기 적합한 곳은?</string>
-        <string name="Wind_Question_3">풍력발전의 단점으로 옳지 않은 것은?</string>
-        <string name="Wind_Question_4">풍력 발전소는 바다에 설치할 수 있다.</string>
-        <string name="Wind_Question_5">풍력 에너지는 다음 중 어떤 에너지에 속할까?</string>
-        <string name="Wind_Question_6">재생 에너지는 사용했던 에너지를 재사용하는 것으로 대표적으로 석탄과 석유가 있다.</string>
-        <string name="Wind_Question_7">풍력 에너지는 미래 지향적이다.</string>
-        <string name="Wind_Question_8">현재 가장 많은 풍력 에너지가 생산되는 곳은?</string>
-        <string name="Wind_Question_9">사람들이 화석 에너지를 대체할 에너지를 찾는 이유로 옳지 않은 것은?</string>
-        <string name="Wind_Question_10">전 세계에서 생산되는 풍력 에너지의 2/3는 유럽에서 생산된다.</string>
+        <string name="Wind_Question_1">1. 풍력 에너지는 ____을(를) 사용하여 운동 에너지를 만든다.</string>
+        <string name="Wind_Question_2">2. 풍력 발전소를 세우기 적합한 곳은?</string>
+        <string name="Wind_Question_3">3. 풍력발전의 단점으로 옳지 않은 것은?</string>
+        <string name="Wind_Question_4">4. 풍력 발전소는 바다에 설치할 수 있다.</string>
+        <string name="Wind_Question_5">5. 풍력 에너지는 다음 중 어떤 에너지에 속할까?</string>
+        <string name="Wind_Question_6">6. 재생 에너지는 사용했던 에너지를 재사용하는 것으로 대표적으로 석탄과 석유가 있다.</string>
+        <string name="Wind_Question_7">7. 풍력 에너지는 미래 지향적이다.</string>
+        <string name="Wind_Question_8">8. 현재 가장 많은 풍력 에너지가 생산되는 곳은?</string>
+        <string name="Wind_Question_9">9. 사람들이 화석 에너지를 대체할 에너지를 찾는 이유로 옳지 않은 것은?</string>
+        <string name="Wind_Question_10">10. 전 세계에서 생산되는 풍력 에너지의 2/3는 유럽에서 생산된다.</string>
 
         <string name="Wind_Answer_Q1_1">프로펠러</string>
         <string name="Wind_Answer_Q1_2">프레온 가스</string>
@@ -196,16 +196,16 @@
 
 
         <!--theme wind-->
-        <string name="Geothermal_Question_1">지열 에너지는 다음 중 어떤 에너지에 속할까?</string>
-        <string name="Geothermal_Question_2">지열 에너지는 얼마나 오래 지속되는가?</string>
-        <string name="Geothermal_Question_3">____은(는) 지하에서 지열 에너지를 추출하는 데 사용된다.</string>
-        <string name="Geothermal_Question_4">지역 에너지는 지구의 어느 지역에서 추출되는가?</string>
-        <string name="Geothermal_Question_5">지열 에너지는 보통 어떤 에너지로 변환되는가?</string>
-        <string name="Geothermal_Question_6">지열 에너지는 ____의 좋은 대안책이다.</string>
-        <string name="Geothermal_Question_7">지열 에너지를 추출하기 위한 최적의 물 온도는?</string>
-        <string name="Geothermal_Question_8">최초로 지열이 사용된 흔적으로 옳은 년도는?</string>
-        <string name="Geothermal_Question_9">Geothermal Energy에서 "Geo"의 의미는?</string>
-        <string name="Geothermal_Question_10">지열 에너지는 석탄의 ____만큼의 배출물을 생성한다.</string>
+        <string name="Geothermal_Question_1">1. 지열 에너지는 다음 중 어떤 에너지에 속할까?</string>
+        <string name="Geothermal_Question_2">2. 지열 에너지는 얼마나 오래 지속되는가?</string>
+        <string name="Geothermal_Question_3">3. ____은(는) 지하에서 지열 에너지를 추출하는 데 사용된다.</string>
+        <string name="Geothermal_Question_4">4. 지역 에너지는 지구의 어느 지역에서 추출되는가?</string>
+        <string name="Geothermal_Question_5">5. 지열 에너지는 보통 어떤 에너지로 변환되는가?</string>
+        <string name="Geothermal_Question_6">6. 지열 에너지는 ____의 좋은 대안책이다.</string>
+        <string name="Geothermal_Question_7">7. 지열 에너지를 추출하기 위한 최적의 물 온도는?</string>
+        <string name="Geothermal_Question_8">8. 최초로 지열이 사용된 흔적으로 옳은 년도는?</string>
+        <string name="Geothermal_Question_9">9. Geothermal Energy에서 "Geo"의 의미는?</string>
+        <string name="Geothermal_Question_10">10. 지열 에너지는 석탄의 ____만큼의 배출물을 생성한다.</string>
 
 
         <string name="Geothermal_Answer_Q1_1">전기</string>
