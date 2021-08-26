@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import java.lang.reflect.Modifier;
 
@@ -35,9 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
     //userName EditText
     EditText txt_userName;
-
-    //saving user name
-    String userName;
 
     //data saving file
     String shared = "file";
@@ -66,12 +64,23 @@ public class MainActivity extends AppCompatActivity {
         txt_userName = findViewById(R.id.editTxt_userName);
         btn_continue = findViewById(R.id.btn_continue);
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
+
+        //아바타 안고르고 고를 시 아바타 먼저 고르라는 메세지 출력
+        Toast userNameErr=Toast.makeText(this.getApplicationContext(),"Please choose your avatar first.",Toast.LENGTH_SHORT);
+        txt_userName.setOnClickListener(v->{
+            if(chooseAvatar==false)
+                userNameErr.show();
+        });
+
         //Choose avatar popup
         btn_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this,SelectAvatar_Dialog.class);
             startActivityForResult(intent,1);
             chooseAvatar=true;
+            txt_userName.setEnabled(true);
         });
+
+
         //userName 안채우면 버튼 비활성화
         txt_userName.addTextChangedListener(new TextWatcher() {
             @Override
@@ -100,6 +109,14 @@ public class MainActivity extends AppCompatActivity {
                     btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
                 }
             }
+        });
+
+        //기본값은 공백으로
+        User.point.setUser_name("");
+        //continue 버튼 클릭 시 userName 저장 및 아바타 저장
+        btn_continue.setOnClickListener(v->{
+            //텍스트뷰로 들어온 이름 저장
+            User.point.setUser_name(txt_userName.getText().toString());
         });
 
 
@@ -139,6 +156,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
  */
+
+
 
 }
 

@@ -2,6 +2,7 @@ package com.example.energize;
 
 import android.util.Log;
 
+
 public class Point {
 
     private int remain_point;
@@ -53,6 +54,7 @@ public class Point {
     public void setUser_name(String user_name){
         this.user_name = user_name;
     }
+
 }
 
 

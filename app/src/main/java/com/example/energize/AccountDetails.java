@@ -27,7 +27,7 @@ public class AccountDetails extends AppCompatActivity {
     Button btn_point;
     //move to avatar selection
     Button btn_chooseAvatar;
-    //editText 채워야 버튼 활성화
+    //메인에서 가져온 이름 넣어놓기
     EditText Change_userName;
 
     //change username -> back to page
@@ -52,6 +52,12 @@ public class AccountDetails extends AppCompatActivity {
         //set point text
         btn_point = findViewById(R.id.btn_point);
         btn_point.setText(User.point.getPoint()+" Points");
+
+        //get User name
+        Change_userName=findViewById(R.id.editTxt_userName);
+        //기본값을 메인에서 저장한 이름으로 가져옴
+        Change_userName.setText(User.point.getUser_name());
+
 
         btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(v -> {
@@ -94,9 +100,11 @@ public class AccountDetails extends AppCompatActivity {
         });
 
         btn_change_username=findViewById(R.id.btn_change_username);
-
                     //move to before page
                     btn_change_username.setOnClickListener(v -> {
+                        //버튼 클릭 시 이름 저장
+                        btn_change_username.setText(User.point.getUser_name());
+
                         Intent fromPage = getIntent();
                         int pageCode = fromPage.getIntExtra("page_code",1);
 
