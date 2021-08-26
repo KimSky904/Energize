@@ -38,14 +38,24 @@
         android:background="@drawable/bottom_page_style"
         android:animateLayoutChanges="true">
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_chooseAvatar"
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:background="@drawable/round_btn_style"
+            android:background="@drawable/round_btn_style"/>
+
+        <TextView
+            android:id="@+id/btn_chooseAvatar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_chooseAvatar"
+            android:layout_alignBottom="@+id/btn_chooseAvatar"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="70dp"
             android:text="Choose Avatar" />
 
         <EditText

@@ -18,6 +18,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import java.lang.reflect.Modifier;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     //continue button
     Button btn_continue;
     //choose avatar popup
-    Button btn_chooseAvatar;
+    ImageButton btn_chooseAvatar;
 
     //userName EditText
     EditText txt_userName;
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
 
+        Log.d("myapp",User.point.getAvatar_image()+"");
 
         txt_userName = findViewById(R.id.editTxt_userName);
         btn_continue = findViewById(R.id.btn_continue);
