@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Energize">
-        <activity android:name=".ThemeSolar"></activity>
-        <activity android:name=".ResultScreen"></activity>
-        <activity android:name=".SelectAvatar"/>
+        <activity android:name=".ThemeSolar" />
+        <activity android:name=".ResultScreen" />
+        <activity android:name=".SelectAvatar" />
         <activity android:name=".ThemeSelection" />
         <activity android:name=".LanguageSelection" />
         <activity android:name=".AccountDetails" />
-        <activity android:name=".SelectAvatar_Dialog"
+        <activity
+            android:name=".SelectAvatar_Dialog"
             android:screenOrientation="portrait"
             android:theme="@style/popupTheme" />
         <activity

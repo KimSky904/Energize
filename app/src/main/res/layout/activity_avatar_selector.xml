@@ -52,14 +52,16 @@
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn_style" />
+                android:background="@drawable/round_btn_style"
+                android:onClick="buttonClicked"/>
 
             <ImageButton
                 android:id="@+id/avatar_2"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn_style" />
+                android:background="@drawable/round_btn_style"
+                android:onClick="buttonClicked"/>
         </TableRow>
 
         <TableRow>
@@ -68,14 +70,16 @@
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn_style" />
+                android:background="@drawable/round_btn_style"
+                android:onClick="buttonClicked"/>
 
             <ImageButton
                 android:id="@+id/avatar_4"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn_style" />
+                android:background="@drawable/round_btn_style"
+                android:onClick="buttonClicked"/>
         </TableRow>
 
         <TableRow>
@@ -85,14 +89,16 @@
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn" />
+                android:background="@drawable/round_btn"
+                android:onClick="buttonClicked"/>
 
             <ImageButton
                 android:id="@+id/avatar_6"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn" />
+                android:background="@drawable/round_btn"
+                android:onClick="buttonClicked"/>
         </TableRow>
 
         <TableRow>
@@ -102,14 +108,16 @@
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn" />
+                android:background="@drawable/round_btn"
+                android:onClick="buttonClicked"/>
 
             <ImageButton
                 android:id="@+id/avatar_8"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn" />
+                android:background="@drawable/round_btn"
+                android:onClick="buttonClicked"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>
