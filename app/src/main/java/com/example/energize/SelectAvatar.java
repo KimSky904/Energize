@@ -55,65 +55,11 @@ public class SelectAvatar extends AppCompatActivity {
         Btn_back.setOnClickListener(v -> {
             Intent intent = new Intent(this,AccountDetails.class);
             startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
         });
 
-        //image resource return
-//        avatar_1.setOnClickListener(v -> {
-//            //intent
-//            Intent intent = new Intent(this,AccountDetails.class);
-//            intent.putExtra("selected_avatar",R.drawable.img_avatar_1);
-//            setResult(RESULT_OK, intent);
-//            startActivity(intent);
-//        });
-//        avatar_2.setOnClickListener(v -> {
-//            //intent
-//            Intent intent = new Intent(this,AccountDetails.class);
-//            intent.putExtra("selected_avatar",R.drawable.img_avatar_2);
-//            setResult(RESULT_OK, intent);
-//            startActivity(intent);
-//        });
-//        avatar_3.setOnClickListener(v -> {
-//            //intent
-//            Intent intent = new Intent(this,AccountDetails.class);
-//            intent.putExtra("selected_avatar",R.drawable.img_avatar_3);
-//            setResult(RESULT_OK, intent);
-//            startActivity(intent);
-//        });
-//        avatar_4.setOnClickListener(v -> {
-//            //intent
-//            Intent intent = new Intent(this,AccountDetails.class);
-//            intent.putExtra("selected_avatar",R.drawable.img_avatar_4);
-//            setResult(RESULT_OK, intent);
-//            startActivity(intent);
-//        });
-//        avatar_5.setOnClickListener(v -> {
-//            //intent
-//            Intent intent = new Intent(this,AccountDetails.class);
-//            intent.putExtra("selected_avatar",R.drawable.img_avatar_5);
-//            setResult(RESULT_OK, intent);
-//            startActivity(intent);
-//        });
-//        avatar_6.setOnClickListener(v -> {
-//            //intent
-//            Intent intent = new Intent(this,AccountDetails.class);
-//            intent.putExtra("selected_avatar",R.drawable.img_avatar_6);
-//            setResult(RESULT_OK, intent);
-//            startActivity(intent);
-//        });
-//        avatar_7.setOnClickListener(v -> {
-//            //intent
-//            Intent intent = new Intent(this,AccountDetails.class);
-//            intent.putExtra("selected_avatar",R.drawable.img_avatar_7);
-//            setResult(RESULT_OK, intent);
-//            startActivity(intent);
-//        });
-//        avatar_8.setOnClickListener(v -> {
-//            //intent
-//            Intent intent = new Intent(this,AccountDetails.class);
-//            intent.putExtra("selected_avatar",R.drawable.img_avatar_8);
-//            setResult(RESULT_OK, intent);
-//            startActivity(intent);
-//        });
     }
     public void buttonClicked(View view){
         int avatarCode = 1;
@@ -156,6 +102,7 @@ public class SelectAvatar extends AppCompatActivity {
             else{
                 isAvatarAvailable[avatarCode-1]=1;
                 User.point.usePoint(20);
+                btn_point.setText(User.point.getPoint()+" POINTS");
                 ViewDialog alert = new ViewDialog();
                 alert.showDialog(SelectAvatar.this);
             }

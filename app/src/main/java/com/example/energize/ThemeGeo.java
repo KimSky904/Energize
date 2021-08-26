@@ -39,11 +39,14 @@ public class ThemeGeo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theme_solar);
 
-
+        btn_back = findViewById(R.id.btn_back);
         //테마로 돌아가기
         btn_back.setOnClickListener(v->{
             Intent intent = new Intent(this,ThemeSelection.class);
             startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
         });
 
         //목록 값 할당
