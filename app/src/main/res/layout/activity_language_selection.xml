@@ -89,6 +89,7 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/oval_btn_style"
             android:text="CONTINUE →"
+            android:enabled="false"
             style="@style/Text.TitleStyle"
             android:textSize="16sp"
             android:textColor="@color/white"/>

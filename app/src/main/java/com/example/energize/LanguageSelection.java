@@ -25,7 +25,6 @@ public class LanguageSelection extends AppCompatActivity {
     //move to next page
 
     Button korean,english;
-    boolean e_bool,k_bool=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,13 +60,13 @@ public class LanguageSelection extends AppCompatActivity {
         korean.setOnClickListener(v->{
             korean.setBackgroundResource(R.drawable.round_edge_btn_click_color);
             english.setBackgroundResource(R.drawable.round_edge_btn_style);
-            btn_continue.setClickable(true);
+            btn_continue.setEnabled(true);
             btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
         });
         english.setOnClickListener(v->{
             english.setBackgroundResource(R.drawable.round_edge_btn_click_color);
             korean.setBackgroundResource(R.drawable.round_edge_btn_style);
-            btn_continue.setClickable(true);
+            btn_continue.setEnabled(true);
             btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
         });
 
