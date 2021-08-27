@@ -202,7 +202,7 @@
     <string name="Wind_Question_7">7. Wind energy is future-oriented.</string>
     <string name="Wind_Question_8">8. Where does wind energy mostly produced?</string>
     <string name="Wind_Question_9">9. Which one is wrong about finding energy other than fossil energy?</string>
-    <string name="Wind_Question_10">10. Two-thirds of the world's wind energy is produced in Europe</string>
+    <string name="Wind_Question_10">10. Two-thirds of the world\'s wind energy is produced in Europe</string>
 
 
     <string name="Wind_Answer_Q1_1">Propeller</string>
