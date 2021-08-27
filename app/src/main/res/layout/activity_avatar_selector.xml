@@ -19,7 +19,6 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="16dp"
-
             android:src="@drawable/arrow"
             android:background="@drawable/round_btn_style"
             android:backgroundTint="@color/white" />
@@ -89,7 +88,7 @@
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn"
+                android:background="@drawable/round_btn_style"
                 android:onClick="buttonClicked"/>
 
             <ImageButton
@@ -97,7 +96,7 @@
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn"
+                android:background="@drawable/round_btn_style"
                 android:onClick="buttonClicked"/>
         </TableRow>
 
@@ -108,7 +107,7 @@
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn"
+                android:background="@drawable/round_btn_style"
                 android:onClick="buttonClicked"/>
 
             <ImageButton
@@ -116,7 +115,7 @@
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_btn"
+                android:background="@drawable/round_btn_style"
                 android:onClick="buttonClicked"/>
         </TableRow>
     </TableLayout>

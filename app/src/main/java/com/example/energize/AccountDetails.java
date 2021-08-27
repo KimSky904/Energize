@@ -55,7 +55,7 @@ public class AccountDetails extends AppCompatActivity {
 
         //get User name
         Change_userName=findViewById(R.id.editTxt_userName);
-        //기본값을 메인에서 저장한 이름으로 가져옴
+        //기본값을 메인에서 저장한 이름으로 가져와서 저장
         Change_userName.setText(User.point.getUser_name());
 
 

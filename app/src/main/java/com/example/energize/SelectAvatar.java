@@ -30,6 +30,8 @@ public class SelectAvatar extends AppCompatActivity {
     int[] avatar = {R.drawable.img_avatar_1,R.drawable.img_avatar_2,R.drawable.img_avatar_3,R.drawable.img_avatar_4
             ,R.drawable.img_avatar_5,R.drawable.img_avatar_6,R.drawable.img_avatar_7,R.drawable.img_avatar_8};
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

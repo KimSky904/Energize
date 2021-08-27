@@ -45,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
     //아바타 골라야 넘어감
     boolean chooseAvatar=false;
 
+    //아바타 목록
+    ImageButton avatar1, avatar2, avatar3, avatar4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +80,25 @@ public class MainActivity extends AppCompatActivity {
                 User.point.setAvatar_available(i);
             }
         }*/
+        avatar1=findViewById(R.id.avatar_1);
+        avatar2=findViewById(R.id.avatar_2);
+        avatar3=findViewById(R.id.avatar_3);
+        avatar4=findViewById(R.id.avatar_4);
 
+
+        //아바타 이미지 선택시 해당 아바타 저장
+        avatar1.setOnClickListener(v->{
+            User.point.setAvatar_image(R.id.avatar_1);
+        });
+        avatar2.setOnClickListener(v->{
+            User.point.setAvatar_image(R.id.avatar_2);
+        });
+        avatar3.setOnClickListener(v->{
+            User.point.setAvatar_image(R.id.avatar_3);
+        });
+        avatar4.setOnClickListener(v->{
+            User.point.setAvatar_image(R.id.avatar_4);
+        });
 
         //아바타 안고르고 고를 시 아바타 먼저 고르라는 메세지 출력
         Toast userNameErr=Toast.makeText(this.getApplicationContext(),"Please choose your avatar first.",Toast.LENGTH_SHORT);
@@ -105,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if(s.length()>0 && chooseAvatar==true) {
+                if(s.length()>0 && chooseAvatar) {
                     btn_continue.setClickable(true);
                     btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
                     //move to select language screen
@@ -125,12 +146,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         //기본값은 공백으로
         User.point.setUser_name("");
+
         //continue 버튼 클릭 시 userName 저장 및 아바타 저장
         btn_continue.setOnClickListener(v->{
             //텍스트뷰로 들어온 이름 저장
             User.point.setUser_name(txt_userName.getText().toString());
+
         });
 
 
