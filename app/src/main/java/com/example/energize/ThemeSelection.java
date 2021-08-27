@@ -87,6 +87,8 @@ public class ThemeSelection extends AppCompatActivity {
 
         //move to account details
         go_avatar = findViewById(R.id.go_avatar);
+        //저장된 이미지 가져오기
+        go_avatar.setBackgroundResource(User.point.getAvatar_image());
         go_avatar.setOnClickListener(v -> {
             Intent intent = new Intent(this,AccountDetails.class);
             //Theme selection page code = 2

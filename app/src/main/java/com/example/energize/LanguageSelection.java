@@ -72,6 +72,8 @@ public class LanguageSelection extends AppCompatActivity {
 
         //move to account details
         go_avatar = findViewById(R.id.go_avatar);
+        //저장된 아바타 이미지 보여줌
+        go_avatar.setBackgroundResource(User.point.getAvatar_image());
         go_avatar.setOnClickListener(v -> {
             Intent intent = new Intent(this,AccountDetails.class);
             //language selection page code = 1

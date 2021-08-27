@@ -35,6 +35,7 @@ public class AccountDetails extends AppCompatActivity {
     //activity 실행 요청 확인을 위한 요청코드
     static final int REQ_AVATAR_CONTACT = 2;
 
+
     //move to
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +91,8 @@ public class AccountDetails extends AppCompatActivity {
         });
         //move to avatar selection
         btn_chooseAvatar=findViewById(R.id.btn_chooseAvatar);
+        //저장된 아바타 이미지를 가져옴
+        btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
         btn_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), SelectAvatar.class);
             startActivity(intent);
