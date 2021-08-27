@@ -55,14 +55,12 @@
                 android:orientation="horizontal">
                 <Button
                     android:id="@+id/AnswerText1"
-                    android:onClick="chooseAnswer"
                     android:layout_marginEnd="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:background="@drawable/round_edge_btn" />
                 <Button
                     android:id="@+id/AnswerText2"
-                    android:onClick="chooseAnswer"
                     android:layout_marginStart="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -78,14 +76,12 @@
                 android:orientation="horizontal">
                 <Button
                     android:id="@+id/AnswerText3"
-                    android:onClick="chooseAnswer"
                     android:layout_marginEnd="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:background="@drawable/round_edge_btn" />
                 <Button
                     android:id="@+id/AnswerText4"
-                    android:onClick="chooseAnswer"
                     android:layout_marginStart="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"

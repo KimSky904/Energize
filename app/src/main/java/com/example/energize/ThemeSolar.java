@@ -64,6 +64,7 @@ public class ThemeSolar extends AppCompatActivity {
 
         //1번 보기 선택 시 1번만 눌리고 나머지는 그대로
         AnswerText1.setOnClickListener(v->{
+            answer_user[index] = R.id.AnswerText1;
             AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_click_color);
             AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
             AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
@@ -72,6 +73,7 @@ public class ThemeSolar extends AppCompatActivity {
 
         //2번 보기 선택 시 2번만 눌리고 나머지는 그대로
         AnswerText2.setOnClickListener(v->{
+            answer_user[index] = R.id.AnswerText2;
             AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_click_color);
             AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
             AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
@@ -80,6 +82,7 @@ public class ThemeSolar extends AppCompatActivity {
 
         //3번 보기 선택 시 3번만 눌리고 나머지는 그대로
         AnswerText3.setOnClickListener(v->{
+            answer_user[index] = R.id.AnswerText3;
             AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_click_color);
             AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
             AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
@@ -88,6 +91,7 @@ public class ThemeSolar extends AppCompatActivity {
 
         //4번 보기 선택 시 4번만 눌리고 나머지는 그대로
         AnswerText4.setOnClickListener(v->{
+            answer_user[index] = R.id.AnswerText4;
             AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_click_color);
             AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
             AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
@@ -140,10 +144,12 @@ public class ThemeSolar extends AppCompatActivity {
         overridePendingTransition(R.anim.translate_none, R.anim.translate_center_to_right);
         finish();
     }
+    /*
     public void chooseAnswer(View view){
         answer_user[index] = view.getId();
         Log.d("myapp",answer_user[index]+"가 선택됨");
     }
+     */
     private void setQuestion(){
         //각 문제 텍스트 지정
         MainText.setText(question[index]);

@@ -14,6 +14,8 @@
         <entry key="..\:/AndroidProject/Energize/app/src/main/res/layout/activity_result_screen.xml" value="0.19895833333333332" />
         <entry key="..\:/AndroidProject/Energize/app/src/main/res/layout/activity_splash.xml" value="0.19895833333333332" />
         <entry key="..\:/AndroidProject/Energize/app/src/main/res/layout/activity_theme_selection.xml" value="0.26875" />
+        <entry key="..\:/AndroidProject/Energize/app/src/main/res/layout/activity_theme_solar.xml" value="0.1" />
+        <entry key="..\:/AndroidProject/Energize/app/src/main/res/layout/activity_theme_wind.xml" value="0.246875" />
       </map>
     </option>
   </component>
