@@ -42,6 +42,8 @@ public class ResultScreen extends AppCompatActivity {
 
         //move to account details
         go_avatar = findViewById(R.id.go_avatar);
+        //저장된 아바타 값 가져옴
+        go_avatar.setBackgroundResource(User.point.getAvatar_image());
         go_avatar.setOnClickListener(v -> {
             Intent intent = new Intent(this,AccountDetails.class);
             //Result page code = 3

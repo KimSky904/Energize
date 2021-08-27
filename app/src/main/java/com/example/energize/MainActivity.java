@@ -129,15 +129,11 @@ public class MainActivity extends AppCompatActivity {
         //기본값은 공백으로
         User.point.setUser_name("");
 
-        //continue 버튼 클릭 시 userName 저장 및 아바타 저장
+        //continue 버튼 클릭 시 userName 저장
         btn_continue.setOnClickListener(v->{
             //텍스트뷰로 들어온 이름 저장
             User.point.setUser_name(txt_userName.getText().toString());
-
         });
-
-
-
 
         User.point.setPoint(0);
 /*

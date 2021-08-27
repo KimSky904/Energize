@@ -99,7 +99,6 @@ public class AccountDetails extends AppCompatActivity {
             //starting activity animation
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
-
         });
 
         btn_change_username=findViewById(R.id.btn_change_username);
