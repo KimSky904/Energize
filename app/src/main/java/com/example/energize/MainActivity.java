@@ -45,9 +45,6 @@ public class MainActivity extends AppCompatActivity {
     //아바타 골라야 넘어감
     boolean chooseAvatar=false;
 
-    //아바타 목록
-    ImageButton avatar1, avatar2, avatar3, avatar4;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,25 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 User.point.setAvatar_available(i);
             }
         }*/
-        avatar1=findViewById(R.id.avatar_1);
-        avatar2=findViewById(R.id.avatar_2);
-        avatar3=findViewById(R.id.avatar_3);
-        avatar4=findViewById(R.id.avatar_4);
 
-
-        //아바타 이미지 선택시 해당 아바타 저장
-        avatar1.setOnClickListener(v->{
-            User.point.setAvatar_image(R.id.avatar_1);
-        });
-        avatar2.setOnClickListener(v->{
-            User.point.setAvatar_image(R.id.avatar_2);
-        });
-        avatar3.setOnClickListener(v->{
-            User.point.setAvatar_image(R.id.avatar_3);
-        });
-        avatar4.setOnClickListener(v->{
-            User.point.setAvatar_image(R.id.avatar_4);
-        });
 
         //아바타 안고르고 고를 시 아바타 먼저 고르라는 메세지 출력
         Toast userNameErr=Toast.makeText(this.getApplicationContext(),"Please choose your avatar first.",Toast.LENGTH_SHORT);
@@ -175,9 +154,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
-
-            Log.d("myapp",data.getStringExtra("selected_avatar")+"가 선택되었습니다.");
-
+            Log.d("myapp","아바타 선택 종료됨");
         }
     }
 

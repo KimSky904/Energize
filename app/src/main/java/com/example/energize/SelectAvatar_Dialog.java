@@ -43,6 +43,7 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
 
 
         avatar1.setOnClickListener(v->{
+            User.point.setAvatar_image(R.drawable.img_avatar_1);
             //intent
             Intent intent = new Intent();
             intent.putExtra("selected_avatar",R.drawable.img_avatar_1);
@@ -50,6 +51,7 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
             finish();
         });
         avatar2.setOnClickListener(v->{
+            User.point.setAvatar_image(R.drawable.img_avatar_2);
             //intent
             Intent intent = new Intent();
             intent.putExtra("selected_avatar",R.drawable.img_avatar_2);
@@ -57,6 +59,7 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
             finish();
         });
         avatar3.setOnClickListener(v->{
+            User.point.setAvatar_image(R.drawable.img_avatar_3);
             //intent
             Intent intent = new Intent();
             intent.putExtra("selected_avatar",R.drawable.img_avatar_3);
@@ -64,6 +67,7 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
             finish();
         });
         avatar4.setOnClickListener(v->{
+            User.point.setAvatar_image(R.drawable.img_avatar_4);
             //intent
             Intent intent = new Intent();
             intent.putExtra("selected_avatar",R.drawable.img_avatar_4);
