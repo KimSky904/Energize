@@ -7,6 +7,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -58,6 +59,38 @@ public class SelectAvatar extends AppCompatActivity {
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
+        //이미지 선택 시 어둡게? 변하기
+        //다시 원상복구 되는걸 구현중
+/*        avatar_1.setOnClickListener(v->{
+            avatar_1.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
+            User.point.setAvatar_image(R.id.btn_avatar_1);
+        });
+        avatar_2.setOnClickListener(v->{
+            avatar_2.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
+            User.point.setAvatar_image(R.id.btn_avatar_1);
+        });
+        avatar_3.setOnClickListener(v->{
+            avatar_3.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
+            User.point.setAvatar_image(R.id.btn_avatar_1);
+        });
+        avatar_4.setOnClickListener(v->{
+            avatar_4.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
+            User.point.setAvatar_image(R.id.btn_avatar_1);
+        });
+        avatar_5.setOnClickListener(v->{
+            avatar_5.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
+        });
+        avatar_6.setOnClickListener(v->{
+            avatar_6.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
+        });
+        avatar_7.setOnClickListener(v->{
+            avatar_7.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
+        });
+        avatar_8.setOnClickListener(v->{
+            avatar_8.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
+        });*/
+
+
 
     }
     public void buttonClicked(View view){
