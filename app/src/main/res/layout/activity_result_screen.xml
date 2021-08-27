@@ -54,6 +54,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
+            android:enabled="false"
             android:background="@drawable/round_btn_style"
             android:backgroundTint="#CC507B00"
             android:text="result point" />
