@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="17dp"
         android:layout_marginTop="137dp"
-        android:text="Choose a Language"
+        android:text="@string/choose_a_language"
         android:textColor="@color/white"
         style="@style/Text.TitleStyle"/>
 
@@ -25,7 +25,7 @@
         android:layout_below="@+id/MainText"
         android:layout_marginStart="17dp"
         android:layout_marginTop="5dp"
-        android:text="Please choose a language that youprefer :)"
+        android:text="@string/please_choose_a_language_that_youprefer"
         android:textColor="#CDCDCD"
         style="@style/Text.ContextStyle"/>
 
@@ -60,7 +60,7 @@
             android:layout_height="170dp"
             android:layout_marginTop="80dp"
             android:background="@drawable/round_edge_btn_style"
-            android:text="Korean"
+            android:text="@string/korean"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words"
@@ -74,7 +74,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="80dp"
             android:background="@drawable/round_edge_btn_style"
-            android:text="English"
+            android:text="@string/english"
 
             android:textColorHighlight="@color/clickable_words"
             android:textColor="@color/clickable_words"
@@ -88,7 +88,7 @@
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/oval_btn_style"
-            android:text="CONTINUE →"
+            android:text="@string/continueText"
             android:enabled="false"
             style="@style/Text.TitleStyle"
             android:textSize="16sp"
