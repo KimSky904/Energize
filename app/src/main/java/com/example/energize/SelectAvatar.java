@@ -41,14 +41,14 @@ public class SelectAvatar extends AppCompatActivity {
         btn_point.setText(User.point.getPoint()+" Points");
 
         //each avatars
-        avatar_1 = findViewById(R.id.avatar_1);
-        avatar_2 = findViewById(R.id.avatar_2);
-        avatar_3 = findViewById(R.id.avatar_3);
-        avatar_4 = findViewById(R.id.avatar_4);
-        avatar_5 = findViewById(R.id.avatar_5);
-        avatar_6 = findViewById(R.id.avatar_6);
-        avatar_7 = findViewById(R.id.avatar_7);
-        avatar_8 = findViewById(R.id.avatar_8);
+        avatar_1 = findViewById(R.id.btn_avatar_1);
+        avatar_2 = findViewById(R.id.btn_avatar_2);
+        avatar_3 = findViewById(R.id.btn_avatar_3);
+        avatar_4 = findViewById(R.id.btn_avatar_4);
+        avatar_5 = findViewById(R.id.btn_avatar_5);
+        avatar_6 = findViewById(R.id.btn_avatar_6);
+        avatar_7 = findViewById(R.id.btn_avatar_7);
+        avatar_8 = findViewById(R.id.btn_avatar_8);
 
         Btn_back = findViewById(R.id.btn_back);
         Btn_back.setOnClickListener(v -> {
@@ -63,28 +63,28 @@ public class SelectAvatar extends AppCompatActivity {
     public void buttonClicked(View view){
         int avatarCode = 1;
         switch(view.getId()){
-            case R.id.avatar_1:
+            case R.id.btn_avatar_1:
                 avatarCode = 1;
                 break;
-            case R.id.avatar_2:
+            case R.id.btn_avatar_2:
                 avatarCode = 2;
                 break;
-            case R.id.avatar_3:
+            case R.id.btn_avatar_3:
                 avatarCode = 3;
                 break;
-            case R.id.avatar_4:
+            case R.id.btn_avatar_4:
                 avatarCode = 4;
                 break;
-            case R.id.avatar_5:
+            case R.id.btn_avatar_5:
                 avatarCode = 5;
                 break;
-            case R.id.avatar_6:
+            case R.id.btn_avatar_6:
                 avatarCode = 6;
                 break;
-            case R.id.avatar_7:
+            case R.id.btn_avatar_7:
                 avatarCode = 7;
                 break;
-            case R.id.avatar_8:
+            case R.id.btn_avatar_8:
                 avatarCode = 8;
                 break;
             default: avatarCode = 1;

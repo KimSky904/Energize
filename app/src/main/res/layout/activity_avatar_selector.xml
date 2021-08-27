@@ -47,7 +47,7 @@
 
         <TableRow>
             <ImageButton
-                android:id="@+id/avatar_1"
+                android:id="@+id/btn_avatar_1"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
@@ -57,7 +57,7 @@
                 android:onClick="buttonClicked"/>
 
             <ImageButton
-                android:id="@+id/avatar_2"
+                android:id="@+id/btn_avatar_2"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
@@ -69,7 +69,7 @@
 
         <TableRow>
             <ImageButton
-                android:id="@+id/avatar_3"
+                android:id="@+id/btn_avatar_3"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
@@ -79,7 +79,7 @@
                 android:onClick="buttonClicked"/>
 
             <ImageButton
-                android:id="@+id/avatar_4"
+                android:id="@+id/btn_avatar_4"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
@@ -92,7 +92,7 @@
         <TableRow>
 
             <ImageButton
-                android:id="@+id/avatar_5"
+                android:id="@+id/btn_avatar_5"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
@@ -102,7 +102,7 @@
                 android:onClick="buttonClicked"/>
 
             <ImageButton
-                android:id="@+id/avatar_6"
+                android:id="@+id/btn_avatar_6"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
@@ -115,7 +115,7 @@
         <TableRow>
 
             <ImageButton
-                android:id="@+id/avatar_7"
+                android:id="@+id/btn_avatar_7"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
@@ -125,7 +125,7 @@
                 android:onClick="buttonClicked"/>
 
             <ImageButton
-                android:id="@+id/avatar_8"
+                android:id="@+id/btn_avatar_8"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_margin="10dp"

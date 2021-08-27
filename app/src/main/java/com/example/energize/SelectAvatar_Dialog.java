@@ -36,10 +36,10 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
 
 
         //each buttons
-        avatar1 = findViewById(R.id.avatar_1);
-        avatar2 = findViewById(R.id.avatar_2);
-        avatar3 = findViewById(R.id.avatar_3);
-        avatar4 = findViewById(R.id.avatar_4);
+        avatar1 = findViewById(R.id.btn_avatar_1);
+        avatar2 = findViewById(R.id.btn_avatar_2);
+        avatar3 = findViewById(R.id.btn_avatar_3);
+        avatar4 = findViewById(R.id.btn_avatar_4);
 
         btn_choose_avatar=findViewById(R.id.btn_chooseAvatar);
 
