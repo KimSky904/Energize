@@ -5,7 +5,7 @@
     <!-- Solar Theme -->
     <string name="Solar_Question_1">1. What\'s the main source of Solar Energy?</string>
     <string name="Solar_Question_2">2. A _______ is used to harvest Solar Energy.</string>
-    <string name="Solar_Question_3">3. What country harvest the most Solar Energy?</string>
+    <string name="Solar_Question_3">3. 3. Which country harvest the most Solar Energy?</string>
     <string name="Solar_Question_4">4. Can you harvest Solar Energy at night?</string>
     <string name="Solar_Question_5">5. When was Solar Energy discovered?</string>
     <string name="Solar_Question_6">6. Is Solar Energy eco friendly?</string>
@@ -66,16 +66,16 @@
 
 
     <!--hydro theme-->
-    <string name="Hydro_Question_1">Low ____ can disrupt power generation.</string>
-    <string name="Hydro_Question_2">Environmental pollution is caused by the fuel used in hydroelectric power generation.</string>
-    <string name="Hydro_Question_3">What kind of energy uses the principle of falling when water flows low?</string>
-    <string name="Hydro_Question_4">What is not suitable for hydroelectric power plant use?</string>
-    <string name="Hydro_Question_5">Hydroelectric power plants emit no air pollutants.</string>
-    <string name="Hydro_Question_6">What is not a place to get hydroelectric energy?</string>
-    <string name="Hydro_Question_7">Hydroelectric power is transformed into ____ energy.</string>
-    <string name="Hydro_Question_8">What is rotated by water falling from the top?</string>
-    <string name="Hydro_Question_9">There is energy using salt from the sea.</string>
-    <string name="Hydro_Question_10">Which of the following keywords is irrelevant to the dam?</string>
+    <string name="Hydro_Question_1">1. Low ____ can disrupt hydroelectric power generation.</string>
+    <string name="Hydro_Question_2">2. Environmental pollution is caused by the fuel used in hydroelectric power generation.</string>
+    <string name="Hydro_Question_3">3. What kind of energy uses the principle of falling when water flows low?</string>
+    <string name="Hydro_Question_4">4. What is not suitable for hydroelectric power plant use?</string>
+    <string name="Hydro_Question_5">5. Hydroelectric power plants emit no air pollutants.</string>
+    <string name="Hydro_Question_6">6. Which one is not a place to get hydroelectric energy?</string>
+    <string name="Hydro_Question_7">7. Hydroelectric energy is produced when the potential energy is converted into ___energy.</string>
+    <string name="Hydro_Question_8">8. Which one is rotated by water falling from the top?</string>
+    <string name="Hydro_Question_9">9. There is energy using salt from the sea.</string>
+    <string name="Hydro_Question_10">10. Which of the following keywords is irrelevant to the dam?</string>
 
     <string name="Hydro_Answer_Q1_1">Chemical fuel</string>
     <string name="Hydro_Answer_Q1_2">Precipitation</string>
@@ -130,16 +130,16 @@
     '
 
     <!--theme Geothermal-->
-    <string name="Geothermal_Question_1">What type of energy is geothermal energy?</string>
-    <string name="Geothermal_Question_2">How long does a Geothermal source of energy last?</string>
-    <string name="Geothermal_Question_3">A ____ is used to extract geothermal energy from under the ground</string>
-    <string name="Geothermal_Question_4">What part of the Earth is Geothermal energy extracted from?</string>
-    <string name="Geothermal_Question_5">What type of energy is geothermal energy usually transformed into?</string>
-    <string name="Geothermal_Question_6">Geothermal energy is a good alternative to?</string>
-    <string name="Geothermal_Question_7">What is the optimum temperature of water for geothermal energy to be extracted from?</string>
-    <string name="Geothermal_Question_8">What was the first trace of geothermal use in history?</string>
-    <string name="Geothermal_Question_9">What does the latine term "Geo" mean?</string>
-    <string name="Geothermal_Question_10">Geothermal energy produces ____ of the emission that coal produces</string>
+    <string name="Geothermal_Question_1">1. Which type of energy is geothermal energy?</string>
+    <string name="Geothermal_Question_2">2. How long does a Geothermal source of energy last?</string>
+    <string name="Geothermal_Question_3">3. A ____ is used to extract geothermal energy from under the ground</string>
+    <string name="Geothermal_Question_4">4. Which part of the Earth is Geothermal energy extracted from?</string>
+    <string name="Geothermal_Question_5">5. Which type of energy is geothermal energy usually transformed into?</string>
+    <string name="Geothermal_Question_6">6. Geothermal energy is a good alternative to ____</string>
+    <string name="Geothermal_Question_7">7. What is the optimum temperature of water for geothermal energy to be extracted from?</string>
+    <string name="Geothermal_Question_8">8. Which one was the first trace of geothermal use in history?</string>
+    <string name="Geothermal_Question_9">9. What does the latin term \'Geo'\ mean?</string>
+    <string name="Geothermal_Question_10">10. Geothermal energy produces ____ of the emission that coal produces</string>
 
     <string name="Geothermal_Answer_Q1_1">Electricity</string>
     <string name="Geothermal_Answer_Q1_2">Heat</string>
@@ -193,16 +193,16 @@
 
 
     <!--theme wind-->
-    <string name="Wind_Question_1">Wind energy uses ____ to create kinetic energy</string>
-    <string name="Wind_Question_2">What is not a place to get wind energy?</string>
-    <string name="Wind_Question_3">What is wrong with wind energy.</string>
-    <string name="Wind_Question_4">Wind power plant can be installed in the sea.</string>
-    <string name="Wind_Question_5">Where does wind energy belong?</string>
-    <string name="Wind_Question_6">Renewable energy is the reuse of used energy, typically coal and oil.</string>
-    <string name="Wind_Question_7">Wind energy is future-oriented.</string>
-    <string name="Wind_Question_8">Where is the most wind energy produced?</string>
-    <string name="Wind_Question_9">What is wrong about finding energy other than fossil energy?</string>
-    <string name="Wind_Question_10">Two-thirds of the world\'s wind energy is produced in Europe.</string>
+    <string name="Wind_Question_1">1. Wind energy uses ____ to create kinetic energy</string>
+    <string name="Wind_Question_2">2. Which one is not appropriate place to get wind energy?</string>
+    <string name="Wind_Question_3">3. Which one is not related to wind energy?</string>
+    <string name="Wind_Question_4">4. Wind power plant can be installed in the sea.</string>
+    <string name="Wind_Question_5">5. Where does wind energy belong to?</string>
+    <string name="Wind_Question_6">6. Renewable energy is the re-used energy, typically coal and oil</string>
+    <string name="Wind_Question_7">7. Wind energy is future-oriented.</string>
+    <string name="Wind_Question_8">8. Where does wind energy mostly produced?</string>
+    <string name="Wind_Question_9">9. Which one is wrong about finding energy other than fossil energy?</string>
+    <string name="Wind_Question_10">10. Two-thirds of the world's wind energy is produced in Europe</string>
 
 
     <string name="Wind_Answer_Q1_1">Propeller</string>
