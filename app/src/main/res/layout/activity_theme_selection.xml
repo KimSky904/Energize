@@ -35,7 +35,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="27dp"
         android:layout_marginTop="136dp"
-        android:text="Choose a Theme"
+        android:text="@string/choose_a_theme"
         android:textColor="@color/white"
         style="@style/Text.TitleStyle"/>
 
@@ -46,7 +46,7 @@
         android:layout_below="@+id/MainText"
         android:layout_marginStart="27dp"
         android:layout_marginTop="3dp"
-        android:text="The theme you choose will be the main topic for the questions you'll attempt!"
+        android:text="@string/the_theme_you_choose_will_be_the_main_topic_for_the_questions_you_ll_attempt"
         android:textColor="#CDCDCD"
         style="@style/Text.ContextStyle"/>
 
@@ -67,7 +67,7 @@
             android:layout_marginLeft="18dp"
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/solar"
-            android:text="Solar"
+            android:text="@string/solar"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words"/>
@@ -80,7 +80,7 @@
             android:layout_marginLeft="202dp"
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/hydroelectric"
-            android:text="Hydroelectric\nEnergy"
+            android:text="@string/hydroelectric_nenergy"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words" />
@@ -93,7 +93,7 @@
             android:layout_marginLeft="18dp"
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/wind"
-            android:text="Wind Energy"
+            android:text="@string/wind_energy"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words" />
@@ -106,7 +106,7 @@
             android:layout_marginLeft="202dp"
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/geothermal"
-            android:text="Geothermal\nEnergy"
+            android:text="@string/geothermal_nenergy"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words" />

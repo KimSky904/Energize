@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="17dp"
         android:layout_marginTop="137dp"
-        android:text="Before You\nBegin"
+        android:text="@string/before_you_nbegin"
         android:textColor="@color/white"
         style="@style/Text.TitleStyle"/>
 
@@ -25,7 +25,7 @@
         android:layout_below="@+id/MainText"
         android:layout_marginStart="17dp"
         android:layout_marginTop="5dp"
-        android:text="Create a username and choose an\navatar to begin! "
+        android:text="@string/create_a_username_and_choose_an_navatar_to_begin"
         android:textColor="#CDCDCD"
         style="@style/Text.ContextStyle"/>
 
@@ -56,7 +56,7 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="70dp"
             android:layout_marginBottom="70dp"
-            android:text="Choose Avatar" />
+            android:text="@string/choose_avatar" />
 
         <EditText
             android:id="@+id/editTxt_userName"
@@ -66,7 +66,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             android:background="@drawable/username_edittxt_style"
-            android:hint="Enter Username"
+            android:hint="@string/enter_username"
             android:enabled="false"
             android:paddingStart="10dp" />
 
@@ -80,7 +80,7 @@
             android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/oval_btn_style"
-            android:text="CONTINUE →"
+            android:text="@string/continuetext"
             style="@style/Text.TitleStyle"
             android:textSize="16sp"
             android:textColor="@color/white"/>

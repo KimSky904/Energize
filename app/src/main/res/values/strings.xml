@@ -2,6 +2,19 @@
     <string name="app_name">Energize</string>
     <string name="app_version">Version 1.0.0</string>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Solar Theme -->
     <string name="Solar_Question_1">1. What\'s the main source of Solar Energy?</string>
     <string name="Solar_Question_2">2. A _______ is used to harvest Solar Energy.</string>
@@ -254,6 +267,23 @@
     <string name="Wind_Answer_Q10_2">No</string>
     <string name="Wind_Answer_Q10_3">Maybe</string>
     <string name="Wind_Answer_Q10_4">I\'m not sure.</string>
+    <string name="before_you_nbegin">Before You
+        Begin</string>
+    <string name="create_a_username_and_choose_an_navatar_to_begin">Create a username and choose an\navatar to begin!</string>
+    <string name="choose_avatar">Choose Avatar</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="continuetext">CONTINUE →</string>
+    <string name="choose_a_language">Choose a Language</string>
+    <string name="please_choose_a_language_that_youprefer">Please choose a language that youprefer :)</string>
+    <string name="korean">Korean</string>
+    <string name="english">English</string>
+    <string name="continueText">CONTINUE →</string>
+    <string name="choose_a_theme">Choose a Theme</string>
+    <string name="the_theme_you_choose_will_be_the_main_topic_for_the_questions_you_ll_attempt">The theme you choose will be the main topic for the questions you\'ll attempt!</string>
+    <string name="solar">Solar</string>
+    <string name="hydroelectric_nenergy">Hydroelectric\nEnergy</string>
+    <string name="wind_energy">Wind Energy</string>
+    <string name="geothermal_nenergy">Geothermal\nEnergy</string>
 
 
 </resources>

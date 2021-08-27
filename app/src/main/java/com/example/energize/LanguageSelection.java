@@ -3,6 +3,8 @@ package com.example.energize;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import java.util.Locale;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class LanguageSelection extends AppCompatActivity {
@@ -22,7 +25,10 @@ public class LanguageSelection extends AppCompatActivity {
     Button btn_continue;
     //move to avatar
     ImageView go_avatar;
-    //move to next page
+
+    Locale locale;
+    private final int Loc_Korean = 0;
+    private final int Loc_Endlish = 1;
 
     Button korean,english;
     @Override
@@ -58,12 +64,14 @@ public class LanguageSelection extends AppCompatActivity {
         english=findViewById(R.id.btn_chooseLanguage_English);
 
         korean.setOnClickListener(v->{
+            changeLocale(Loc_Korean);
             korean.setBackgroundResource(R.drawable.round_edge_btn_click_color);
             english.setBackgroundResource(R.drawable.round_edge_btn_style);
             btn_continue.setEnabled(true);
             btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
         });
         english.setOnClickListener(v->{
+            changeLocale(Loc_Endlish);
             english.setBackgroundResource(R.drawable.round_edge_btn_click_color);
             korean.setBackgroundResource(R.drawable.round_edge_btn_style);
             btn_continue.setEnabled(true);
@@ -84,5 +92,26 @@ public class LanguageSelection extends AppCompatActivity {
             finish();
         });
 
+    }
+
+    private void changeLocale(int localeLang){
+        Locale locale = null;
+        switch (localeLang){
+            case 0:
+                locale = new Locale("ko");
+                break;
+
+            case 1:
+                locale = new Locale("en");
+                break;
+        }
+        Configuration config = getApplicationContext().getResources().getConfiguration();
+        if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1 ) {
+            config.setLocale(locale);
+        }
+        else {
+            config.locale = locale;
+        }
+        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
     }
 }
