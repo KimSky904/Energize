@@ -43,34 +43,34 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
 
 
         avatar1.setOnClickListener(v->{
-            User.point.setAvatar_image(R.drawable.img_avatar_1);
+            User.point.setAvatar_image(R.drawable.avatar_1);
             //intent
             Intent intent = new Intent();
-            intent.putExtra("selected_avatar",R.drawable.img_avatar_1);
+            intent.putExtra("selected_avatar",R.drawable.avatar_1);
             setResult(RESULT_OK, intent);
             finish();
         });
         avatar2.setOnClickListener(v->{
-            User.point.setAvatar_image(R.drawable.img_avatar_2);
+            User.point.setAvatar_image(R.drawable.avatar_2);
             //intent
             Intent intent = new Intent();
-            intent.putExtra("selected_avatar",R.drawable.img_avatar_2);
+            intent.putExtra("selected_avatar",R.drawable.avatar_2);
             setResult(RESULT_OK, intent);
             finish();
         });
         avatar3.setOnClickListener(v->{
-            User.point.setAvatar_image(R.drawable.img_avatar_3);
+            User.point.setAvatar_image(R.drawable.avatar_3);
             //intent
             Intent intent = new Intent();
-            intent.putExtra("selected_avatar",R.drawable.img_avatar_3);
+            intent.putExtra("selected_avatar",R.drawable.avatar_3);
             setResult(RESULT_OK, intent);
             finish();
         });
         avatar4.setOnClickListener(v->{
-            User.point.setAvatar_image(R.drawable.img_avatar_4);
+            User.point.setAvatar_image(R.drawable.avatar_4);
             //intent
             Intent intent = new Intent();
-            intent.putExtra("selected_avatar",R.drawable.img_avatar_4);
+            intent.putExtra("selected_avatar",R.drawable.avatar_4);
             setResult(RESULT_OK, intent);
             finish();
         });

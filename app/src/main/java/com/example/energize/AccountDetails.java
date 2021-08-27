@@ -143,7 +143,7 @@ public class AccountDetails extends AppCompatActivity {
         if (requestCode == REQ_AVATAR_CONTACT) {
             if (resultCode == RESULT_OK) {
                 //dialog 액티비티에서 이미지 리소스 네임 받아옴, 객체 avatar 설정
-                int selectedAvatarResource = data.getIntExtra("selected_avatar",R.drawable.img_avatar_1);
+                int selectedAvatarResource = data.getIntExtra("selected_avatar",R.drawable.avatar_1);
                 User.point.setAvatar_image(selectedAvatarResource);
             }
         }

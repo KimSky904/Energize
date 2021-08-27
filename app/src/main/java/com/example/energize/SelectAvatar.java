@@ -27,8 +27,8 @@ public class SelectAvatar extends AppCompatActivity {
     //point text
     Button btn_point;
     //아바타 배열
-    int[] avatar = {R.drawable.img_avatar_1,R.drawable.img_avatar_2,R.drawable.img_avatar_3,R.drawable.img_avatar_4
-            ,R.drawable.img_avatar_5,R.drawable.img_avatar_6,R.drawable.img_avatar_7,R.drawable.img_avatar_8};
+    int[] avatar = {R.drawable.avatar_1,R.drawable.avatar_2,R.drawable.avatar_3,R.drawable.avatar_4
+            ,R.drawable.avatar_5,R.drawable.avatar_6,R.drawable.avatar_7,R.drawable.avatar_8};
 
 
 

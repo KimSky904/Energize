@@ -57,6 +57,8 @@
             android:enabled="false"
             android:background="@drawable/round_btn_style"
             android:backgroundTint="#CC507B00"
+            android:textColor="@color/white"
+            android:textSize="18sp"
             android:text="result point" />
 
         <Button
