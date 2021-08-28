@@ -67,7 +67,9 @@ public class ThemeHydro extends AppCompatActivity {
         //1번문제일 경우 이전버튼 숨김
         if(index==0) previous.setVisibility(View.INVISIBLE);
         previous.setOnClickListener(v -> {
+            answer_user[index] = 0;
             index--;
+            answer_user[index] = 0;
             if (index>-1){
                 if(index==0) previous.setVisibility(View.INVISIBLE);
                 else previous.setVisibility(View.VISIBLE);
@@ -97,7 +99,6 @@ public class ThemeHydro extends AppCompatActivity {
                 User.point.addPoint(2);
                 User.point.addEachPoint(2);
             }
-            else Log.d("myapp",i+"번 문제 틀림");
         }
         Intent intent = new Intent(this, ResultScreen.class);
         startActivity(intent);
@@ -109,7 +110,6 @@ public class ThemeHydro extends AppCompatActivity {
     public void chooseAnswer(View view){
         initButtonBackground();
         answer_user[index] = view.getId();
-        Log.d("myapp",answer_user[index]+"가 선택됨");
         view.setBackgroundResource(R.drawable.round_edge_btn_click_color);
     }
     private void initButtonBackground(){

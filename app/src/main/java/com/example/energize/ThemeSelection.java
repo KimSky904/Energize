@@ -32,6 +32,8 @@ public class ThemeSelection extends AppCompatActivity {
         setContentView(R.layout.activity_theme_selection);
         setTheme(R.style.AppTheme);
 
+        //얻은 점수 초기화
+        User.point.initialThemePoint();
         //bottom page animation
         final Animation translateup = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate_up);
         bottomPage = findViewById(R.id.bottom_page);
