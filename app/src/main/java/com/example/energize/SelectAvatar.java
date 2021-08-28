@@ -1,6 +1,7 @@
 package com.example.energize;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -9,7 +10,9 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -22,7 +25,7 @@ import android.widget.Toast;
 public class SelectAvatar extends AppCompatActivity {
 
     //each avatar
-    ImageButton avatar_1,avatar_2,avatar_3,avatar_4,avatar_5,avatar_6,avatar_7,avatar_8;
+    ImageButton[] avatar_button = new ImageButton[8];
     //back to previous page
     ImageButton Btn_back;
     //point text
@@ -41,15 +44,23 @@ public class SelectAvatar extends AppCompatActivity {
         btn_point = findViewById(R.id.btn_point);
         btn_point.setText(User.point.getPoint()+" Points");
 
+        Log.d("myapp","1번 단계 통과");
         //each avatars
-        avatar_1 = findViewById(R.id.btn_avatar_1);
-        avatar_2 = findViewById(R.id.btn_avatar_2);
-        avatar_3 = findViewById(R.id.btn_avatar_3);
-        avatar_4 = findViewById(R.id.btn_avatar_4);
-        avatar_5 = findViewById(R.id.btn_avatar_5);
-        avatar_6 = findViewById(R.id.btn_avatar_6);
-        avatar_7 = findViewById(R.id.btn_avatar_7);
-        avatar_8 = findViewById(R.id.btn_avatar_8);
+        avatar_button[0] = findViewById(R.id.btn_avatar_1);
+        avatar_button[1] = findViewById(R.id.btn_avatar_2);
+        avatar_button[2] = findViewById(R.id.btn_avatar_3);
+        avatar_button[3] = findViewById(R.id.btn_avatar_4);
+        avatar_button[4] = findViewById(R.id.btn_avatar_5);
+        avatar_button[5] = findViewById(R.id.btn_avatar_6);
+        avatar_button[6] = findViewById(R.id.btn_avatar_7);
+        avatar_button[7] = findViewById(R.id.btn_avatar_8);
+
+        //구매되지 않은 아이콘 잠금처리
+        for(int i=0;i<8;i++){
+            if(!User.point.getAvatar_available(i)) {
+                avatar_button[i].setImageResource(R.drawable.materialed_round_btn);
+            }
+        }
 
         Btn_back = findViewById(R.id.btn_back);
         Btn_back.setOnClickListener(v -> {
@@ -89,9 +100,6 @@ public class SelectAvatar extends AppCompatActivity {
         avatar_8.setOnClickListener(v->{
             avatar_8.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
         });*/
-
-
-
     }
     public void buttonClicked(View view){
         int avatarCode = 1;
@@ -140,6 +148,7 @@ public class SelectAvatar extends AppCompatActivity {
                 ViewDialog alert = new ViewDialog();
                 alert.showDialog(SelectAvatar.this);
                 AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
+                avatar_button[avatarCode-1].setImageResource(avatar[avatarCode-1]);
             }
         }
         //구매된 아바타일 경우
