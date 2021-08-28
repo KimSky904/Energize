@@ -6,22 +6,25 @@
 
     <ImageView
         android:id="@+id/img_logo"
-        android:layout_width="160dp"
-        android:layout_height="170dp"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
         android:scaleType="fitCenter"
         android:src="@drawable/energize_logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp" />
 
-    <ImageView
-        android:id="@+id/string_logo"
-        android:layout_width="160dp"
-        android:layout_height="170dp"
-        android:layout_below="@+id/img_logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-50dp"
-        android:src="@drawable/energize_string_logo" />
 
+    <TextView
+        android:id="@+id/txt_Energize"
+        style="@style/Text.TitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/energize"
+        android:textColor="@color/white"
+        android:textSize="36sp" />
 
     <TextView
         android:layout_width="wrap_content"
