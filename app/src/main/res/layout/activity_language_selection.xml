@@ -42,8 +42,7 @@
     <RelativeLayout
         android:id="@+id/bottom_page"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/SubText"
+        android:layout_height="390dp"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="70dp"
         android:animateLayoutChanges="true"
@@ -56,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="70dp"
             android:orientation="horizontal">
 
             <Button

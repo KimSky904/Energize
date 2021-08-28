@@ -28,7 +28,7 @@
             android:id="@+id/btn_point"
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="215dp"
+            android:layout_marginLeft="200dp"
             android:background="@drawable/round_btn_style"
             android:backgroundTint="@color/white"
             android:clickable="false"
@@ -37,7 +37,7 @@
     </LinearLayout>
 
     <TableLayout
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

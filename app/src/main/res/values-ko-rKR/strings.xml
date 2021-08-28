@@ -70,7 +70,7 @@
         <!--hydro theme-->
         <string name="Hydro_Question_1">1. ____이 적으면 수력발전에 차질이 생길 수 있다.</string>
         <string name="Hydro_Question_2">2. 수력발전의 과정에서 쓰이는 연료로 인해 환경 오염이 발생한다.</string>
-        <string name="Hydro_Question_3">3. 물이 낮은 곳으로 흘렀을 때 발생하는 낙차의 원리를 이용한 에너지의 종류는?</string>
+        <string name="Hydro_Question_3">3. 물이 낮은 곳으로 흐르는 낙차의 원리를 이용한 에너지는?</string>
         <string name="Hydro_Question_4">4. 수력발전이 사용되는 용도에 해당되지 않는 것은?</string>
         <string name="Hydro_Question_5">5. 수력 발전소는 대기 오염물질을 전혀 배출하지 않는다.</string>
         <string name="Hydro_Question_6">6. 수력 에너지를 얻을 수 있는 장소로 알맞지 않은 곳은?</string>
@@ -290,5 +290,14 @@
         <string name="this_is_where_you_can_gain_key_info_about_your_account_and_customize_it">계정의 정보를 확인하거나 새롭게 아바타를 선택해보세요!</string>
         <string name="change_username">사용자 이름 변경하기</string>
 
+
+        <!-- Pop up -->
+        <string name="purchase">구매 완료</string>
+        <string name="congratulation_nyou_can_use_this_avatar_nfrom_now">축하합니다!
+                이제 구매한 아바타를 사용해보세요 :D</string>
+        <string name="ok">확인</string>
+        <string name="purchase_failed">구매 실패</string>
+        <string name="sorry_nyour_remaining_points_are_insufficient">남아있는 포인트가
+        부족하여 아바타를 구매실 수 없습니다 </string>
 
 </resources>

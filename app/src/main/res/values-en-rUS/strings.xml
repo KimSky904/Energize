@@ -68,7 +68,7 @@
 
     <!--hydro theme-->
     <string name="Hydro_Question_1">1. Low ____ can disrupt power generation.</string>
-    <string name="Hydro_Question_2">2. Environmental pollution is caused by the fuel used in hydroelectric power generation.</string>
+    <string name="Hydro_Question_2">2. Hydroelectricity\'s puel causes environmental pollution.</string>
     <string name="Hydro_Question_3">3. What kind of energy uses the principle of falling when water flows low?</string>
     <string name="Hydro_Question_4">4. What is not suitable for hydroelectric power plant use?</string>
     <string name="Hydro_Question_5">5. Hydroelectric power plants emit no air pollutants.</string>
@@ -290,6 +290,16 @@
     <string name="account_ndetails">Account Details</string>
     <string name="this_is_where_you_can_gain_key_info_about_your_account_and_customize_it">This is where you can gain key info about your account and customize it!</string>
     <string name="change_username">Change Username</string>
+
+    <!-- Pop up -->
+    <string name="purchase">Purchase</string>
+    <string name="congratulation_nyou_can_use_this_avatar_nfrom_now">Congratulation!
+        you can use this avatar
+        from now</string>
+    <string name="ok">OK</string>
+    <string name="purchase_failed">Purchase Failed</string>
+    <string name="sorry_nyour_remaining_points_are_insufficient">Sorry
+        Your remaining points are insufficient</string>
 
 
 </resources>

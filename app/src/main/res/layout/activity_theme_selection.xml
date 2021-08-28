@@ -53,8 +53,7 @@
     <RelativeLayout
         android:id="@+id/bottom_page"
         android:layout_width="match_parent"
-        android:layout_height="390dp"
-        android:layout_below="@+id/SubText"
+        android:layout_height="400dp"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="38dp"
         android:layout_marginBottom="1dp"

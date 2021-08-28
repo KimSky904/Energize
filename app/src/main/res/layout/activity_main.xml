@@ -46,7 +46,7 @@
             android:layout_height="160dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="31dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/round_btn_style" />
 
         <TextView
@@ -69,7 +69,7 @@
             android:layout_height="60dp"
             android:layout_below="@+id/btn_chooseAvatar"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/username_edittxt_style"
             android:enabled="false"
             android:hint="@string/enter_username"
@@ -83,7 +83,7 @@
             android:layout_height="50dp"
             android:layout_below="@+id/editTxt_userName"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/oval_btn_style"
             android:clickable="false"
             android:text="@string/continuetext"

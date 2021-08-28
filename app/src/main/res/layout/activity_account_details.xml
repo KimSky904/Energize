@@ -15,11 +15,11 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:layout_gravity="center_vertical"
             android:id="@+id/btn_back"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
             android:src="@drawable/arrow"
             android:background="@drawable/round_btn_style"
             android:backgroundTint="@color/white" />
@@ -29,7 +29,7 @@
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="215dp"
+            android:layout_marginLeft="200dp"
             android:background="@drawable/round_btn_style"
             android:backgroundTint="@color/white"
             android:clickable="false"
@@ -64,9 +64,11 @@
         android:id="@+id/bottom_page"
         android:layout_width="match_parent"
         android:layout_height="360dp"
+        android:layout_below="@+id/SubText"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/bottom_page_style"
-        android:animateLayoutChanges="true">
+        android:layout_marginTop="80dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bottom_page_style">
 
         <Button
             android:id="@+id/btn_chooseAvatar"
@@ -74,9 +76,8 @@
             android:layout_height="160dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/round_btn_style"
-            />
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_btn_style" />
 
         <EditText
             android:id="@+id/editTxt_userName"
@@ -85,25 +86,25 @@
             android:layout_below="@+id/btn_chooseAvatar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
+            android:background="@drawable/round_edge_btn_style"
             android:hint="@string/enter_username"
-            android:paddingStart="10dp"
-            android:background="@drawable/round_edge_btn_style"/>
+            android:paddingStart="10dp" />
 
 
         <Button
             android:id="@+id/btn_change_username"
+            style="@style/Text.TitleStyle"
             android:layout_width="225dp"
             android:layout_height="50dp"
             android:layout_below="@+id/editTxt_userName"
-            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
             android:background="@drawable/oval_btn_style"
             android:backgroundTint="#507B00"
             android:text="@string/change_username"
             android:textAllCaps="false"
-            style="@style/Text.TitleStyle"
-            android:textSize="16sp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 </RelativeLayout>
