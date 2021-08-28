@@ -57,6 +57,7 @@
                 android:paddingBottom="5dp">
 
                 <Button
+                    android:onClick="chooseAnswer"
                     android:id="@+id/AnswerText1"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -64,6 +65,7 @@
                     android:background="@drawable/round_edge_btn" />
 
                 <Button
+                    android:onClick="chooseAnswer"
                     android:id="@+id/AnswerText2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -81,6 +83,7 @@
                 android:paddingRight="10dp">
 
                 <Button
+                    android:onClick="chooseAnswer"
                     android:id="@+id/AnswerText3"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
@@ -88,6 +91,7 @@
                     android:background="@drawable/round_edge_btn" />
 
                 <Button
+                    android:onClick="chooseAnswer"
                     android:id="@+id/AnswerText4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"

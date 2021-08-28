@@ -60,41 +60,6 @@ public class ThemeGeo extends AppCompatActivity {
         AnswerText3 = findViewById(R.id.AnswerText3);
         AnswerText4 = findViewById(R.id.AnswerText4);
 
-        //1번 보기 선택 시 1번만 눌리고 나머지는 그대로
-        AnswerText1.setOnClickListener(v->{
-            answer_user[index] = R.id.AnswerText1;
-            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_click_color);
-            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_style);
-        });
-
-        //2번 보기 선택 시 2번만 눌리고 나머지는 그대로
-        AnswerText2.setOnClickListener(v->{
-            answer_user[index] = R.id.AnswerText2;
-            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_click_color);
-            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_style);
-        });
-
-        //3번 보기 선택 시 3번만 눌리고 나머지는 그대로
-        AnswerText3.setOnClickListener(v->{
-            answer_user[index] = R.id.AnswerText3;
-            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_click_color);
-            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_style);
-        });
-
-        //4번 보기 선택 시 4번만 눌리고 나머지는 그대로
-        AnswerText4.setOnClickListener(v->{
-            answer_user[index] = R.id.AnswerText4;
-            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_click_color);
-            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
-        });
 
         //이전 문제로
         previous = findViewById(R.id.previous_btn);
@@ -109,6 +74,8 @@ public class ThemeGeo extends AppCompatActivity {
                 else previous.setVisibility(View.VISIBLE);
                 setQuestion(); //문제 교체
             }
+            //previous 누르면 색 원상복구
+            initButtonBackground();
         });
         //다음 문제로
         next = findViewById(R.id.next_btn);
@@ -120,10 +87,7 @@ public class ThemeGeo extends AppCompatActivity {
                 setQuestion(); //문제 교체
             }
             //next 누르면 색 원상복구
-            AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
-            AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_style);
+            initButtonBackground();
         });
         //answer에서 아무거나 눌리면 유지되게 하기
     }
@@ -143,9 +107,18 @@ public class ThemeGeo extends AppCompatActivity {
         overridePendingTransition(R.anim.translate_none, R.anim.translate_center_to_right);
         finish();
     }
+    //정답 선택
     public void chooseAnswer(View view){
+        initButtonBackground();
         answer_user[index] = view.getId();
         Log.d("myapp",answer_user[index]+"가 선택됨");
+        view.setBackgroundResource(R.drawable.round_edge_btn_click_color);
+    }
+    private void initButtonBackground(){
+        AnswerText1.setBackgroundResource(R.drawable.round_edge_btn_style);
+        AnswerText2.setBackgroundResource(R.drawable.round_edge_btn_style);
+        AnswerText3.setBackgroundResource(R.drawable.round_edge_btn_style);
+        AnswerText4.setBackgroundResource(R.drawable.round_edge_btn_style);
     }
     private void setQuestion(){
         //각 문제 텍스트 지정
