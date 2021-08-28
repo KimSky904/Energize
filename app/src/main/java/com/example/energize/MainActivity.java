@@ -48,7 +48,9 @@ public class MainActivity extends AppCompatActivity {
     Point point;
 
     //아바타 골라야 넘어감
-    boolean chooseAvatar=false;
+    boolean chooseAvatar; //=false;
+    //이름 입력해야 넘어감
+    boolean writeText;
 
 
     @Override
@@ -74,83 +76,26 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sf = getSharedPreferences(userName, 0);
         String str = sf.getString("name", ""); // 키값으로 꺼냄
         txt_userName.setText(str); // EditText에 반영함
+        if(!txt_userName.getText().equals("")) writeText=true;
+        else writeText=false;
 
+        Log.d("myapp",writeText+"");
+        Log.d("myapp",User.point.getAvatar_image()+"");
         User.point.setUser_name(str);
 
-        //데이터(포인트,이름,아바타 여부) 저장값 불러옴
-        /*
-        int pointValue = PreferenceManager.getInt(this,"rebuild_point");
-        User.point.setPoint(pointValue);
-        String nameValue = PreferenceManager.getString(this,"rebuild_name");
-        User.point.setUser_name(nameValue);
-        boolean[] avatarValue = new boolean[8];
-        for(int i=0;i<8;i++){
-            avatarValue[i] = PreferenceManager.getBoolean(this,"rebuild_avatar["+i+"]");
-            if(avatarValue[i]==true){
-                User.point.setAvatar_available(i);
-            }
-        }*/
-//        Log.d("myapp","아바타 : "+User.point.getAvatar_image());
-//        if(User.point.getAvatar_image()!=0) btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
-
-        //아바타 안고르고 고를 시 아바타 먼저 고르라는 메세지 출력
-        //Toast userNameErr=Toast.makeText(MainActivity.this,"Please choose your avatar first",Toast.LENGTH_SHORT);
-
-        /*txt_userName.setOnClickListener(v->{
-            if(!chooseAvatar){
-                userNameErr.show();
-                Log.d("myapp","토스트메세지");
-            }
-
-        });
-        if(!chooseAvatar){
-            txt_userName.setOnClickListener(v->{
-                userNameErr.show();
-                Log.d("myapp","토스트메세지2");
-            });
-        }*/
+        //컨티뉴 활성화
+        checkContinueIsAble();
 
         if(User.point.getAvatar_image()!=0) btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
         //Choose avatar popup
         btn_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this,SelectAvatar_Dialog.class);
             startActivityForResult(intent,1);
-            Log.d("myapp",User.point.getAvatar_image()+"");
             //btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
             chooseAvatar=true;
             txt_userName.setEnabled(true);
         });
 
-
-        //userName 안채우면 버튼 비활성화
-        txt_userName.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(s.length()>0 && chooseAvatar) {
-                    btn_continue.setClickable(true);
-                    btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
-                    //move to select language screen
-                    btn_continue.setOnClickListener(v -> {
-                        Intent intent = new Intent(getApplicationContext(),LanguageSelection.class);
-                        startActivity(intent);
-                        //starting activity animation
-                        overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
-                        finish();
-                    });
-
-                }
-                else{
-                    btn_continue.setClickable(false);
-                    btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
-                }
-            }
-        });
 
 
         //기본값은 공백으로
@@ -163,14 +108,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         User.point.setPoint(0);
-/*
-        // get shared preference data
-        SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
-        int point_number =sharedPreferences.getInt("point_number",0);
-        point.setPoint(point_number);
-
- */
-
     }
 
     @Override
@@ -178,22 +115,12 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
             Log.d("myapp","아바타 선택 종료됨");
+            User.point.setAvatar_image(data.getIntExtra("selected_avatar",0));
+            Log.d("myapp","->"+User.point.getAvatar_image()+"");
+            checkContinueIsAble();
         }
     }
 
-/*
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        //sharedprefarence 호출해서 위의 set한 포인트 값 얻어오기
-        SharedPreferences sharedPreferences = getSharedPreferences(shared,0);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt("point_number",point.getPoint());
-        editor.commit();
-
-    }
-
- */
     @Override
     protected void onStop() {
         super.onStop();
@@ -206,6 +133,26 @@ public class MainActivity extends AppCompatActivity {
         User.point.setUser_name(str); //객체에 이름 저장
         editor.putString("xx", "xx"); // 입력
         editor.commit(); // 파일에 최종 반영함
+    }
+
+    private void checkContinueIsAble(){
+        //change userName 비활성화 / 활성화
+        if(User.point.getAvatar_image()!=0&&writeText) {
+            btn_continue.setClickable(true);
+            btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
+            //move to select language screen
+            btn_continue.setOnClickListener(v -> {
+                Intent intent = new Intent(getApplicationContext(),LanguageSelection.class);
+                startActivity(intent);
+                //starting activity animation
+                overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+                finish();
+            });
+        }
+        else{
+            btn_continue.setClickable(false);
+            btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
+        }
     }
 }
 
