@@ -88,9 +88,9 @@ public class MainActivity extends AppCompatActivity {
         //아바타 안고르고 고를 시 아바타 먼저 고르라는 메세지 출력
         Toast userNameErr=Toast.makeText(this.getApplicationContext(),"Please choose your avatar first.",Toast.LENGTH_SHORT);
         txt_userName.setOnClickListener(v->{
-            if(!chooseAvatar)
-                userNameErr.show();
+            userNameErr.show();
         });
+
         if(User.point.getAvatar_image()!=0) btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
         //Choose avatar popup
         btn_chooseAvatar.setOnClickListener(v -> {

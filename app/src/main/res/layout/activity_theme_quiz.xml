@@ -27,7 +27,7 @@
         android:text="1. What is . . ."
         android:textColor="@color/white"
         style="@style/Text.TitleStyle"
-        android:textSize="38sp"/>
+        android:textSize="34sp"/>
 
 
     <!-- one for each quiz(question) -->
