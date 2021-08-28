@@ -44,7 +44,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="17dp"
         android:layout_marginTop="137dp"
-        android:text="Account\nDetails"
+        android:text="@string/account_ndetails"
         android:textColor="@color/white"
         style="@style/Text.TitleStyle"/>
 
@@ -55,7 +55,7 @@
         android:layout_below="@+id/MainText"
         android:layout_marginStart="17dp"
         android:layout_marginTop="5dp"
-        android:text="This is where you can gain key info about your account and customize it!"
+        android:text="@string/this_is_where_you_can_gain_key_info_about_your_account_and_customize_it"
         android:textColor="#CDCDCD"
         style="@style/Text.ContextStyle"/>
 
@@ -85,7 +85,7 @@
             android:layout_below="@+id/btn_chooseAvatar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            android:hint="Enter Username"
+            android:hint="@string/enter_username"
             android:paddingStart="10dp"
             android:background="@drawable/round_edge_btn_style"/>
 
@@ -99,7 +99,7 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/oval_btn_style"
             android:backgroundTint="#507B00"
-            android:text="Change Username"
+            android:text="@string/change_username"
             style="@style/Text.TitleStyle"
             android:textSize="16sp"
             android:textColor="@color/white"/>

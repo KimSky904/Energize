@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.lang.reflect.Modifier;
@@ -26,12 +27,15 @@ import java.lang.reflect.Modifier;
 
 public class MainActivity extends AppCompatActivity {
 
+
     //bottom page animation
     RelativeLayout bottomPage;
     //continue button
     Button btn_continue;
     //choose avatar popup
-    ImageButton btn_chooseAvatar;
+    //ImageButton btn_chooseAvatar;
+    public static ImageButton btn_chooseAvatar;
+    public static TextView btn_chooseAvatar_text;
 
     //userName EditText
     EditText txt_userName;
@@ -60,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("myapp",User.point.getAvatar_image()+"");
 
+        btn_chooseAvatar_text = findViewById(R.id.btn_chooseAvatar_text);
         txt_userName = findViewById(R.id.editTxt_userName);
         btn_continue = findViewById(R.id.btn_continue);
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
@@ -77,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
                 User.point.setAvatar_available(i);
             }
         }*/
-
+//        Log.d("myapp","아바타 : "+User.point.getAvatar_image());
+//        if(User.point.getAvatar_image()!=0) btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
 
         //아바타 안고르고 고를 시 아바타 먼저 고르라는 메세지 출력
         Toast userNameErr=Toast.makeText(this.getApplicationContext(),"Please choose your avatar first.",Toast.LENGTH_SHORT);
@@ -85,11 +91,13 @@ public class MainActivity extends AppCompatActivity {
             if(!chooseAvatar)
                 userNameErr.show();
         });
-
+        if(User.point.getAvatar_image()!=0) btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
         //Choose avatar popup
         btn_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this,SelectAvatar_Dialog.class);
             startActivityForResult(intent,1);
+            Log.d("myapp",User.point.getAvatar_image()+"");
+            //btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
             chooseAvatar=true;
             txt_userName.setEnabled(true);
         });

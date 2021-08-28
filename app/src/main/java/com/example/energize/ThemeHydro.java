@@ -37,7 +37,7 @@ public class ThemeHydro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_theme_solar);
+        setContentView(R.layout.activity_theme_quiz);
 
         btn_back = findViewById(R.id.btn_back);
         //테마로 돌아가기

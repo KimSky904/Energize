@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Energize</string>
     <string name="app_version">Version 1.0.0</string>
+
+
     <!-- Solar Theme -->
     <string name="Solar_Question_1">1. What\'s the main source of Solar Energy?</string>
     <string name="Solar_Question_2">2. A _______ is used to harvest Solar Energy.</string>
-    <string name="Solar_Question_3">3. Which country harvest the most Solar Energy?</string>
+    <string name="Solar_Question_3">3. What country harvest the most Solar Energy?</string>
     <string name="Solar_Question_4">4. Can you harvest Solar Energy at night?</string>
     <string name="Solar_Question_5">5. When was Solar Energy discovered?</string>
     <string name="Solar_Question_6">6. Is Solar Energy eco friendly?</string>
@@ -66,16 +67,16 @@
 
 
     <!--hydro theme-->
-    <string name="Hydro_Question_1">1. Low ____ can disrupt hydroelectric power generation.</string>
+    <string name="Hydro_Question_1">1. Low ____ can disrupt power generation.</string>
     <string name="Hydro_Question_2">2. Environmental pollution is caused by the fuel used in hydroelectric power generation.</string>
     <string name="Hydro_Question_3">3. What kind of energy uses the principle of falling when water flows low?</string>
     <string name="Hydro_Question_4">4. What is not suitable for hydroelectric power plant use?</string>
     <string name="Hydro_Question_5">5. Hydroelectric power plants emit no air pollutants.</string>
-    <string name="Hydro_Question_6">6. Which one is not a place to get hydroelectric energy?</string>
-    <string name="Hydro_Question_7">7. Hydroelectric energy is produced when the potential energy is converted into ___energy.</string>
-    <string name="Hydro_Question_8">8. Which one is rotated by water falling from the top?</string>
+    <string name="Hydro_Question_6">6. What is not a place to get hydroelectric energy?</string>
+    <string name="Hydro_Question_7">7. Hydroelectric power is transformed into ____ energy.</string>
+    <string name="Hydro_Question_8">8. What is rotated by water falling from the top?</string>
     <string name="Hydro_Question_9">9. There is energy using salt from the sea.</string>
-    <string name="Hydro_Question_10">10. Which of the following keywords is irrelevant to the dam?</string>
+    <string name="Hydro_Question_10">10.Which of the following keywords is irrelevant to the dam?</string>
 
     <string name="Hydro_Answer_Q1_1">Chemical fuel</string>
     <string name="Hydro_Answer_Q1_2">Precipitation</string>
@@ -130,15 +131,15 @@
     '
 
     <!--theme Geothermal-->
-    <string name="Geothermal_Question_1">1. Which type of energy is geothermal energy?</string>
+    <string name="Geothermal_Question_1">1. What type of energy is geothermal energy?</string>
     <string name="Geothermal_Question_2">2. How long does a Geothermal source of energy last?</string>
     <string name="Geothermal_Question_3">3. A ____ is used to extract geothermal energy from under the ground</string>
-    <string name="Geothermal_Question_4">4. Which part of the Earth is Geothermal energy extracted from?</string>
-    <string name="Geothermal_Question_5">5. Which type of energy is geothermal energy usually transformed into?</string>
-    <string name="Geothermal_Question_6">6. Geothermal energy is a good alternative to ____</string>
+    <string name="Geothermal_Question_4">4. What part of the Earth is Geothermal energy extracted from?</string>
+    <string name="Geothermal_Question_5">5. What type of energy is geothermal energy usually transformed into?</string>
+    <string name="Geothermal_Question_6">6. Geothermal energy is a good alternative to?</string>
     <string name="Geothermal_Question_7">7. What is the optimum temperature of water for geothermal energy to be extracted from?</string>
-    <string name="Geothermal_Question_8">8. Which one was the first trace of geothermal use in history?</string>
-    <string name="Geothermal_Question_9">9. What does the latin term \'Geo\' mean?</string>
+    <string name="Geothermal_Question_8">8. What was the first trace of geothermal use in history?</string>
+    <string name="Geothermal_Question_9">9. What does the latine term "Geo" mean?</string>
     <string name="Geothermal_Question_10">10. Geothermal energy produces ____ of the emission that coal produces</string>
 
     <string name="Geothermal_Answer_Q1_1">Electricity</string>
@@ -194,15 +195,15 @@
 
     <!--theme wind-->
     <string name="Wind_Question_1">1. Wind energy uses ____ to create kinetic energy</string>
-    <string name="Wind_Question_2">2. Which one is not appropriate place to get wind energy?</string>
-    <string name="Wind_Question_3">3. Which one is not related to wind energy?</string>
+    <string name="Wind_Question_2">2. What is not a place to get wind energy?</string>
+    <string name="Wind_Question_3">3. What is wrong with wind energy.</string>
     <string name="Wind_Question_4">4. Wind power plant can be installed in the sea.</string>
-    <string name="Wind_Question_5">5. Where does wind energy belong to?</string>
-    <string name="Wind_Question_6">6. Renewable energy is the re-used energy, typically coal and oil</string>
+    <string name="Wind_Question_5">5. Where does wind energy belong?</string>
+    <string name="Wind_Question_6">6. Renewable energy is the reuse of used energy, typically coal and oil.</string>
     <string name="Wind_Question_7">7. Wind energy is future-oriented.</string>
-    <string name="Wind_Question_8">8. Where does wind energy mostly produced?</string>
-    <string name="Wind_Question_9">9. Which one is wrong about finding energy other than fossil energy?</string>
-    <string name="Wind_Question_10">10. Two-thirds of the world\'s wind energy is produced in Europe</string>
+    <string name="Wind_Question_8">8. Where is the most wind energy produced?</string>
+    <string name="Wind_Question_9">9. What is wrong about finding energy other than fossil energy?</string>
+    <string name="Wind_Question_10">10. Two-thirds of the world\'s wind energy is produced in Europe.</string>
 
 
     <string name="Wind_Answer_Q1_1">Propeller</string>
@@ -255,22 +256,40 @@
     <string name="Wind_Answer_Q10_3">Maybe</string>
     <string name="Wind_Answer_Q10_4">I\'m not sure.</string>
 
-    <string name="before_you_nbegin">Before You\nBegin</string>
+    <!-- Sign in Page -->
+    <string name="before_you_nbegin">Before You
+        Begin</string>
     <string name="create_a_username_and_choose_an_navatar_to_begin">Create a username and choose an\navatar to begin!</string>
     <string name="choose_avatar">Choose Avatar</string>
     <string name="enter_username">Enter Username</string>
     <string name="continuetext">CONTINUE →</string>
+
+    <!-- Language Select -->
     <string name="choose_a_language">Choose a Language</string>
     <string name="please_choose_a_language_that_youprefer">Please choose a language that youprefer :)</string>
     <string name="korean">Korean</string>
     <string name="english">English</string>
     <string name="continueText">CONTINUE →</string>
+
+    <!-- Theme Select -->
     <string name="choose_a_theme">Choose a Theme</string>
-    <string name="the_theme_you_choose_will_be_the_main_topic_for_the_questions_you_ll_attempt">The theme you choose will be the main topic for the questions you\'ll attempt!</string>
+    <string name="the_theme_you_choose_will_be_the_main_topic_for_the_questions_you_ll_attempt">The theme you choose will be the main topic for the questions you
+        will attempt!</string>
     <string name="solar">Solar</string>
-    <string name="hydroelectric_nenergy">Hydroelectric\nEnergy</string>
+    <string name="hydroelectric_nenergy">Hydroelectric Energy</string>
     <string name="wind_energy">Wind Energy</string>
-    <string name="geothermal_nenergy">Geothermal\nEnergy</string>
+    <string name="geothermal_nenergy">Geothermal Energy</string>
+
+    <!-- Result Page -->
+    <string name="your_results">Your Results</string>
+    <string name="below_is_a_summary_of_how_you_performed">Below is a summary of how you performed!</string>
+    <string name="result_point">result point</string>
+    <string name="done">DONE →</string>
+
+    <!-- Account Details -->
+    <string name="account_ndetails">Account Details</string>
+    <string name="this_is_where_you_can_gain_key_info_about_your_account_and_customize_it">This is where you can gain key info about your account and customize it!</string>
+    <string name="change_username">Change Username</string>
 
 
 </resources>

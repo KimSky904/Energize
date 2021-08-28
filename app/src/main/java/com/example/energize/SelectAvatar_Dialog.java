@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
@@ -45,6 +46,8 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
 
         avatar1.setOnClickListener(v->{
             User.point.setAvatar_image(R.drawable.avatar_1);
+            MainActivity.btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
+            MainActivity.btn_chooseAvatar.setBackgroundResource(R.drawable.avatar_1);
             //intent
             Intent intent = new Intent();
             intent.putExtra("selected_avatar",R.drawable.avatar_1);
@@ -54,6 +57,8 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
         });
         avatar2.setOnClickListener(v->{
             User.point.setAvatar_image(R.drawable.avatar_2);
+            MainActivity.btn_chooseAvatar.setBackgroundResource(R.drawable.avatar_2);
+            MainActivity.btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
             //intent
             Intent intent = new Intent();
             intent.putExtra("selected_avatar",R.drawable.avatar_2);
@@ -62,6 +67,8 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
         });
         avatar3.setOnClickListener(v->{
             User.point.setAvatar_image(R.drawable.avatar_3);
+            MainActivity.btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
+            MainActivity.btn_chooseAvatar.setBackgroundResource(R.drawable.avatar_3);
             //intent
             Intent intent = new Intent();
             intent.putExtra("selected_avatar",R.drawable.avatar_3);
@@ -70,6 +77,8 @@ public class SelectAvatar_Dialog extends AppCompatActivity {
         });
         avatar4.setOnClickListener(v->{
             User.point.setAvatar_image(R.drawable.avatar_4);
+            MainActivity.btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
+            MainActivity.btn_chooseAvatar.setBackgroundResource(R.drawable.avatar_4);
             //intent
             Intent intent = new Intent();
             intent.putExtra("selected_avatar",R.drawable.avatar_4);

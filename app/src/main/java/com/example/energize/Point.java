@@ -9,9 +9,10 @@ import java.util.Locale;
 public class Point {
 
     private int remain_point;
-    private int avatar_image;
+    private int avatar_image = 0;
     private String user_name;
     private Locale locale;
+
     //아바타 잠금해제 여부
     private boolean[] avatar_available={true,true,true,true,false,false,false,false};
 
