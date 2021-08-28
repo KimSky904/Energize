@@ -124,7 +124,7 @@ public class SelectAvatar extends AppCompatActivity {
         }
 
         //구매되지 않은 아바타일 경우
-        if(User.point.getAvatar_available(avatarCode-1)==false){
+        if(!User.point.getAvatar_available(avatarCode - 1)){
             //포인트 사용
             //잔여 포인트 부족할 때
             if(User.point.getPoint()<20){
@@ -134,15 +134,18 @@ public class SelectAvatar extends AppCompatActivity {
             //잔여 포인트 있을 때
             else{
                 User.point.setAvatar_available(avatarCode-1);
+                User.point.setAvatar_image(avatar[avatarCode-1]);
                 User.point.usePoint(20);
                 btn_point.setText(User.point.getPoint()+" POINTS");
                 ViewDialog alert = new ViewDialog();
                 alert.showDialog(SelectAvatar.this);
+                AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
             }
         }
         //구매된 아바타일 경우
         else {
             User.point.setAvatar_image(avatar[avatarCode-1]);
+            AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
         }
     }
 

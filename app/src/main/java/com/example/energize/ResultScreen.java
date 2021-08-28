@@ -31,7 +31,7 @@ public class ResultScreen extends AppCompatActivity {
         if(User.point.getEachPoint()==0) {
             //account detail 페이지 갔다온 후
             SharedPreferences sharedPreferences = getSharedPreferences(shared, 0);
-            int pointted = sharedPreferences.getInt("point", 0);
+            int pointted = sharedPreferences.getInt("point", User.point.getEachPoint());
             btn_chooseAvatar.setText(pointted+" out 20 points");
         }
         else {

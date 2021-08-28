@@ -11,7 +11,7 @@ public class Point {
     private int remain_point;
     private int avatar_image = 0;
     private String user_name;
-    private Locale locale;
+    private int eachPoint;
 
     //아바타 잠금해제 여부
     private boolean[] avatar_available={true,true,true,true,false,false,false,false};
@@ -19,15 +19,6 @@ public class Point {
     public Point(){
         remain_point = 0;
         Log.d("myapp","포인트 객체가 생성되었습니다.");
-    }
-
-    //언어 설정
-    public void setLocale(int key){
-        if(key == 0) locale = Locale.KOREA;
-        else locale = Locale.ENGLISH;
-    }
-    public Locale getLocale(){
-        return locale;
     }
 
     //포인트
@@ -47,7 +38,6 @@ public class Point {
     }
 
     //테마 끝난 후 해당 세트에 획득한 포인트
-    private int eachPoint;
     public void addEachPoint(int point){
         eachPoint += point;
     }

@@ -279,8 +279,8 @@
     <!-- Language Select -->
     <string name="choose_a_language">Choose a Language</string>
     <string name="please_choose_a_language_that_youprefer">Please choose a language that youprefer :)</string>
-    <string name="korean">Korean</string>
-    <string name="english">English</string>
+    <string name="korean">Korean(한국어)</string>
+    <string name="english">English(영어)</string>
     <string name="continueText">CONTINUE →</string>
 
     <!-- Theme Select -->

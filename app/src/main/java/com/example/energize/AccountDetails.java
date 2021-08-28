@@ -26,7 +26,7 @@ public class AccountDetails extends AppCompatActivity {
     //set point
     Button btn_point;
     //move to avatar selection
-    Button btn_chooseAvatar;
+    public static Button button_chooseAvatar;
     //메인에서 가져온 이름 넣어놓기
     EditText Change_userName;
 
@@ -90,10 +90,10 @@ public class AccountDetails extends AppCompatActivity {
             }
         });
         //move to avatar selection
-        btn_chooseAvatar=findViewById(R.id.btn_chooseAvatar);
+        button_chooseAvatar=findViewById(R.id.btn_chooseAvatar);
         //저장된 아바타 이미지를 가져옴
-        btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
-        btn_chooseAvatar.setOnClickListener(v -> {
+        button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
+        button_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), SelectAvatar.class);
             startActivity(intent);
             //starting activity animation

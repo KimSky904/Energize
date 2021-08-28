@@ -267,8 +267,8 @@
         <!-- Language Select -->
         <string name="choose_a_language">언어 고르기</string>
         <string name="please_choose_a_language_that_youprefer">원하는 언어를 선택해주세요 :D</string>
-        <string name="korean">한국어</string>
-        <string name="english">영어</string>
+        <string name="korean">한국어(Korean)</string>
+        <string name="english">영어(English)</string>
         <string name="continueText">다음으로 →</string>
 
         <!-- Theme Select -->

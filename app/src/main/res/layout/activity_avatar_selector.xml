@@ -52,7 +52,7 @@
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/round_btn_style"
-                android:src="@drawable/avatar_2"
+                android:src="@drawable/avatar_1"
                 android:scaleType="fitCenter"
                 android:onClick="buttonClicked"/>
 
@@ -62,7 +62,7 @@
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/round_btn_style"
-                android:src="@drawable/avatar_3"
+                android:src="@drawable/avatar_2"
                 android:scaleType="fitCenter"
                 android:onClick="buttonClicked"/>
         </TableRow>
@@ -74,7 +74,7 @@
                 android:layout_height="125dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/round_btn_style"
-                android:src="@drawable/avatar_1"
+                android:src="@drawable/avatar_3"
                 android:scaleType="fitCenter"
                 android:onClick="buttonClicked"/>
 

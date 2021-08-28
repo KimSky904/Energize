@@ -128,6 +128,7 @@ public class ThemeSolar extends AppCompatActivity {
     }
 
     private void scoring() {
+        User.point.initialThemePoint();
         //포인트 부여
         for (int i = 0; i < 10; i++) {
             if (answer_user[i] == answer_list[i]) {
