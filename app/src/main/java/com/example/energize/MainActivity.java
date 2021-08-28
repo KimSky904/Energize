@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     //data saving file
     String shared = "file";
+    String userName="test";
 
     //point object
     Point point;
@@ -69,6 +70,14 @@ public class MainActivity extends AppCompatActivity {
         btn_continue = findViewById(R.id.btn_continue);
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
 
+        // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기
+        SharedPreferences sf = getSharedPreferences(userName, 0);
+        String str = sf.getString("name", ""); // 키값으로 꺼냄
+        txt_userName.setText(str); // EditText에 반영함
+
+
+        출처: https://bitsoul.tistory.com/120 [Happy Programmer~]
+
         //데이터(포인트,이름,아바타 여부) 저장값 불러옴
         /*
         int pointValue = PreferenceManager.getInt(this,"rebuild_point");
@@ -86,10 +95,21 @@ public class MainActivity extends AppCompatActivity {
 //        if(User.point.getAvatar_image()!=0) btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
 
         //아바타 안고르고 고를 시 아바타 먼저 고르라는 메세지 출력
-        Toast userNameErr=Toast.makeText(this.getApplicationContext(),"Please choose your avatar first.",Toast.LENGTH_SHORT);
-        txt_userName.setOnClickListener(v->{
-            userNameErr.show();
+        //Toast userNameErr=Toast.makeText(MainActivity.this,"Please choose your avatar first",Toast.LENGTH_SHORT);
+
+        /*txt_userName.setOnClickListener(v->{
+            if(!chooseAvatar){
+                userNameErr.show();
+                Log.d("myapp","토스트메세지");
+            }
+
         });
+        if(!chooseAvatar){
+            txt_userName.setOnClickListener(v->{
+                userNameErr.show();
+                Log.d("myapp","토스트메세지2");
+            });
+        }*/
 
         if(User.point.getAvatar_image()!=0) btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
         //Choose avatar popup
@@ -175,6 +195,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
  */
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // Activity 가 종료되기 전에 저장한다
+        // SharedPreferences 에 설정값(특별히 기억해야할 사용자 값)을 저장하기
+        SharedPreferences sf = getSharedPreferences(userName, 0);
+        SharedPreferences.Editor editor = sf.edit();//저장하려면 editor가 필요
+        String str = txt_userName.getText().toString(); // 사용자가 입력한 값
+        editor.putString("name", str); // 입력
+        editor.putString("xx", "xx"); // 입력
+        editor.commit(); // 파일에 최종 반영함
+    }
 
 
 

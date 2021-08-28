@@ -71,7 +71,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:background="@drawable/username_edittxt_style"
-            android:enabled="false"
             android:hint="@string/enter_username"
             android:paddingStart="10dp" />
 
