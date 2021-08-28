@@ -1,6 +1,7 @@
 package com.example.energize;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -29,7 +30,7 @@ public class AccountDetails extends AppCompatActivity {
     public static Button button_chooseAvatar;
     //메인에서 가져온 이름 넣어놓기
     EditText Change_userName;
-
+    String userName="test";
     //change username -> back to page
     Button btn_change_username;
     //activity 실행 요청 확인을 위한 요청코드
@@ -56,8 +57,13 @@ public class AccountDetails extends AppCompatActivity {
 
         //get User name
         Change_userName=findViewById(R.id.editTxt_userName);
-        //기본값을 메인에서 저장한 이름으로 가져와서 저장
-        Change_userName.setText(User.point.getUser_name());
+
+
+        // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기
+        SharedPreferences sf = getSharedPreferences(userName, 0);
+        String str = sf.getString("name", ""); // 키값으로 꺼냄
+        Change_userName.setText(str); // EditText에 반영함
+        User.point.setUser_name(str);
 
 
         btn_back = findViewById(R.id.btn_back);
@@ -105,7 +111,7 @@ public class AccountDetails extends AppCompatActivity {
                     //move to before page
                     btn_change_username.setOnClickListener(v -> {
                         //버튼 클릭 시 이름 저장
-                        btn_change_username.setText(User.point.getUser_name());
+
 
                         Intent fromPage = getIntent();
                         int pageCode = fromPage.getIntExtra("page_code",1);
@@ -147,4 +153,19 @@ public class AccountDetails extends AppCompatActivity {
             }
         }
     }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // Activity 가 종료되기 전에 저장한다
+        // SharedPreferences 에 설정값(특별히 기억해야할 사용자 값)을 저장하기
+        SharedPreferences sf = getSharedPreferences(User.point.getUser_name(), 0);
+        SharedPreferences.Editor editor = sf.edit();//저장하려면 editor가 필요
+        String str = Change_userName.getText().toString(); // 사용자가 입력한 값
+        editor.putString("name", str); // 입력
+        editor.putString("xx", "xx"); // 입력
+        editor.commit(); // 파일에 최종 반영함
+    }
 }
+
+
+

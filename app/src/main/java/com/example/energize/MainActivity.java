@@ -75,8 +75,7 @@ public class MainActivity extends AppCompatActivity {
         String str = sf.getString("name", ""); // 키값으로 꺼냄
         txt_userName.setText(str); // EditText에 반영함
 
-
-        출처: https://bitsoul.tistory.com/120 [Happy Programmer~]
+        User.point.setUser_name(str);
 
         //데이터(포인트,이름,아바타 여부) 저장값 불러옴
         /*
@@ -204,11 +203,9 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sf.edit();//저장하려면 editor가 필요
         String str = txt_userName.getText().toString(); // 사용자가 입력한 값
         editor.putString("name", str); // 입력
+        User.point.setUser_name(str); //객체에 이름 저장
         editor.putString("xx", "xx"); // 입력
         editor.commit(); // 파일에 최종 반영함
     }
-
-
-
 }
 
