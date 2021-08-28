@@ -16,55 +16,55 @@
         <string name="Solar_Question_9">9. 태양열 에너지는 열 또는 ____을(를) 발생시키는 데 사용할 수 있다.</string>
         <string name="Solar_Question_10">10. 태양으로부터 나오는 입자 중 태양 전지에서 에너지를 생성하는데 도움을 주는 것은?</string>
 
-        <string name="Solar_Answer_Q1_1">습도</string>
-        <string name="Solar_Answer_Q1_2">물</string>
-        <string name="Solar_Answer_Q1_3">태양광선</string>
-        <string name="Solar_Answer_Q1_4">열</string>
+        <string name="Solar_Answer_Q1_1">A. 습도</string>
+        <string name="Solar_Answer_Q1_2">B. 물</string>
+        <string name="Solar_Answer_Q1_3">C. 태양광선</string>
+        <string name="Solar_Answer_Q1_4">D. 열</string>
 
-        <string name="Solar_Answer_Q2_1">온도계</string>
-        <string name="Solar_Answer_Q2_2">태양광 패널</string>
-        <string name="Solar_Answer_Q2_3">컵</string>
-        <string name="Solar_Answer_Q2_4">기압계</string>
+        <string name="Solar_Answer_Q2_1">A. 온도계</string>
+        <string name="Solar_Answer_Q2_2">B. 태양광 패널</string>
+        <string name="Solar_Answer_Q2_3">C. 컵</string>
+        <string name="Solar_Answer_Q2_4">D. 기압계</string>
 
-        <string name="Solar_Answer_Q3_1">미국</string>
-        <string name="Solar_Answer_Q3_2">영국</string>
-        <string name="Solar_Answer_Q3_3">중국</string>
-        <string name="Solar_Answer_Q3_4">대한민국</string>
+        <string name="Solar_Answer_Q3_1">A. 미국</string>
+        <string name="Solar_Answer_Q3_2">B. 영국</string>
+        <string name="Solar_Answer_Q3_3">C. 중국</string>
+        <string name="Solar_Answer_Q3_4">D. 대한민국</string>
 
-        <string name="Solar_Answer_Q4_1">그렇다.</string>
-        <string name="Solar_Answer_Q4_2">아니다.</string>
-        <string name="Solar_Answer_Q4_3">그럴 것이다.</string>
-        <string name="Solar_Answer_Q4_4">잘 모르겠다.</string>
+        <string name="Solar_Answer_Q4_1">A. 그렇다.</string>
+        <string name="Solar_Answer_Q4_2">B. 아니다.</string>
+        <string name="Solar_Answer_Q4_3">C. 그럴 것이다.</string>
+        <string name="Solar_Answer_Q4_4">D. 잘 모르겠다.</string>
 
-        <string name="Solar_Answer_Q5_1">1930년</string>
-        <string name="Solar_Answer_Q5_2">1864년</string>
-        <string name="Solar_Answer_Q5_3">1758년</string>
-        <string name="Solar_Answer_Q5_4">1839년</string>
+        <string name="Solar_Answer_Q5_1">A. 1930년</string>
+        <string name="Solar_Answer_Q5_2">B. 1864년</string>
+        <string name="Solar_Answer_Q5_3">C. 1758년</string>
+        <string name="Solar_Answer_Q5_4">D. 1839년</string>
 
-        <string name="Solar_Answer_Q6_1">그렇다.</string>
-        <string name="Solar_Answer_Q6_2">아니다.</string>
-        <string name="Solar_Answer_Q6_3">그럴 것이다.</string>
-        <string name="Solar_Answer_Q6_4">잘 모르겠다.</string>
+        <string name="Solar_Answer_Q6_1">A. 그렇다.</string>
+        <string name="Solar_Answer_Q6_2">B. 아니다.</string>
+        <string name="Solar_Answer_Q6_3">C. 그럴 것이다.</string>
+        <string name="Solar_Answer_Q6_4">D. 잘 모르겠다.</string>
 
-        <string name="Solar_Answer_Q7_1">바람이 전기로 변환된 것이다.</string>
-        <string name="Solar_Answer_Q7_2">지열 에너지에 사용되는 것이다.</string>
-        <string name="Solar_Answer_Q7_3">원자 수준에서 빛을 전기로 직접 변환한 것이다.</string>
-        <string name="Solar_Answer_Q7_4">화석 연료를 태운 것이다.</string>
+        <string name="Solar_Answer_Q7_1">A. 바람이 전기로 변환된 것이다.</string>
+        <string name="Solar_Answer_Q7_2">B. 지열 에너지에 사용되는 것이다.</string>
+        <string name="Solar_Answer_Q7_3">C. 원자 수준에서 빛을 전기로 직접 변환한 것이다.</string>
+        <string name="Solar_Answer_Q7_4">D. 화석 연료를 태운 것이다.</string>
 
-        <string name="Solar_Answer_Q8_1">그렇다.</string>
-        <string name="Solar_Answer_Q8_2">아니다.</string>
-        <string name="Solar_Answer_Q8_3">그럴 것이다.</string>
-        <string name="Solar_Answer_Q8_4">잘 모르겠다.</string>
+        <string name="Solar_Answer_Q8_1">A. 그렇다.</string>
+        <string name="Solar_Answer_Q8_2">B. 아니다.</string>
+        <string name="Solar_Answer_Q8_3">C. 그럴 것이다.</string>
+        <string name="Solar_Answer_Q8_4">D. 잘 모르겠다.</string>
 
-        <string name="Solar_Answer_Q9_1">가스</string>
-        <string name="Solar_Answer_Q9_2">물</string>
-        <string name="Solar_Answer_Q9_3">전기</string>
-        <string name="Solar_Answer_Q9_4">빛</string>
+        <string name="Solar_Answer_Q9_1">A. 가스</string>
+        <string name="Solar_Answer_Q9_2">B. 물</string>
+        <string name="Solar_Answer_Q9_3">C. 전기</string>
+        <string name="Solar_Answer_Q9_4">D. 빛</string>
 
-        <string name="Solar_Answer_Q10_1">전자</string>
-        <string name="Solar_Answer_Q10_2">중성자</string>
-        <string name="Solar_Answer_Q10_3">양성자</string>
-        <string name="Solar_Answer_Q10_4">광자</string>
+        <string name="Solar_Answer_Q10_1">A. 전자</string>
+        <string name="Solar_Answer_Q10_2">B. 중성자</string>
+        <string name="Solar_Answer_Q10_3">C. 양성자</string>
+        <string name="Solar_Answer_Q10_4">D. 광자</string>
 
 
         <!--hydro theme-->
@@ -79,55 +79,55 @@
         <string name="Hydro_Question_9">9. 바다의 염분을 이용한 에너지가 존재한다.</string>
         <string name="Hydro_Question_10">10. 다음 중 댐에 관한 설명으로 어색한 것은?</string>
 
-        <string name="Hydro_Answer_Q1_1">태양열</string>
-        <string name="Hydro_Answer_Q1_2">강수량</string>
-        <string name="Hydro_Answer_Q1_3">전기 에너지</string>
-        <string name="Hydro_Answer_Q1_4">화석 연료</string>
+        <string name="Hydro_Answer_Q1_1">A. 태양열</string>
+        <string name="Hydro_Answer_Q1_2">B. 강수량</string>
+        <string name="Hydro_Answer_Q1_3">C. 전기 에너지</string>
+        <string name="Hydro_Answer_Q1_4">D. 화석 연료</string>
 
-        <string name="Hydro_Answer_Q2_1">그렇다.</string>
-        <string name="Hydro_Answer_Q2_2">아니다.</string>
-        <string name="Hydro_Answer_Q2_3">그럴 것이다.</string>
-        <string name="Hydro_Answer_Q2_4">잘 모르겠다.</string>
+        <string name="Hydro_Answer_Q2_1">A. 그렇다.</string>
+        <string name="Hydro_Answer_Q2_2">B. 아니다.</string>
+        <string name="Hydro_Answer_Q2_3">C. 그럴 것이다.</string>
+        <string name="Hydro_Answer_Q2_4">D. 잘 모르겠다.</string>
 
-        <string name="Hydro_Answer_Q3_1">전기 에너지</string>
-        <string name="Hydro_Answer_Q3_2">풍력 에너지</string>
-        <string name="Hydro_Answer_Q3_3">수력 에너지</string>
-        <string name="Hydro_Answer_Q3_4">원자력 에너지</string>
+        <string name="Hydro_Answer_Q3_1">A. 전기 에너지</string>
+        <string name="Hydro_Answer_Q3_2">B. 풍력 에너지</string>
+        <string name="Hydro_Answer_Q3_3">C. 수력 에너지</string>
+        <string name="Hydro_Answer_Q3_4">D. 원자력 에너지</string>
 
-        <string name="Hydro_Answer_Q4_1">용수 제공</string>
-        <string name="Hydro_Answer_Q4_2">자연재해 예방</string>
-        <string name="Hydro_Answer_Q4_3">가뭄 극복</string>
-        <string name="Hydro_Answer_Q4_4">자동차 연료</string>
+        <string name="Hydro_Answer_Q4_1">A. 용수 제공</string>
+        <string name="Hydro_Answer_Q4_2">B. 자연재해 예방</string>
+        <string name="Hydro_Answer_Q4_3">C. 가뭄 극복</string>
+        <string name="Hydro_Answer_Q4_4">D. 자동차 연료</string>
 
-        <string name="Hydro_Answer_Q5_1">그렇다.</string>
-        <string name="Hydro_Answer_Q5_2">아니다.</string>
-        <string name="Hydro_Answer_Q5_3">그럴 것이다.</string>
-        <string name="Hydro_Answer_Q5_4">잘 모르겠다.</string>
+        <string name="Hydro_Answer_Q5_1">A. 그렇다.</string>
+        <string name="Hydro_Answer_Q5_2">B. 아니다.</string>
+        <string name="Hydro_Answer_Q5_3">C. 그럴 것이다.</string>
+        <string name="Hydro_Answer_Q5_4">D. 잘 모르겠다.</string>
 
-        <string name="Hydro_Answer_Q6_1">폭포</string>
-        <string name="Hydro_Answer_Q6_2">댐</string>
-        <string name="Hydro_Answer_Q6_3">수영장</string>
-        <string name="Hydro_Answer_Q6_4">파도</string>
+        <string name="Hydro_Answer_Q6_1">A. 폭포</string>
+        <string name="Hydro_Answer_Q6_2">B. 댐</string>
+        <string name="Hydro_Answer_Q6_3">C. 수영장</string>
+        <string name="Hydro_Answer_Q6_4">D. 파도</string>
 
-        <string name="Hydro_Answer_Q7_1">운동 에너지</string>
-        <string name="Hydro_Answer_Q7_2">열 에너지</string>
-        <string name="Hydro_Answer_Q7_3">원자력 에너지</string>
-        <string name="Hydro_Answer_Q7_4">빛 에너지</string>
+        <string name="Hydro_Answer_Q7_1">A. 운동 에너지</string>
+        <string name="Hydro_Answer_Q7_2">B. 열 에너지</string>
+        <string name="Hydro_Answer_Q7_3">C. 원자력 에너지</string>
+        <string name="Hydro_Answer_Q7_4">D. 빛 에너지</string>
 
-        <string name="Hydro_Answer_Q8_1">물레방아</string>
-        <string name="Hydro_Answer_Q8_2">반도체</string>
-        <string name="Hydro_Answer_Q8_3">터빈</string>
-        <string name="Hydro_Answer_Q8_4">증기 발생기</string>
+        <string name="Hydro_Answer_Q8_1">A. 물레방아</string>
+        <string name="Hydro_Answer_Q8_2">B. 반도체</string>
+        <string name="Hydro_Answer_Q8_3">C. 터빈</string>
+        <string name="Hydro_Answer_Q8_4">D. 증기 발생기</string>
 
-        <string name="Hydro_Answer_Q9_1">그렇다.</string>
-        <string name="Hydro_Answer_Q9_2">아니다.</string>
-        <string name="Hydro_Answer_Q9_3">그럴 것이다.</string>
-        <string name="Hydro_Answer_Q9_4">잘 모르겠다.</string>
+        <string name="Hydro_Answer_Q9_1">A. 그렇다.</string>
+        <string name="Hydro_Answer_Q9_2">B. 아니다.</string>
+        <string name="Hydro_Answer_Q9_3">C. 그럴 것이다.</string>
+        <string name="Hydro_Answer_Q9_4">D. 잘 모르겠다.</string>
 
-        <string name="Hydro_Answer_Q10_1">비싼 공사비</string>
-        <string name="Hydro_Answer_Q10_2">co2 발생</string>
-        <string name="Hydro_Answer_Q10_3">생태계 파괴</string>
-        <string name="Hydro_Answer_Q10_4">안정성</string>
+        <string name="Hydro_Answer_Q10_1">A. 비싼 공사비</string>
+        <string name="Hydro_Answer_Q10_2">B. co2 발생</string>
+        <string name="Hydro_Answer_Q10_3">C. 생태계 파괴</string>
+        <string name="Hydro_Answer_Q10_4">D. 안정성</string>
 
         '
 
@@ -143,55 +143,55 @@
         <string name="Wind_Question_9">9. 사람들이 화석 에너지를 대체할 에너지를 찾는 이유로 옳지 않은 것은?</string>
         <string name="Wind_Question_10">10. 전 세계에서 생산되는 풍력 에너지의 2/3는 유럽에서 생산된다.</string>
 
-        <string name="Wind_Answer_Q1_1">프로펠러</string>
-        <string name="Wind_Answer_Q1_2">프레온 가스</string>
-        <string name="Wind_Answer_Q1_3">석탄</string>
-        <string name="Wind_Answer_Q1_4">헬리콥터</string>
+        <string name="Wind_Answer_Q1_1">A. 프로펠러</string>
+        <string name="Wind_Answer_Q1_2">B. 프레온 가스</string>
+        <string name="Wind_Answer_Q1_3">C. 석탄</string>
+        <string name="Wind_Answer_Q1_4">D. 헬리콥터</string>
 
-        <string name="Wind_Answer_Q2_1">나무 한그루 없는 평야</string>
-        <string name="Wind_Answer_Q2_2">산꼭대기</string>
-        <string name="Wind_Answer_Q2_3">사람이 많이 사는 도시</string>
-        <string name="Wind_Answer_Q2_4">새들이 지나가는 산지</string>
+        <string name="Wind_Answer_Q2_1">A. 나무 한그루 없는 평야</string>
+        <string name="Wind_Answer_Q2_2">B. 산꼭대기</string>
+        <string name="Wind_Answer_Q2_3">C. 사람이 많이 사는 도시</string>
+        <string name="Wind_Answer_Q2_4">D. 새들이 지나가는 산지</string>
 
-        <string name="Wind_Answer_Q3_1">높은 비용</string>
-        <string name="Wind_Answer_Q3_2">설치 지역 제한</string>
-        <string name="Wind_Answer_Q3_3">유해 물질 배출 X</string>
-        <string name="Wind_Answer_Q3_4">주변 환경 파괴</string>
+        <string name="Wind_Answer_Q3_1">A. 높은 비용</string>
+        <string name="Wind_Answer_Q3_2">B. 설치 지역 제한</string>
+        <string name="Wind_Answer_Q3_3">C. 유해 물질 배출 X</string>
+        <string name="Wind_Answer_Q3_4">D. 주변 환경 파괴</string>
 
-        <string name="Wind_Answer_Q4_1">그렇다.</string>
-        <string name="Wind_Answer_Q4_2">아니다.</string>
-        <string name="Wind_Answer_Q4_3">그럴 것이다.</string>
-        <string name="Wind_Answer_Q4_4">잘 모르겠다.</string>
+        <string name="Wind_Answer_Q4_1">A. 그렇다.</string>
+        <string name="Wind_Answer_Q4_2">B. 아니다.</string>
+        <string name="Wind_Answer_Q4_3">C. 그럴 것이다.</string>
+        <string name="Wind_Answer_Q4_4">D. 잘 모르겠다.</string>
 
-        <string name="Wind_Answer_Q5_1">태양 에너지</string>
-        <string name="Wind_Answer_Q5_2">바이오 에너지</string>
-        <string name="Wind_Answer_Q5_3">화석 에너지</string>
-        <string name="Wind_Answer_Q5_4">재생 에너지</string>
+        <string name="Wind_Answer_Q5_1">A. 태양 에너지</string>
+        <string name="Wind_Answer_Q5_2">B. 바이오 에너지</string>
+        <string name="Wind_Answer_Q5_3">C. 화석 에너지</string>
+        <string name="Wind_Answer_Q5_4">D. 재생 에너지</string>
 
-        <string name="Wind_Answer_Q6_1">그렇다.</string>
-        <string name="Wind_Answer_Q6_2">아니다.</string>
-        <string name="Wind_Answer_Q6_3">그럴 것이다.</string>
-        <string name="Wind_Answer_Q6_4">잘 모르겠다.</string>
+        <string name="Wind_Answer_Q6_1">A. 그렇다.</string>
+        <string name="Wind_Answer_Q6_2">B. 아니다.</string>
+        <string name="Wind_Answer_Q6_3">C. 그럴 것이다.</string>
+        <string name="Wind_Answer_Q6_4">D. 잘 모르겠다.</string>
 
-        <string name="Wind_Answer_Q7_1">그렇다.</string>
-        <string name="Wind_Answer_Q7_2">아니다.</string>
-        <string name="Wind_Answer_Q7_3">그럴 것이다.</string>
-        <string name="Wind_Answer_Q7_4">잘 모르겠다.</string>
+        <string name="Wind_Answer_Q7_1">A. 그렇다.</string>
+        <string name="Wind_Answer_Q7_2">B. 아니다.</string>
+        <string name="Wind_Answer_Q7_3">C. 그럴 것이다.</string>
+        <string name="Wind_Answer_Q7_4">D. 잘 모르겠다.</string>
 
-        <string name="Wind_Answer_Q8_1">대한민국</string>
-        <string name="Wind_Answer_Q8_2">탄자니아</string>
-        <string name="Wind_Answer_Q8_3">노르웨이</string>
-        <string name="Wind_Answer_Q8_4">중국</string>
+        <string name="Wind_Answer_Q8_1">A. 대한민국</string>
+        <string name="Wind_Answer_Q8_2">B. 탄자니아</string>
+        <string name="Wind_Answer_Q8_3">C. 노르웨이</string>
+        <string name="Wind_Answer_Q8_4">D. 중국</string>
 
-        <string name="Wind_Answer_Q9_1">비싼 비용</string>
-        <string name="Wind_Answer_Q9_2">환경 보호</string>
-        <string name="Wind_Answer_Q9_3">화석 에너지 고갈</string>
-        <string name="Wind_Answer_Q9_4">미래 지향적</string>
+        <string name="Wind_Answer_Q9_1">A. 비싼 비용</string>
+        <string name="Wind_Answer_Q9_2">B. 환경 보호</string>
+        <string name="Wind_Answer_Q9_3">C. 화석 에너지 고갈</string>
+        <string name="Wind_Answer_Q9_4">D. 미래 지향적</string>
 
-        <string name="Wind_Answer_Q10_1">그렇다.</string>
-        <string name="Wind_Answer_Q10_2">아니다.</string>
-        <string name="Wind_Answer_Q10_3">그럴 것이다.</string>
-        <string name="Wind_Answer_Q10_4">잘 모르겠다.</string>
+        <string name="Wind_Answer_Q10_1">A. 그렇다.</string>
+        <string name="Wind_Answer_Q10_2">B. 아니다.</string>
+        <string name="Wind_Answer_Q10_3">C. 그럴 것이다.</string>
+        <string name="Wind_Answer_Q10_4">D. 잘 모르겠다.</string>
 
 
         <!--theme wind-->
@@ -207,55 +207,55 @@
         <string name="Geothermal_Question_10">10. 지열 에너지는 석탄의 ____만큼의 배출물을 생성한다.</string>
 
 
-        <string name="Geothermal_Answer_Q1_1">전기</string>
-        <string name="Geothermal_Answer_Q1_2">열</string>
-        <string name="Geothermal_Answer_Q1_3">땅(지구)</string>
-        <string name="Geothermal_Answer_Q1_4">태양</string>
+        <string name="Geothermal_Answer_Q1_1">A. 전기</string>
+        <string name="Geothermal_Answer_Q1_2">B. 열</string>
+        <string name="Geothermal_Answer_Q1_3">C. 땅(지구)</string>
+        <string name="Geothermal_Answer_Q1_4">D. 태양</string>
 
-        <string name="Geothermal_Answer_Q2_1">100년</string>
-        <string name="Geothermal_Answer_Q2_2">10년</string>
-        <string name="Geothermal_Answer_Q2_3">20~50년</string>
-        <string name="Geothermal_Answer_Q2_4">무기한</string>
+        <string name="Geothermal_Answer_Q2_1">A. 100년</string>
+        <string name="Geothermal_Answer_Q2_2">B. 10년</string>
+        <string name="Geothermal_Answer_Q2_3">C. 20~50년</string>
+        <string name="Geothermal_Answer_Q2_4">D. 무기한</string>
 
-        <string name="Geothermal_Answer_Q3_1">회전 터빈</string>
-        <string name="Geothermal_Answer_Q3_2">지열 패널</string>
-        <string name="Geothermal_Answer_Q3_3">지열 펌프</string>
-        <string name="Geothermal_Answer_Q3_4">열화학 공급 연료</string>
+        <string name="Geothermal_Answer_Q3_1">A. 회전 터빈</string>
+        <string name="Geothermal_Answer_Q3_2">B. 지열 패널</string>
+        <string name="Geothermal_Answer_Q3_3">C. 지열 펌프</string>
+        <string name="Geothermal_Answer_Q3_4">D. 열화학 공급 연료</string>
 
-        <string name="Geothermal_Answer_Q4_1">지각</string>
-        <string name="Geothermal_Answer_Q4_2">맨틀</string>
-        <string name="Geothermal_Answer_Q4_3">외핵</string>
-        <string name="Geothermal_Answer_Q4_4">표면</string>
+        <string name="Geothermal_Answer_Q4_1">A. 지각</string>
+        <string name="Geothermal_Answer_Q4_2">B. 맨틀</string>
+        <string name="Geothermal_Answer_Q4_3">C. 외핵</string>
+        <string name="Geothermal_Answer_Q4_4">D. 표면</string>
 
-        <string name="Geothermal_Answer_Q5_1">열 에너지</string>
-        <string name="Geothermal_Answer_Q5_2">빛 에너지</string>
-        <string name="Geothermal_Answer_Q5_3">화학 에너지</string>
-        <string name="Geothermal_Answer_Q5_4">전기 에너지</string>
+        <string name="Geothermal_Answer_Q5_1">A. 열 에너지</string>
+        <string name="Geothermal_Answer_Q5_2">B. 빛 에너지</string>
+        <string name="Geothermal_Answer_Q5_3">C. 화학 에너지</string>
+        <string name="Geothermal_Answer_Q5_4">D. 전기 에너지</string>
 
-        <string name="Geothermal_Answer_Q6_1">태양 에너지</string>
-        <string name="Geothermal_Answer_Q6_2">장작</string>
-        <string name="Geothermal_Answer_Q6_3">가스/석유</string>
-        <string name="Geothermal_Answer_Q6_4">석탄</string>
+        <string name="Geothermal_Answer_Q6_1">A. 태양 에너지</string>
+        <string name="Geothermal_Answer_Q6_2">B. 장작</string>
+        <string name="Geothermal_Answer_Q6_3">C. 가스/석유</string>
+        <string name="Geothermal_Answer_Q6_4">D. 석탄</string>
 
-        <string name="Geothermal_Answer_Q7_1">100~150°C </string>
-        <string name="Geothermal_Answer_Q7_2">70~100°C</string>
-        <string name="Geothermal_Answer_Q7_3">40~60°C</string>
-        <string name="Geothermal_Answer_Q7_4">160~180°C</string>
+        <string name="Geothermal_Answer_Q7_1">A. 100~150°C </string>
+        <string name="Geothermal_Answer_Q7_2">B. 70~100°C</string>
+        <string name="Geothermal_Answer_Q7_3">C. 40~60°C</string>
+        <string name="Geothermal_Answer_Q7_4">D. 160~180°C</string>
 
-        <string name="Geothermal_Answer_Q8_1">기원전 1852년</string>
-        <string name="Geothermal_Answer_Q8_2">기원후 3년</string>
-        <string name="Geothermal_Answer_Q8_3">기원전 256년</string>
-        <string name="Geothermal_Answer_Q8_4">기원후 1640년</string>
+        <string name="Geothermal_Answer_Q8_1">A. 기원전 1852년</string>
+        <string name="Geothermal_Answer_Q8_2">B. 기원후 3년</string>
+        <string name="Geothermal_Answer_Q8_3">C. 기원전 256년</string>
+        <string name="Geothermal_Answer_Q8_4">D. 기원후 1640년</string>
 
-        <string name="Geothermal_Answer_Q9_1">사람</string>
-        <string name="Geothermal_Answer_Q9_2">땅</string>
-        <string name="Geothermal_Answer_Q9_3">지구</string>
-        <string name="Geothermal_Answer_Q9_4">열</string>
+        <string name="Geothermal_Answer_Q9_1">A. 사람</string>
+        <string name="Geothermal_Answer_Q9_2">B. 땅</string>
+        <string name="Geothermal_Answer_Q9_3">C. 지구</string>
+        <string name="Geothermal_Answer_Q9_4">D. 열</string>
 
-        <string name="Geothermal_Answer_Q10_1">50%</string>
-        <string name="Geothermal_Answer_Q10_2">0.03%</string>
-        <string name="Geothermal_Answer_Q10_3">12%</string>
-        <string name="Geothermal_Answer_Q10_4">5%</string>
+        <string name="Geothermal_Answer_Q10_1">A. 50%</string>
+        <string name="Geothermal_Answer_Q10_2">B. 0.03%</string>
+        <string name="Geothermal_Answer_Q10_3">C. 12%</string>
+        <string name="Geothermal_Answer_Q10_4">D. 5%</string>
 
         <!-- Sign in Page -->
         <string name="before_you_nbegin">준비하기</string>
@@ -300,5 +300,5 @@
         <string name="sorry_nyour_remaining_points_are_insufficient">남아있는 포인트가
         부족하여 아바타를 구매실 수 없습니다 </string>
 
-        <string name="Please_choose_your_avatar_first">아바타를 먼저 선택해주세요.</string>
+
 </resources>
