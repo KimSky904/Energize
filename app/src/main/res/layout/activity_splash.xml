@@ -22,7 +22,7 @@
         android:layout_below="@+id/img_logo"
         android:layout_marginTop="5dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/energize"
+        android:text="Energize"
         android:textColor="@color/white"
         android:textSize="36sp" />
 

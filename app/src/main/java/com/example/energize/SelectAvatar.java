@@ -34,7 +34,7 @@ public class SelectAvatar extends AppCompatActivity {
     int[] avatar = {R.drawable.avatar_1,R.drawable.avatar_2,R.drawable.avatar_3,R.drawable.avatar_4
             ,R.drawable.avatar_5,R.drawable.avatar_6,R.drawable.avatar_7,R.drawable.avatar_8};
 
-
+    PreferenceManager p;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,9 @@ public class SelectAvatar extends AppCompatActivity {
         setContentView(R.layout.activity_avatar_selector);
         //set point
         btn_point = findViewById(R.id.btn_point);
-        btn_point.setText(User.point.getPoint()+" Points");
+        btn_point.setText(p.getInt(this,"point")+" Points");
+
+
 
         Log.d("myapp","1번 단계 통과");
         //each avatars

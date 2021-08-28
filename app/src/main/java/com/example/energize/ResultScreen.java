@@ -20,6 +20,8 @@ public class ResultScreen extends AppCompatActivity {
     //값 유지
     String shared = "file";
     int saving;
+    PreferenceManager p;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,8 @@ public class ResultScreen extends AppCompatActivity {
 
         //get each points
         btn_chooseAvatar.setText(User.point.getEachPoint() + " out 20 points");
+        //얻은 포인트 저장한다.
+        p.setInt(this,"point",saving);
 
 
         //move to account details
