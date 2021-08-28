@@ -59,6 +59,7 @@
             android:backgroundTint="#CC507B00"
             android:textColor="@color/white"
             android:textSize="18sp"
+            android:textAllCaps="false"
             android:text="@string/result_point" />
 
         <Button

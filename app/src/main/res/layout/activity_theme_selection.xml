@@ -68,6 +68,7 @@
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/solar"
             android:text="@string/solar"
+            android:textAllCaps="false"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words"/>
@@ -81,6 +82,7 @@
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/hydroelectric"
             android:text="@string/hydroelectric_nenergy"
+            android:textAllCaps="false"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words" />
@@ -94,6 +96,7 @@
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/wind"
             android:text="@string/wind_energy"
+            android:textAllCaps="false"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words" />
@@ -107,6 +110,7 @@
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/geothermal"
             android:text="@string/geothermal_nenergy"
+            android:textAllCaps="false"
             android:textColor="@color/clickable_words"
             android:textColorLink="@color/clickable_words"
             android:textColorHighlight="@color/clickable_words" />
