@@ -42,58 +42,61 @@
     <RelativeLayout
         android:id="@+id/bottom_page"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SubText"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/bottom_page_style"
-        android:animateLayoutChanges="true">
+        android:layout_marginTop="70dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bottom_page_style">
 
 
         <LinearLayout
-            android:layout_centerHorizontal="true"
+            android:id="@+id/choose_language"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/choose_language">
-        <Button
-            android:id="@+id/btn_chooseLanguage_Korean"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/round_edge_btn_style"
-            android:text="@string/korean"
-            android:textAllCaps="false"
-            android:textColor="@color/clickable_words"
-            android:textColorLink="@color/clickable_words"
-            android:textColorHighlight="@color/clickable_words"
-            />
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_chooseLanguage_Korean"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/round_edge_btn_style"
+                android:text="@string/korean"
+                android:textAllCaps="false"
+                android:textColor="@color/clickable_words"
+                android:textColorHighlight="@color/clickable_words"
+                android:textColorLink="@color/clickable_words" />
 
 
-        <Button
-            android:id="@+id/btn_chooseLanguage_English"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/round_edge_btn_style"
-            android:text="@string/english"
-            android:textAllCaps="false"
-            android:textColorHighlight="@color/clickable_words"
-            android:textColor="@color/clickable_words"
-            android:textColorLink="@color/clickable_words"/>
+            <Button
+                android:id="@+id/btn_chooseLanguage_English"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_edge_btn_style"
+                android:text="@string/english"
+                android:textAllCaps="false"
+                android:textColor="@color/clickable_words"
+                android:textColorHighlight="@color/clickable_words"
+                android:textColorLink="@color/clickable_words" />
         </LinearLayout>
+
         <Button
             android:id="@+id/btn_continue"
+            style="@style/Text.TitleStyle"
             android:layout_width="225dp"
             android:layout_height="50dp"
             android:layout_below="@+id/choose_language"
-            android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
             android:background="@drawable/oval_btn_style"
-            android:text="@string/continueText"
             android:enabled="false"
-            style="@style/Text.TitleStyle"
-            android:textSize="16sp"
-            android:textColor="@color/white"/>
+            android:text="@string/continueText"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 

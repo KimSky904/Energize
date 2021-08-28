@@ -34,9 +34,11 @@
         android:id="@+id/bottom_page"
         android:layout_width="match_parent"
         android:layout_height="360dp"
+        android:layout_below="@+id/SubText"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/bottom_page_style"
-        android:animateLayoutChanges="true">
+        android:layout_marginTop="32dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bottom_page_style">
 
         <ImageButton
             android:id="@+id/btn_chooseAvatar"
@@ -44,17 +46,20 @@
             android:layout_height="160dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/round_btn_style"/>
+            android:layout_marginTop="31dp"
+            android:background="@drawable/round_btn_style" />
 
         <TextView
             android:id="@+id/btn_chooseAvatar_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btn_chooseAvatar"
             android:layout_alignTop="@+id/btn_chooseAvatar"
+            android:layout_alignEnd="@+id/btn_chooseAvatar"
             android:layout_alignBottom="@+id/btn_chooseAvatar"
-            android:layout_centerInParent="true"
+            android:layout_marginStart="33dp"
             android:layout_marginTop="70dp"
+            android:layout_marginEnd="35dp"
             android:layout_marginBottom="70dp"
             android:text="@string/choose_avatar" />
 
@@ -66,24 +71,24 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             android:background="@drawable/username_edittxt_style"
-            android:hint="@string/enter_username"
             android:enabled="false"
+            android:hint="@string/enter_username"
             android:paddingStart="10dp" />
 
 
         <Button
             android:id="@+id/btn_continue"
-            android:clickable="false"
+            style="@style/Text.TitleStyle"
             android:layout_width="225dp"
             android:layout_height="50dp"
             android:layout_below="@+id/editTxt_userName"
-            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
             android:background="@drawable/oval_btn_style"
+            android:clickable="false"
             android:text="@string/continuetext"
-            style="@style/Text.TitleStyle"
-            android:textSize="16sp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 
