@@ -86,8 +86,19 @@ public class MainActivity extends AppCompatActivity {
         String str = sf.getString("name", ""); // 키값으로 꺼냄
         int ava = sf.getInt("avatar",R.drawable.avatar_1);
         User.point.setAvatar_image(ava);
-        int points = User.p.getInt(this,"point");
-        User.point.setPoint(points);
+
+        int points;
+        if(User.p.getInt(this,"point")!=-1){
+            points = User.p.getInt(this,"point");
+            User.point.setPoint(points);
+        }
+        else {
+            User.p.setInt(this,"point",0);
+            points = User.p.getInt(this,"point");
+            User.point.setPoint(points);
+        }
+
+
         if(User.point.getAvatar_image()!=0){
             btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
             btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
