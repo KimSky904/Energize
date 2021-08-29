@@ -61,17 +61,13 @@ public class AccountDetails extends AppCompatActivity {
         Change_userName=findViewById(R.id.editTxt_userName);
 
 
-        // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기
+        // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기 -> 어느 액티비티에서 변경하던 적용되어야함 : manager사용
         SharedPreferences sf = getSharedPreferences(userName, 0);
         String str = sf.getString("name", ""); // 키값으로 꺼냄
-        Change_userName.setText(str); // EditText에 반영함
+        Change_userName.setText(User.point.getUser_name().toString()); // EditText에 반영함
 
         btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(v -> {
-
-            //이름 저장
-            User.point.setUser_name(Change_userName.getText().toString());
-
             Intent fromPage = getIntent();
             int pageCode = fromPage.getIntExtra("page_code",1);
             switch (pageCode){
@@ -113,8 +109,12 @@ public class AccountDetails extends AppCompatActivity {
         btn_change_username=findViewById(R.id.btn_change_username);
                     //move to before page
                     btn_change_username.setOnClickListener(v -> {
-                        //버튼 클릭 시 이름 저장
-
+                        //이름 저장
+                        String changedName = Change_userName.getText().toString();
+                        User.p.setString(this,"name",changedName);
+                        User.point.setUser_name(changedName);
+                        Log.d("myapp","p에 저장된 이름 : "+User.p.getString(this,"name"));
+                        Log.d("myapp","point에 저장된 이름 : "+User.point.getUser_name());
 
                         Intent fromPage = getIntent();
                         int pageCode = fromPage.getIntExtra("page_code",1);

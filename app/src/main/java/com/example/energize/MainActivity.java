@@ -76,17 +76,13 @@ public class MainActivity extends AppCompatActivity {
         //기본 언어 지정
         changeLocale();
 
-
-
-//        Log.d("myapp",User.p.getInt(this,"point")+"");
-//        User.point.setPoint(User.p.getInt(this,"point"));
-
         // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기 & 아바타
         SharedPreferences sf = getSharedPreferences(userName, 0);
-        String str = sf.getString("name", ""); // 키값으로 꺼냄
+        //String str = sf.getString("name", ""); // 키값으로 꺼냄
         int ava = sf.getInt("avatar",R.drawable.avatar_1);
         User.point.setAvatar_image(ava);
 
+        //포인트 설정
         int points;
         if(User.p.getInt(this,"point")!=-1){
             points = User.p.getInt(this,"point");
@@ -98,17 +94,23 @@ public class MainActivity extends AppCompatActivity {
             User.point.setPoint(points);
         }
 
-
+        //아바타 설정
         if(User.point.getAvatar_image()!=0){
             btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
             btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
             //컨티뉴 활성화
             checkContinueIsAble();
         }
+
+        //이름
+        Log.d("myapp","p에 저장된 이름 : "+User.p.getString(this,"name"));
+        Log.d("myapp","point에 저장된 이름 : "+User.point.getUser_name());
+        String str = User.p.getString(this,"name").toString();
         txt_userName.setText(str); // EditText에 반영함
         if(!str.isEmpty()) writeText=true;
         else writeText=false;
 
+        Log.d("myapp",writeText+"");
         Log.d("myapp",User.p.getInt(this,"point")+"");
 
         //컨티뉴 활성화
@@ -123,10 +125,12 @@ public class MainActivity extends AppCompatActivity {
         btn_continue.setOnClickListener(v->{
             //텍스트뷰로 들어온 이름 저장
             User.point.setUser_name(txt_userName.getText().toString());
+            Intent intent = new Intent(getApplicationContext(),LanguageSelection.class);
+            startActivity(intent);
+            //starting activity animation
+            overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
+            finish();
         });
-
-        //User.point.setPoint(0);
-
 
         //사용자가 임의로 이름을 지웠을 경우 체크하여 버튼 비활성화
         //userName 안채우면 버튼 비활성화
@@ -181,17 +185,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkContinueIsAble(){
         //change userName 비활성화 / 활성화
-        if(User.point.getAvatar_image()!=0&&writeText) {
+        if(writeText) {
+            Log.d("myapp","통과함");
             btn_continue.setClickable(true);
             btn_continue.setBackgroundResource(R.drawable.oval_btn_color_style);
-            //move to select language screen
-            btn_continue.setOnClickListener(v -> {
-                Intent intent = new Intent(getApplicationContext(),LanguageSelection.class);
-                startActivity(intent);
-                //starting activity animation
-                overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
-                finish();
-            });
         }
         else{
             btn_continue.setClickable(false);
