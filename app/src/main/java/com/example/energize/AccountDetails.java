@@ -54,8 +54,8 @@ public class AccountDetails extends AppCompatActivity {
         //set point text
         btn_point = findViewById(R.id.btn_point);
         //저장된 포인트 꺼내옴
-        int point= User.p.getInt(this,"point");
-        btn_point.setText(point+" Points");
+        //int point= User.p.getInt(this,"point");
+        btn_point.setText(User.point.getPoint()+" Points");
 
         //get User name
         Change_userName=findViewById(R.id.editTxt_userName);
@@ -65,14 +65,15 @@ public class AccountDetails extends AppCompatActivity {
         SharedPreferences sf = getSharedPreferences(userName, 0);
         String str = sf.getString("name", ""); // 키값으로 꺼냄
         Change_userName.setText(str); // EditText에 반영함
-        User.point.setUser_name(str);
-
 
         btn_back = findViewById(R.id.btn_back);
         btn_back.setOnClickListener(v -> {
+
+            //이름 저장
+            User.point.setUser_name(Change_userName.getText().toString());
+
             Intent fromPage = getIntent();
             int pageCode = fromPage.getIntExtra("page_code",1);
-
             switch (pageCode){
                 // page code 1 : LanguageSelection
                 // page code 2 : ThemeSelection

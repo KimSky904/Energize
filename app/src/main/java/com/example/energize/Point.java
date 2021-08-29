@@ -1,5 +1,6 @@
 package com.example.energize;
 
+import android.content.Context;
 import android.content.res.Configuration;
 import android.util.Log;
 

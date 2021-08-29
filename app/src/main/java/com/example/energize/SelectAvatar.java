@@ -40,10 +40,11 @@ public class SelectAvatar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avatar_selector);
+
         //set point
         btn_point = findViewById(R.id.btn_point);
-        btn_point.setText(p.getInt(this,"point")+" Points");
-
+        //btn_point.setText(p.getInt(this,"point")+" Points");
+        btn_point.setText(User.point.getPoint()+" POINTS");
 
         //each avatars
         avatar_button[0] = findViewById(R.id.btn_avatar_1);
@@ -103,24 +104,29 @@ public class SelectAvatar extends AppCompatActivity {
 
         //구매되지 않은 아바타일 경우
         if(!User.p.getBoolean(this,"avatar_button["+(avatarCode-1)+"]")){
-            //포인트 사용
             //잔여 포인트 부족할 때
-            if(User.point.getPoint()<20){
+            if(User.p.getInt(this,"point")<20){
                 FailDialog alert = new FailDialog();
                 alert.showDialog(SelectAvatar.this);
             }
             //잔여 포인트 있을 때
             else{
                 //User.point.setAvatar_available(avatarCode-1);
-                User.point.setAvatar_image(avatar[avatarCode-1]);
+                //영구 소장 가능
+                User.p.setBoolean(this,"avatar_button["+(avatarCode-1)+"]",true);
+                //포인트 사용
                 User.point.usePoint(20);
-                User.p.setInt(this,"points",User.point.getPoint());
+                Log.d("myapp","구매 후 잔액 : "+User.point.getPoint());
                 btn_point.setText(User.point.getPoint()+" POINTS");
+                //잔액 p에 저장
+                User.p.setInt(this,"point",User.point.getPoint());
+                //성공 팝업 띄움
                 ViewDialog alert = new ViewDialog();
                 alert.showDialog(SelectAvatar.this);
+                //이미지 띄움
                 AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
                 avatar_button[avatarCode-1].setImageResource(avatar[avatarCode-1]);
-                User.p.setBoolean(this,"avatar_button["+(avatarCode-1)+"]",true);
+                User.point.setAvatar_image(avatar[avatarCode-1]);
             }
         }
         //구매된 아바타일 경우
