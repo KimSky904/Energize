@@ -290,7 +290,7 @@
     <!-- Account Details -->
     <string name="account_ndetails">Account Details</string>
     <string name="this_is_where_you_can_gain_key_info_about_your_account_and_customize_it">This is where you can gain key info about your account and customize it!</string>
-    <string name="change_username">Change Username</string>
+    <string name="apply">Apply</string>
 
     <!-- Pop up -->
     <string name="purchase">Purchase</string>

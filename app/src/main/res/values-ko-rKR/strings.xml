@@ -288,7 +288,7 @@
         <!-- Account Details -->
         <string name="account_ndetails">계정 정보</string>
         <string name="this_is_where_you_can_gain_key_info_about_your_account_and_customize_it">계정의 정보를 확인하거나 새롭게 아바타를 선택해보세요!</string>
-        <string name="change_username">사용자 이름 변경하기</string>
+        <string name="apply">적용하기</string>
 
 
         <!-- Pop up -->
