@@ -77,11 +77,7 @@ public class MainActivity extends AppCompatActivity {
         changeLocale();
 
         // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기 & 아바타
-        SharedPreferences sf = PreferenceManager.getPreferences(this);
-        //String str = sf.getString("name", ""); // 키값으로 꺼냄
-
-        int ava = sf.getInt("avatar",R.drawable.avatar_1);
-        Log.d("myapp",ava+"");
+        int ava = PreferenceManager.getPreferences(this).getInt("avatar",R.drawable.avatar_1);
         User.point.setAvatar_image(ava);
 
         //포인트 설정
@@ -106,16 +102,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //이름
-        Log.d("myapp","p에 저장된 이름 : "+User.p.getString(this,"name"));
-        Log.d("myapp","point에 저장된 이름 : "+User.point.getUser_name());
         String str = User.p.getString(this,"name");
         txt_userName.setText(str); // EditText에 반영함
         User.point.setUser_name(str);
         if(!str.isEmpty()) writeText=true;
         else writeText=false;
 
-        Log.d("myapp",writeText+"");
-        Log.d("myapp",User.p.getInt(this,"point")+"");
 
         //컨티뉴 활성화
         checkContinueIsAble();
@@ -163,9 +155,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
-            Log.d("myapp","아바타 선택 종료됨");
-            User.point.setAvatar_image(data.getIntExtra("selected_avatar",0));
-            Log.d("myapp","->"+User.point.getAvatar_image()+"");
+            int avatarImage = data.getIntExtra("selected_avatar",0);
+            User.p.setInt(this,"avatar",avatarImage);
+            User.point.setAvatar_image(avatarImage);
             txt_userName.setEnabled(true);
             checkContinueIsAble();
         }
@@ -176,10 +168,13 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         // Activity 가 종료되기 전에 저장한다
         // SharedPreferences 에 설정값(특별히 기억해야할 사용자 값)을 저장하기
-        SharedPreferences sf = getSharedPreferences(userName, 0);
+        //PreferenceManager.getPreferences(this).setInt(this,"avatar",R.drawable.avatar_1);
+        SharedPreferences sf = PreferenceManager.getPreferences(this);
         SharedPreferences.Editor editor = sf.edit();//저장하려면 editor가 필요
+
         String str = txt_userName.getText().toString(); // 사용자가 입력한 값
         int ava = User.point.getAvatar_image();
+
         editor.putString("name", str); // 입력
         editor.putInt("avatar",ava);//아바타 저장
         editor.putInt("point",User.p.getInt(this,"point"));//아바타 저장

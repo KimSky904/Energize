@@ -300,7 +300,7 @@
     <string name="purchase_failed">Purchase Failed</string>
     <string name="sorry_nyour_remaining_points_are_insufficient">Sorry
         Your remaining points are insufficient</string>
-
+    <string name="avatar_is_changed">avatar is changed!</string>
 
 
 </resources>

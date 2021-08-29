@@ -71,8 +71,6 @@ public class SelectAvatar extends AppCompatActivity {
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
-
-
     }
 
     public void buttonClicked(View view){
@@ -152,7 +150,9 @@ public class SelectAvatar extends AppCompatActivity {
                 Log.d("myapp","이미지 저장");
                 Log.d("myapp",avatar[avatarCode-1]+"");
                 User.p.setInt(this,"avatar",avatar[avatarCode-1]);
-                AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
+                AccountDetails.button_chooseAvatar.setBackgroundResource(avatar[avatarCode-1]);
+                SelectedDialog selectedDialog = new SelectedDialog();
+                selectedDialog.showDialog(SelectAvatar.this);
         }
     }
 
@@ -184,6 +184,23 @@ public class SelectAvatar extends AppCompatActivity {
             FrameLayout mDialogNo = dialog.findViewById(R.id.frmNo);
             mDialogNo.setOnClickListener(v -> {
                 dialog.dismiss();
+            });
+
+            dialog.show();
+        }
+    }
+
+    public class SelectedDialog{
+        public void showDialog(Activity activity) {
+            final Dialog dialog = new Dialog(activity);
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            dialog.setCancelable(false);
+            dialog.setContentView(R.layout.activity_avatar_is_selected_dialog);
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+
+            FrameLayout mDialogOk = dialog.findViewById(R.id.frmOk);
+            mDialogOk.setOnClickListener(v -> {
+                dialog.cancel();
             });
 
             dialog.show();
