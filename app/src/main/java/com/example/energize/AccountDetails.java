@@ -109,7 +109,10 @@ public class AccountDetails extends AppCompatActivity {
         btn_change_username=findViewById(R.id.btn_change_username);
                     //move to before page
                     btn_change_username.setOnClickListener(v -> {
-                        //이름 저장
+                        //아바타 적용
+                        //int changedAvatar = User.p.getInt(this,"avatar");
+
+                        //이름 적용
                         String changedName = Change_userName.getText().toString();
                         User.p.setString(this,"name",changedName);
                         User.point.setUser_name(changedName);
@@ -168,6 +171,8 @@ public class AccountDetails extends AppCompatActivity {
         editor.putString("xx", "xx"); // 입력
         editor.commit(); // 파일에 최종 반영함
     }
+
+
 }
 
 

@@ -133,11 +133,13 @@ public class SelectAvatar extends AppCompatActivity {
                 AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
                 avatar_button[avatarCode-1].setImageResource(avatar[avatarCode-1]);
                 User.point.setAvatar_image(avatar[avatarCode-1]);
+                User.p.setInt(this,"avatar",avatar[avatarCode-1]);
             }
         }
         //구매된 아바타일 경우
         else {
             User.point.setAvatar_image(avatar[avatarCode-1]);
+            User.p.setInt(this,"avatar",avatar[avatarCode-1]);
             AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
         }
     }

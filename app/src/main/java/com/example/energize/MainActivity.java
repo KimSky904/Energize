@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         //아바타 설정
         if(User.point.getAvatar_image()!=0){
             btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
-            btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
+            btn_chooseAvatar.setBackgroundResource(User.p.getInt(this,"avatar"));
             //컨티뉴 활성화
             checkContinueIsAble();
         }
@@ -105,8 +105,9 @@ public class MainActivity extends AppCompatActivity {
         //이름
         Log.d("myapp","p에 저장된 이름 : "+User.p.getString(this,"name"));
         Log.d("myapp","point에 저장된 이름 : "+User.point.getUser_name());
-        String str = User.p.getString(this,"name").toString();
+        String str = User.p.getString(this,"name");
         txt_userName.setText(str); // EditText에 반영함
+        User.point.setUser_name(str);
         if(!str.isEmpty()) writeText=true;
         else writeText=false;
 
