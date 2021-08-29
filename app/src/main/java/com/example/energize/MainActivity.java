@@ -77,9 +77,11 @@ public class MainActivity extends AppCompatActivity {
         changeLocale();
 
         // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기 & 아바타
-        SharedPreferences sf = getSharedPreferences(userName, 0);
+        SharedPreferences sf = PreferenceManager.getPreferences(this);
         //String str = sf.getString("name", ""); // 키값으로 꺼냄
+
         int ava = sf.getInt("avatar",R.drawable.avatar_1);
+        Log.d("myapp",ava+"");
         User.point.setAvatar_image(ava);
 
         //포인트 설정
@@ -93,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
             points = User.p.getInt(this,"point");
             User.point.setPoint(points);
         }
+
 
         //아바타 설정
         if(User.point.getAvatar_image()!=0){

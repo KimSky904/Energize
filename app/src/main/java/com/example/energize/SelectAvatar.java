@@ -71,10 +71,12 @@ public class SelectAvatar extends AppCompatActivity {
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
+
+
     }
 
     public void buttonClicked(View view){
-        int avatarCode = 1;
+        int avatarCode = 0;
         switch(view.getId()){
             case R.id.btn_avatar_1:
                 avatarCode = 1;
@@ -100,9 +102,10 @@ public class SelectAvatar extends AppCompatActivity {
             case R.id.btn_avatar_8:
                 avatarCode = 8;
                 break;
-            default: avatarCode = 1;
+            default: avatarCode = 0;
         }
 
+        //기본 아바타
         User.p.setBoolean(this,"avatar_button[0]",true);
         User.p.setBoolean(this,"avatar_button[1]",true);
         User.p.setBoolean(this,"avatar_button[2]",true);
@@ -110,13 +113,16 @@ public class SelectAvatar extends AppCompatActivity {
 
         //구매되지 않은 아바타일 경우
         if(!User.p.getBoolean(this,"avatar_button["+(avatarCode-1)+"]")){
+            Log.d("myapp","아바타 구매 x");
             //잔여 포인트 부족할 때
             if(User.p.getInt(this,"point")<20){
+                Log.d("myapp","포인트 부족");
                 FailDialog alert = new FailDialog();
                 alert.showDialog(SelectAvatar.this);
             }
             //잔여 포인트 있을 때
             else{
+                Log.d("myapp","포인트 있을 때");
                 //User.point.setAvatar_available(avatarCode-1);
                 //영구 소장 가능
                 User.p.setBoolean(this,"avatar_button["+(avatarCode-1)+"]",true);
@@ -130,17 +136,23 @@ public class SelectAvatar extends AppCompatActivity {
                 ViewDialog alert = new ViewDialog();
                 alert.showDialog(SelectAvatar.this);
                 //이미지 띄움
+                Log.d("myapp","이미지 저장22");
                 AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
                 avatar_button[avatarCode-1].setImageResource(avatar[avatarCode-1]);
                 User.point.setAvatar_image(avatar[avatarCode-1]);
-                User.p.setInt(this,"avatar",avatar[avatarCode-1]);
+                User.p.setInt(this,"avatar",avatar[avatarCode-1]); //아바타 코드를 가져가서 배열 방의 아바타 이미지 저장
             }
         }
         //구매된 아바타일 경우
         else {
-            User.point.setAvatar_image(avatar[avatarCode-1]);
-            User.p.setInt(this,"avatar",avatar[avatarCode-1]);
-            AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
+            Log.d("myapp","이미 구매됨");
+            if(User.p.getBoolean(this,"avatar_button["+(avatarCode-1)+"]"))
+                //둘다 아바타 이미지 저장
+                User.point.setAvatar_image(avatar[avatarCode-1]);
+                Log.d("myapp","이미지 저장");
+                Log.d("myapp",avatar[avatarCode-1]+"");
+                User.p.setInt(this,"avatar",avatar[avatarCode-1]);
+                AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
         }
     }
 

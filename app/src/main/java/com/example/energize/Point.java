@@ -54,6 +54,7 @@ public class Point {
     public void setAvatar_image(int avatar_image){
         this.avatar_image = avatar_image;
     }
+
     //구매할때 사용
     public void setAvatar_available(int index){
         this.avatar_available[index] = true;

@@ -10,7 +10,7 @@ public class PreferenceManager {
     private static final boolean DEFAULT_VALUE_BOOLEAN = false;
     private static final int DEFAULT_VALUE_INT = -1;
 
-    private static SharedPreferences getPreferences(Context context) {
+    public static SharedPreferences getPreferences(Context context) {
         return context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
     }
 

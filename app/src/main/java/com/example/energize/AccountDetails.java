@@ -110,8 +110,7 @@ public class AccountDetails extends AppCompatActivity {
                     //move to before page
                     btn_change_username.setOnClickListener(v -> {
                         //아바타 적용
-                        //int changedAvatar = User.p.getInt(this,"avatar");
-
+                        MainActivity.btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
                         //이름 적용
                         String changedName = Change_userName.getText().toString();
                         User.p.setString(this,"name",changedName);
