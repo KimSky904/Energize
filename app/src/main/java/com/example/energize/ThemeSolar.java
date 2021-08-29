@@ -98,8 +98,6 @@ public class ThemeSolar extends AppCompatActivity {
             if (answer_user[i] == answer_list[i]) {
                 User.point.addPoint(2);
                 User.point.addEachPoint(2);
-                Log.d("myapp","퀴즈 포인트 : "+User.point.getEachPoint());
-                Log.d("myapp","전체 포인트 : "+User.point.getPoint());
             }
         }
         User.p.setInt(this,"point",User.point.getPoint());

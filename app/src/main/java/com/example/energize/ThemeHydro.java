@@ -100,6 +100,7 @@ public class ThemeHydro extends AppCompatActivity {
                 User.point.addEachPoint(2);
             }
         }
+        User.p.setInt(this,"point",User.point.getPoint());
         Intent intent = new Intent(this, ResultScreen.class);
         startActivity(intent);
         //starting activity animation
