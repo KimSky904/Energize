@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="115dp"
         android:text="@string/choose_a_theme"
         android:textColor="@color/white"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/MainText"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="3dp"
         android:text="@string/the_theme_you_choose_will_be_the_main_topic_for_the_questions_you_ll_attempt"
         android:textColor="#CDCDCD"
@@ -62,10 +62,10 @@
 
         <Button
             android:id="@+id/Btn_solar"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="22dp"
+            android:layout_marginStart="28dp"
             android:layout_marginTop="42dp"
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/solar"
@@ -77,9 +77,9 @@
 
         <Button
             android:id="@+id/Btn_hydroelectric"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_marginStart="24dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="42dp"
             android:layout_toEndOf="@+id/Btn_solar"
             android:background="@drawable/round_edge_btn"
@@ -92,10 +92,10 @@
 
         <Button
             android:id="@+id/Btn_wind"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="22dp"
+            android:layout_marginStart="28dp"
             android:layout_marginTop="226dp"
             android:background="@drawable/round_edge_btn"
             android:drawableTop="@drawable/wind"
@@ -107,9 +107,9 @@
 
         <Button
             android:id="@+id/Btn_geothermal"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_marginStart="24dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="226dp"
             android:layout_toEndOf="@+id/Btn_wind"
             android:background="@drawable/round_edge_btn"

@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginStart="17dp"
-        android:layout_marginTop="137dp"
+        android:layout_marginTop="120dp"
         android:text="@string/account_ndetails"
         android:textColor="@color/white"
         style="@style/Text.TitleStyle"/>
@@ -63,10 +63,10 @@
     <RelativeLayout
         android:id="@+id/bottom_page"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
+        android:layout_height="410dp"
         android:layout_below="@+id/SubText"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
         android:animateLayoutChanges="true"
         android:background="@drawable/bottom_page_style">
 
