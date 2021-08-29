@@ -72,6 +72,7 @@ public class SelectAvatar extends AppCompatActivity {
             finish();
         });
     }
+
     public void buttonClicked(View view){
         int avatarCode = 1;
         switch(view.getId()){
@@ -101,6 +102,11 @@ public class SelectAvatar extends AppCompatActivity {
                 break;
             default: avatarCode = 1;
         }
+
+        User.p.setBoolean(this,"avatar_button[0]",true);
+        User.p.setBoolean(this,"avatar_button[1]",true);
+        User.p.setBoolean(this,"avatar_button[2]",true);
+        User.p.setBoolean(this,"avatar_button[3]",true);
 
         //구매되지 않은 아바타일 경우
         if(!User.p.getBoolean(this,"avatar_button["+(avatarCode-1)+"]")){
