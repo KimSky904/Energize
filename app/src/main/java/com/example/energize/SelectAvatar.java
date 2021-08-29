@@ -45,8 +45,6 @@ public class SelectAvatar extends AppCompatActivity {
         btn_point.setText(p.getInt(this,"point")+" Points");
 
 
-
-        Log.d("myapp","1번 단계 통과");
         //each avatars
         avatar_button[0] = findViewById(R.id.btn_avatar_1);
         avatar_button[1] = findViewById(R.id.btn_avatar_2);
@@ -58,8 +56,8 @@ public class SelectAvatar extends AppCompatActivity {
         avatar_button[7] = findViewById(R.id.btn_avatar_8);
 
         //구매되지 않은 아이콘 잠금처리
-        for(int i=0;i<8;i++){
-            if(!User.point.getAvatar_available(i)) {
+        for(int i=4;i<8;i++){
+            if(!User.p.getBoolean(this,"avatar_button["+i+"]")) {
                 avatar_button[i].setImageResource(R.drawable.materialed_round_btn);
             }
         }
@@ -72,36 +70,6 @@ public class SelectAvatar extends AppCompatActivity {
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
-        //이미지 선택 시 어둡게? 변하기
-        //다시 원상복구 되는걸 구현중
-/*        avatar_1.setOnClickListener(v->{
-            avatar_1.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
-            User.point.setAvatar_image(R.id.btn_avatar_1);
-        });
-        avatar_2.setOnClickListener(v->{
-            avatar_2.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
-            User.point.setAvatar_image(R.id.btn_avatar_1);
-        });
-        avatar_3.setOnClickListener(v->{
-            avatar_3.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
-            User.point.setAvatar_image(R.id.btn_avatar_1);
-        });
-        avatar_4.setOnClickListener(v->{
-            avatar_4.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
-            User.point.setAvatar_image(R.id.btn_avatar_1);
-        });
-        avatar_5.setOnClickListener(v->{
-            avatar_5.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
-        });
-        avatar_6.setOnClickListener(v->{
-            avatar_6.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
-        });
-        avatar_7.setOnClickListener(v->{
-            avatar_7.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
-        });
-        avatar_8.setOnClickListener(v->{
-            avatar_8.setColorFilter(Color.parseColor("#BDBDBD"), PorterDuff.Mode.MULTIPLY);
-        });*/
     }
     public void buttonClicked(View view){
         int avatarCode = 1;
@@ -134,7 +102,7 @@ public class SelectAvatar extends AppCompatActivity {
         }
 
         //구매되지 않은 아바타일 경우
-        if(!User.point.getAvatar_available(avatarCode - 1)){
+        if(!User.p.getBoolean(this,"avatar_button["+(avatarCode-1)+"]")){
             //포인트 사용
             //잔여 포인트 부족할 때
             if(User.point.getPoint()<20){
@@ -143,14 +111,16 @@ public class SelectAvatar extends AppCompatActivity {
             }
             //잔여 포인트 있을 때
             else{
-                User.point.setAvatar_available(avatarCode-1);
+                //User.point.setAvatar_available(avatarCode-1);
                 User.point.setAvatar_image(avatar[avatarCode-1]);
                 User.point.usePoint(20);
+                User.p.setInt(this,"points",User.point.getPoint());
                 btn_point.setText(User.point.getPoint()+" POINTS");
                 ViewDialog alert = new ViewDialog();
                 alert.showDialog(SelectAvatar.this);
                 AccountDetails.button_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
                 avatar_button[avatarCode-1].setImageResource(avatar[avatarCode-1]);
+                User.p.setBoolean(this,"avatar_button["+(avatarCode-1)+"]",true);
             }
         }
         //구매된 아바타일 경우

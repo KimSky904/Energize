@@ -34,7 +34,7 @@ public class Point {
     }
     public void addPoint(int addition){
         remain_point += addition;
-        Log.d("myapp","잔여 포인트 : "+remain_point);
+        Log.d("myapp","총 잔여 포인트 : "+remain_point);
     }
 
     //테마 끝난 후 해당 세트에 획득한 포인트
@@ -74,4 +74,5 @@ public class Point {
 
 class User{
     static Point point = new Point();
+    static PreferenceManager p;
 }

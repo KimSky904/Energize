@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.net.http.SslCertificate;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.text.Editable;
@@ -23,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.lang.reflect.Modifier;
+import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -47,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
     //point object
     Point point;
 
-    //아바타 골라야 넘어감
-    boolean chooseAvatar; //=false;
     //이름 입력해야 넘어감
-    boolean writeText;
+    boolean writeText=false;
 
+    //언어
+    Locale locale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,41 +68,38 @@ public class MainActivity extends AppCompatActivity {
         bottomPage.setVisibility(View.VISIBLE);
         bottomPage.startAnimation(translateup);
 
-        Log.d("myapp",User.point.getAvatar_image()+"");
-
         btn_chooseAvatar_text = findViewById(R.id.btn_chooseAvatar_text);
         txt_userName = findViewById(R.id.editTxt_userName);
         btn_continue = findViewById(R.id.btn_continue);
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
 
-        // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기
+        //기본 언어 지정
+        changeLocale();
+
+
+
+        // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기 & 아바타
         SharedPreferences sf = getSharedPreferences(userName, 0);
         String str = sf.getString("name", ""); // 키값으로 꺼냄
+        int ava = sf.getInt("avatar",R.drawable.avatar_1);
+        User.point.setAvatar_image(ava);
+        if(User.point.getAvatar_image()!=0){
+            btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
+            btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
+            //컨티뉴 활성화
+            checkContinueIsAble();
+        }
         txt_userName.setText(str); // EditText에 반영함
-        if(!txt_userName.getText().equals("")) writeText=true;
+        if(!str.isEmpty()) writeText=true;
         else writeText=false;
-
-        Log.d("myapp",writeText+"");
-        Log.d("myapp",User.point.getAvatar_image()+"");
-        User.point.setUser_name(str);
 
         //컨티뉴 활성화
         checkContinueIsAble();
-
-        if(User.point.getAvatar_image()!=0) btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
         //Choose avatar popup
         btn_chooseAvatar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this,SelectAvatar_Dialog.class);
             startActivityForResult(intent,1);
-            //btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
-            chooseAvatar=true;
-            txt_userName.setEnabled(true);
         });
-
-
-
-        //기본값은 공백으로
-        User.point.setUser_name("");
 
         //continue 버튼 클릭 시 userName 저장
         btn_continue.setOnClickListener(v->{
@@ -108,6 +108,29 @@ public class MainActivity extends AppCompatActivity {
         });
 
         User.point.setPoint(0);
+
+
+        //사용자가 임의로 이름을 지웠을 경우 체크하여 버튼 비활성화
+        //userName 안채우면 버튼 비활성화
+        txt_userName.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void afterTextChanged(Editable s) {
+                if(s.length()<=0) {
+                    writeText = false;
+                    //컨티뉴 비활성화
+                    checkContinueIsAble();
+                }
+                else{
+                    writeText = true;
+                    //컨티뉴 활성화
+                    checkContinueIsAble();
+                }
+            }
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+        });
     }
 
     @Override
@@ -117,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d("myapp","아바타 선택 종료됨");
             User.point.setAvatar_image(data.getIntExtra("selected_avatar",0));
             Log.d("myapp","->"+User.point.getAvatar_image()+"");
+            txt_userName.setEnabled(true);
             checkContinueIsAble();
         }
     }
@@ -129,10 +153,11 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sf = getSharedPreferences(userName, 0);
         SharedPreferences.Editor editor = sf.edit();//저장하려면 editor가 필요
         String str = txt_userName.getText().toString(); // 사용자가 입력한 값
+        int ava = User.point.getAvatar_image();
         editor.putString("name", str); // 입력
-        User.point.setUser_name(str); //객체에 이름 저장
+        editor.putInt("avatar",ava);//아바타 저장
         editor.putString("xx", "xx"); // 입력
-        editor.commit(); // 파일에 최종 반영함
+        editor.apply(); // 파일에 최종 반영함
     }
 
     private void checkContinueIsAble(){
@@ -153,6 +178,15 @@ public class MainActivity extends AppCompatActivity {
             btn_continue.setClickable(false);
             btn_continue.setBackgroundResource(R.drawable.oval_btn_style);
         }
+    }
+
+    //언어 미리 지정
+    private void changeLocale(){
+        Locale locale = new Locale("en");
+        Configuration config = getApplicationContext().getResources().getConfiguration();
+        if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1 ) config.setLocale(locale);
+        else config.locale = locale;
+        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
     }
 }
 

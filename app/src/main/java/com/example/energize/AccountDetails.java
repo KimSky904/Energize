@@ -36,7 +36,6 @@ public class AccountDetails extends AppCompatActivity {
     //activity 실행 요청 확인을 위한 요청코드
     static final int REQ_AVATAR_CONTACT = 2;
 
-    PreferenceManager p;
 
     //move to
     @Override
@@ -55,7 +54,7 @@ public class AccountDetails extends AppCompatActivity {
         //set point text
         btn_point = findViewById(R.id.btn_point);
         //저장된 포인트 꺼내옴
-        int point= p.getInt(this,"point");
+        int point= User.p.getInt(this,"point");
         btn_point.setText(point+" Points");
 
         //get User name

@@ -3,6 +3,7 @@ package com.example.energize;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -20,7 +21,6 @@ public class ResultScreen extends AppCompatActivity {
     //값 유지
     String shared = "file";
     int saving;
-    PreferenceManager p;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +28,15 @@ public class ResultScreen extends AppCompatActivity {
         setContentView(R.layout.activity_result_screen);
         //원형 버튼 텍스트
         btn_chooseAvatar = findViewById(R.id.btn_chooseAvatar);
-        saving = User.point.getEachPoint();
+
 
         //get each points
+        saving = User.point.getPoint();
+        Log.d("myapp",saving+"");
+
         btn_chooseAvatar.setText(User.point.getEachPoint() + " out 20 points");
         //얻은 포인트 저장한다.
-        p.setInt(this,"point",saving);
+        User.p.setInt(this,"point",saving);
 
 
         //move to account details
