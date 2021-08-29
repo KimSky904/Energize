@@ -78,11 +78,16 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+//        Log.d("myapp",User.p.getInt(this,"point")+"");
+//        User.point.setPoint(User.p.getInt(this,"point"));
+
         // 지난번 저장해놨던 사용자 입력값을 꺼내서 보여주기 & 아바타
         SharedPreferences sf = getSharedPreferences(userName, 0);
         String str = sf.getString("name", ""); // 키값으로 꺼냄
         int ava = sf.getInt("avatar",R.drawable.avatar_1);
         User.point.setAvatar_image(ava);
+        int points = User.p.getInt(this,"point");
+        User.point.setPoint(points);
         if(User.point.getAvatar_image()!=0){
             btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
             btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
@@ -92,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
         txt_userName.setText(str); // EditText에 반영함
         if(!str.isEmpty()) writeText=true;
         else writeText=false;
+
+        Log.d("myapp",User.p.getInt(this,"point")+"");
 
         //컨티뉴 활성화
         checkContinueIsAble();
@@ -107,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             User.point.setUser_name(txt_userName.getText().toString());
         });
 
-        User.point.setPoint(0);
+        //User.point.setPoint(0);
 
 
         //사용자가 임의로 이름을 지웠을 경우 체크하여 버튼 비활성화
@@ -156,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
         int ava = User.point.getAvatar_image();
         editor.putString("name", str); // 입력
         editor.putInt("avatar",ava);//아바타 저장
+        editor.putInt("point",User.p.getInt(this,"point"));//아바타 저장
         editor.putString("xx", "xx"); // 입력
         editor.apply(); // 파일에 최종 반영함
     }
