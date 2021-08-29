@@ -35,7 +35,7 @@
     <RelativeLayout
         android:id="@+id/QuizLayout"
         android:layout_width="match_parent"
-        android:layout_height="430dp"
+        android:layout_height="410dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_page_style"
         android:animateLayoutChanges="true">
