@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         //아바타 설정
         if(User.point.getAvatar_image()!=0){
             btn_chooseAvatar_text.setVisibility(View.INVISIBLE);
-            btn_chooseAvatar.setBackgroundResource(User.p.getInt(this,"avatar"));
+            btn_chooseAvatar.setBackgroundResource(User.point.getAvatar_image());
             //컨티뉴 활성화
             checkContinueIsAble();
         }
