@@ -14,7 +14,7 @@ import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.energize.R;
+import com.holdmyhand.energize.R;
 
 public class AccountDetails extends AppCompatActivity {
     //bottom page animation

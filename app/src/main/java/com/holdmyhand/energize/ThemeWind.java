@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.energize.R;
+import com.holdmyhand.energize.R;
 
 public class ThemeWind extends AppCompatActivity {
     //1 2 3 1 4 2 1 4 1 1

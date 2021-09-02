@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
-import com.example.energize.R;
+import com.holdmyhand.energize.R;
 
 public class SelectAvatar_Dialog extends AppCompatActivity {
 

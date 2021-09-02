@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.energize.R;
+import com.holdmyhand.energize.R;
 
 public class ThemeSolar extends AppCompatActivity {
     //C B C A D B C B C D

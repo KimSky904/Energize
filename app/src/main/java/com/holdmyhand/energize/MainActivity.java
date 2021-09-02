@@ -19,7 +19,7 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.energize.R;
+import com.holdmyhand.energize.R;
 
 import java.util.Locale;
 

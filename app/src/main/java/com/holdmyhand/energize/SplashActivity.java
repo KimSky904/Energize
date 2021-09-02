@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
 
-import com.example.energize.R;
+import com.holdmyhand.energize.R;
 
 public class SplashActivity extends AppCompatActivity {
 
