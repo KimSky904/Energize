@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.holdmyhand.energize.R;
 
 public class ThemeGeo extends AppCompatActivity {
     //2 4 3 1 4 3 1 2 3 2

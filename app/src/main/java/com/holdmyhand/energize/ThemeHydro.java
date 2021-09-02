@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.holdmyhand.energize.R;
 
 public class ThemeHydro extends AppCompatActivity {
     //2 2 3 4 1 3 1 3 1 2

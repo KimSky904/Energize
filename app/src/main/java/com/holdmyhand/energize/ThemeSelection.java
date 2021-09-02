@@ -12,7 +12,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.holdmyhand.energize.R;
 
 public class ThemeSelection extends AppCompatActivity {
 

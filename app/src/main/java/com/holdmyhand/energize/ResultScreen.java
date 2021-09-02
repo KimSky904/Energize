@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.holdmyhand.energize.R;
+
 
 public class ResultScreen extends AppCompatActivity {
 

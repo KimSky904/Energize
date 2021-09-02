@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
-import com.holdmyhand.energize.R;
 
 public class SelectAvatar extends AppCompatActivity {
 
