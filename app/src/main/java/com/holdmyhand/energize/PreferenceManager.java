@@ -1,4 +1,4 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
 import android.content.Context;
 import android.content.SharedPreferences;

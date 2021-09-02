@@ -1,14 +1,13 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.energize.R;
 
 public class ResultScreen extends AppCompatActivity {
 

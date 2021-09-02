@@ -1,4 +1,4 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,8 +14,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.example.energize.R;
+
 import java.util.Locale;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class LanguageSelection extends AppCompatActivity {
 

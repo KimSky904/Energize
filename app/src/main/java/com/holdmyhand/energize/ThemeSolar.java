@@ -1,14 +1,15 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.energize.R;
 
 public class ThemeSolar extends AppCompatActivity {
     //C B C A D B C B C D

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".SelectAvatar"
+    tools:context="com.holdmyhand.energize.SelectAvatar"
     android:orientation="vertical"
     android:background="@drawable/select_avatar_dialog">
 

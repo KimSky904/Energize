@@ -1,8 +1,7 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -10,8 +9,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ThemeGeo extends AppCompatActivity {
-    //2 4 3 1 4 3 1 2 3 2
+import com.example.energize.R;
+
+public class ThemeWind extends AppCompatActivity {
+    //1 2 3 1 4 2 1 4 1 1
 
     //돌아가기 버튼
     ImageButton btn_back;
@@ -49,6 +50,7 @@ public class ThemeGeo extends AppCompatActivity {
             finish();
         });
 
+
         //목록 값 할당
         setDataList();
 
@@ -59,7 +61,6 @@ public class ThemeGeo extends AppCompatActivity {
         AnswerText2 = findViewById(R.id.AnswerText2);
         AnswerText3 = findViewById(R.id.AnswerText3);
         AnswerText4 = findViewById(R.id.AnswerText4);
-
 
         //이전 문제로
         previous = findViewById(R.id.previous_btn);
@@ -91,7 +92,6 @@ public class ThemeGeo extends AppCompatActivity {
             //next 누르면 색 원상복구
             initButtonBackground();
         });
-        //answer에서 아무거나 눌리면 유지되게 하기
     }
 
     private void scoring() {
@@ -133,34 +133,33 @@ public class ThemeGeo extends AppCompatActivity {
     private void setDataList(){
         //퀴즈 문제 목록 string
         question = new int[]{
-                R.string.Geothermal_Question_1,
-                R.string.Geothermal_Question_2,
-                R.string.Geothermal_Question_3,
-                R.string.Geothermal_Question_4,
-                R.string.Geothermal_Question_5,
-                R.string.Geothermal_Question_6,
-                R.string.Geothermal_Question_7,
-                R.string.Geothermal_Question_8,
-                R.string.Geothermal_Question_9,
-                R.string.Geothermal_Question_10,
+                R.string.Wind_Question_1,
+                R.string.Wind_Question_2,
+                R.string.Wind_Question_3,
+                R.string.Wind_Question_4,
+                R.string.Wind_Question_5,
+                R.string.Wind_Question_6,
+                R.string.Wind_Question_7,
+                R.string.Wind_Question_8,
+                R.string.Wind_Question_9,
+                R.string.Wind_Question_10,
         };
         //퀴즈 보기 목록 string
         answer = new int[][]{
-                {R.string.Geothermal_Answer_Q1_1, R.string.Geothermal_Answer_Q1_2, R.string.Geothermal_Answer_Q1_3, R.string.Geothermal_Answer_Q1_4},
-                {R.string.Geothermal_Answer_Q2_1, R.string.Geothermal_Answer_Q2_2, R.string.Geothermal_Answer_Q2_3, R.string.Geothermal_Answer_Q2_4},
-                {R.string.Geothermal_Answer_Q3_1, R.string.Geothermal_Answer_Q3_2, R.string.Geothermal_Answer_Q3_3, R.string.Geothermal_Answer_Q3_4},
-                {R.string.Geothermal_Answer_Q4_1, R.string.Geothermal_Answer_Q4_2, R.string.Geothermal_Answer_Q4_3, R.string.Geothermal_Answer_Q4_4},
-                {R.string.Geothermal_Answer_Q5_1, R.string.Geothermal_Answer_Q5_2, R.string.Geothermal_Answer_Q5_3, R.string.Geothermal_Answer_Q5_4},
-                {R.string.Geothermal_Answer_Q6_1, R.string.Geothermal_Answer_Q6_2, R.string.Geothermal_Answer_Q6_3, R.string.Geothermal_Answer_Q6_4},
-                {R.string.Geothermal_Answer_Q7_1, R.string.Geothermal_Answer_Q7_2, R.string.Geothermal_Answer_Q7_3, R.string.Geothermal_Answer_Q7_4},
-                {R.string.Geothermal_Answer_Q8_1, R.string.Geothermal_Answer_Q8_2, R.string.Geothermal_Answer_Q8_3, R.string.Geothermal_Answer_Q8_4},
-                {R.string.Geothermal_Answer_Q9_1, R.string.Geothermal_Answer_Q9_2, R.string.Geothermal_Answer_Q9_3, R.string.Geothermal_Answer_Q9_4},
-                {R.string.Geothermal_Answer_Q10_1, R.string.Geothermal_Answer_Q10_2, R.string.Geothermal_Answer_Q10_3, R.string.Geothermal_Answer_Q10_4},
+                {R.string.Wind_Answer_Q1_1, R.string.Wind_Answer_Q1_2, R.string.Wind_Answer_Q1_3, R.string.Wind_Answer_Q1_4},
+                {R.string.Wind_Answer_Q2_1, R.string.Wind_Answer_Q2_2, R.string.Wind_Answer_Q2_3, R.string.Wind_Answer_Q2_4},
+                {R.string.Wind_Answer_Q3_1, R.string.Wind_Answer_Q3_2, R.string.Wind_Answer_Q3_3, R.string.Wind_Answer_Q3_4},
+                {R.string.Wind_Answer_Q4_1, R.string.Wind_Answer_Q4_2, R.string.Wind_Answer_Q4_3, R.string.Wind_Answer_Q4_4},
+                {R.string.Wind_Answer_Q5_1, R.string.Wind_Answer_Q5_2, R.string.Wind_Answer_Q5_3, R.string.Wind_Answer_Q5_4},
+                {R.string.Wind_Answer_Q6_1, R.string.Wind_Answer_Q6_2, R.string.Wind_Answer_Q6_3, R.string.Wind_Answer_Q6_4},
+                {R.string.Wind_Answer_Q7_1, R.string.Wind_Answer_Q7_2, R.string.Wind_Answer_Q7_3, R.string.Wind_Answer_Q7_4},
+                {R.string.Wind_Answer_Q8_1, R.string.Wind_Answer_Q8_2, R.string.Wind_Answer_Q8_3, R.string.Wind_Answer_Q8_4},
+                {R.string.Wind_Answer_Q9_1, R.string.Wind_Answer_Q9_2, R.string.Wind_Answer_Q9_3, R.string.Wind_Answer_Q9_4},
+                {R.string.Wind_Answer_Q10_1, R.string.Wind_Answer_Q10_2, R.string.Wind_Answer_Q10_3, R.string.Wind_Answer_Q10_4},
         };
         //정답 목록
-        //2 4 3 1 4 3 1 2 3 2
-        answer_list = new int[]{R.id.AnswerText2,R.id.AnswerText4,R.id.AnswerText3,R.id.AnswerText1,R.id.AnswerText4,R.id.AnswerText3,R.id.AnswerText1,R.id.AnswerText2,R.id.AnswerText3,R.id.AnswerText2};
-
+        //1 2 3 1 4 2 1 4 1 1
+        answer_list = new int[]{R.id.AnswerText1,R.id.AnswerText2,R.id.AnswerText3,R.id.AnswerText1,R.id.AnswerText4,R.id.AnswerText2,R.id.AnswerText1,R.id.AnswerText4,R.id.AnswerText1,R.id.AnswerText1};
 
     }
 }

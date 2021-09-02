@@ -1,8 +1,7 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -10,8 +9,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ThemeWind extends AppCompatActivity {
-    //1 2 3 1 4 2 1 4 1 1
+import com.example.energize.R;
+
+public class ThemeHydro extends AppCompatActivity {
+    //2 2 3 4 1 3 1 3 1 2
 
     //돌아가기 버튼
     ImageButton btn_back;
@@ -48,7 +49,6 @@ public class ThemeWind extends AppCompatActivity {
             overridePendingTransition(R.anim.translate_none,R.anim.translate_center_to_right);
             finish();
         });
-
 
         //목록 값 할당
         setDataList();
@@ -132,33 +132,33 @@ public class ThemeWind extends AppCompatActivity {
     private void setDataList(){
         //퀴즈 문제 목록 string
         question = new int[]{
-                R.string.Wind_Question_1,
-                R.string.Wind_Question_2,
-                R.string.Wind_Question_3,
-                R.string.Wind_Question_4,
-                R.string.Wind_Question_5,
-                R.string.Wind_Question_6,
-                R.string.Wind_Question_7,
-                R.string.Wind_Question_8,
-                R.string.Wind_Question_9,
-                R.string.Wind_Question_10,
+                R.string.Hydro_Question_1,
+                R.string.Hydro_Question_2,
+                R.string.Hydro_Question_3,
+                R.string.Hydro_Question_4,
+                R.string.Hydro_Question_5,
+                R.string.Hydro_Question_6,
+                R.string.Hydro_Question_7,
+                R.string.Hydro_Question_8,
+                R.string.Hydro_Question_9,
+                R.string.Hydro_Question_10,
         };
         //퀴즈 보기 목록 string
         answer = new int[][]{
-                {R.string.Wind_Answer_Q1_1, R.string.Wind_Answer_Q1_2, R.string.Wind_Answer_Q1_3, R.string.Wind_Answer_Q1_4},
-                {R.string.Wind_Answer_Q2_1, R.string.Wind_Answer_Q2_2, R.string.Wind_Answer_Q2_3, R.string.Wind_Answer_Q2_4},
-                {R.string.Wind_Answer_Q3_1, R.string.Wind_Answer_Q3_2, R.string.Wind_Answer_Q3_3, R.string.Wind_Answer_Q3_4},
-                {R.string.Wind_Answer_Q4_1, R.string.Wind_Answer_Q4_2, R.string.Wind_Answer_Q4_3, R.string.Wind_Answer_Q4_4},
-                {R.string.Wind_Answer_Q5_1, R.string.Wind_Answer_Q5_2, R.string.Wind_Answer_Q5_3, R.string.Wind_Answer_Q5_4},
-                {R.string.Wind_Answer_Q6_1, R.string.Wind_Answer_Q6_2, R.string.Wind_Answer_Q6_3, R.string.Wind_Answer_Q6_4},
-                {R.string.Wind_Answer_Q7_1, R.string.Wind_Answer_Q7_2, R.string.Wind_Answer_Q7_3, R.string.Wind_Answer_Q7_4},
-                {R.string.Wind_Answer_Q8_1, R.string.Wind_Answer_Q8_2, R.string.Wind_Answer_Q8_3, R.string.Wind_Answer_Q8_4},
-                {R.string.Wind_Answer_Q9_1, R.string.Wind_Answer_Q9_2, R.string.Wind_Answer_Q9_3, R.string.Wind_Answer_Q9_4},
-                {R.string.Wind_Answer_Q10_1, R.string.Wind_Answer_Q10_2, R.string.Wind_Answer_Q10_3, R.string.Wind_Answer_Q10_4},
+                {R.string.Hydro_Answer_Q1_1, R.string.Hydro_Answer_Q1_2, R.string.Hydro_Answer_Q1_3, R.string.Hydro_Answer_Q1_4},
+                {R.string.Hydro_Answer_Q2_1, R.string.Hydro_Answer_Q2_2, R.string.Hydro_Answer_Q2_3, R.string.Hydro_Answer_Q2_4},
+                {R.string.Hydro_Answer_Q3_1, R.string.Hydro_Answer_Q3_2, R.string.Hydro_Answer_Q3_3, R.string.Hydro_Answer_Q3_4},
+                {R.string.Hydro_Answer_Q4_1, R.string.Hydro_Answer_Q4_2, R.string.Hydro_Answer_Q4_3, R.string.Hydro_Answer_Q4_4},
+                {R.string.Hydro_Answer_Q5_1, R.string.Hydro_Answer_Q5_2, R.string.Hydro_Answer_Q5_3, R.string.Hydro_Answer_Q5_4},
+                {R.string.Hydro_Answer_Q6_1, R.string.Hydro_Answer_Q6_2, R.string.Hydro_Answer_Q6_3, R.string.Hydro_Answer_Q6_4},
+                {R.string.Hydro_Answer_Q7_1, R.string.Hydro_Answer_Q7_2, R.string.Hydro_Answer_Q7_3, R.string.Hydro_Answer_Q7_4},
+                {R.string.Hydro_Answer_Q8_1, R.string.Hydro_Answer_Q8_2, R.string.Hydro_Answer_Q8_3, R.string.Hydro_Answer_Q8_4},
+                {R.string.Hydro_Answer_Q9_1, R.string.Hydro_Answer_Q9_2, R.string.Hydro_Answer_Q9_3, R.string.Hydro_Answer_Q9_4},
+                {R.string.Hydro_Answer_Q10_1, R.string.Hydro_Answer_Q10_2, R.string.Hydro_Answer_Q10_3, R.string.Hydro_Answer_Q10_4},
         };
         //정답 목록
-        //1 2 3 1 4 2 1 4 1 1
-        answer_list = new int[]{R.id.AnswerText1,R.id.AnswerText2,R.id.AnswerText3,R.id.AnswerText1,R.id.AnswerText4,R.id.AnswerText2,R.id.AnswerText1,R.id.AnswerText4,R.id.AnswerText1,R.id.AnswerText1};
+        //2 2 3 4 1 3 1 3 1 2
+        answer_list = new int[]{R.id.AnswerText2,R.id.AnswerText2,R.id.AnswerText3,R.id.AnswerText4,R.id.AnswerText1,R.id.AnswerText3,R.id.AnswerText1,R.id.AnswerText3,R.id.AnswerText1,R.id.AnswerText2};
 
     }
 }

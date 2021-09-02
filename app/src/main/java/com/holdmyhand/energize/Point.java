@@ -1,10 +1,6 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
-import android.content.Context;
-import android.content.res.Configuration;
 import android.util.Log;
-
-import java.util.Locale;
 
 
 public class Point {

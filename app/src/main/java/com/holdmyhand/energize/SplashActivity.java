@@ -1,13 +1,13 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Display;
 import android.widget.ImageView;
+
+import com.example.energize.R;
 
 public class SplashActivity extends AppCompatActivity {
 

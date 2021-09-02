@@ -1,20 +1,17 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
-import android.widget.FrameLayout;
 import android.widget.ImageButton;
-import android.widget.Toast;
+
+import com.example.energize.R;
 
 public class SelectAvatar_Dialog extends AppCompatActivity {
 

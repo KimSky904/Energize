@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.energize"
+        applicationId "com.holdmyhand.energize"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1

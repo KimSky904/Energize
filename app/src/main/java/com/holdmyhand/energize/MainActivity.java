@@ -1,16 +1,12 @@
-package com.example.energize;
+package com.holdmyhand.energize;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.graphics.Color;
-import android.net.http.SslCertificate;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.Preference;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -22,9 +18,9 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.lang.reflect.Modifier;
+import com.example.energize.R;
+
 import java.util.Locale;
 
 
